@@ -1,0 +1,1 @@
+{"name":"Local: PY01043","url":"d:\\Exercise\\Kì 5\\Python\\PY01043.py","tests":[{"id":1692515103807,"input":"1\n999999","output":"22 44 66 88 2002 2222 2442 2662 2882 4004 4224 4444 4664 4884 6006 6226 6446 6666 6886 8008 8228 8448 8668 8888"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Exercise\\Kì 5\\Python\\PY01043.py","group":"local","local":true}

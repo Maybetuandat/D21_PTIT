@@ -1,0 +1,1 @@
+{"name":"Local: py03014_bieuthuc","url":"d:\\Exercise\\Kì 5\\Python\\py03014_bieuthuc.py","tests":[{"id":1701625585577,"input":"2\n(a + (b *c) ) + (d/e)\n((())(()))","output":"1  2  2  1  3  3\n1 2  3  3  2  4  5  5  4  1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Exercise\\Kì 5\\Python\\py03014_bieuthuc.py","group":"local","local":true}

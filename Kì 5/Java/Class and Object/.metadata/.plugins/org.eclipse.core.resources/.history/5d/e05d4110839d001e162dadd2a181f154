@@ -1,0 +1,46 @@
+package JKT015_gobanphim;
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		String s = sc.nextLine();
+		Stack<Character> st1 = new Stack<Character>();
+		Stack<Character> st2 = new Stack<Character>();
+		for(int i=0; i<s.length(); i++)
+		{
+			if(s.charAt(i) == '<')
+			{
+				if(st1.empty())
+					continue;
+				st2.push(st1.pop());
+				
+			}
+			else if (s.charAt(i) == '>')
+			{
+				if(st2.empty())
+					continue;
+				st1.push(st2.pop());
+				
+			}
+			else if(s.charAt(i) == '-')
+			{
+				if (st1.empty())
+					continue;
+				st1.pop();
+			}
+			else
+			{
+				st1.push(s.charAt(i));
+			}
+		}
+		String ans = "";
+		while(!st1.empty())
+		{
+			ans = st1.pop() + ans;
+		}
+		while(!st2.empty())
+		{
+			ans = st2.pop() + ans;
+		}
+	}
+}

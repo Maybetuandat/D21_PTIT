@@ -1,0 +1,32 @@
+#include<bits/stdc++.h>
+using namespace std;
+void xuli(int n)
+{
+	vector<int> a(n);
+	for(int i=0; i<n; i++)
+	   cin>>a[i];
+	int dem=0;
+	for(int i=0; i<n-1; i++)
+	{
+		int minidx = i;
+		for(int j = i+1; j <n; j++)
+		   if(a[minidx] > a[j])
+		      minidx = j;
+		if(i != minidx)
+		{
+		
+			swap(a[i], a[minidx]);
+			dem++;
+	    }
+	}
+	cout<<dem<<endl;
+}
+int main ()
+{
+	int t; cin>>t;
+	while(t--)
+	{
+		int n; cin>>n;
+		xuli(n);
+	}
+}

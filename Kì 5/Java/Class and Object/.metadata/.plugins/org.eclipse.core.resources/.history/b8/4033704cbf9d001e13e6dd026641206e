@@ -1,0 +1,29 @@
+package test;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Main {
+    public static void main(String[] args) {
+        // Đường dẫn tới file txt bạn muốn tạo hoặc ghi đè
+        String filePath = "dat.txt";
+
+        try {
+            // Mở file để ghi
+            BufferedWriter writer = new BufferedWriter(new FileWriter(filePath));
+
+            // Dữ liệu bạn muốn ghi vào file
+            String data = "Nội dung muốn ghi vào file.";
+
+            // Ghi dữ liệu vào file
+            writer.write(data);
+
+            // Đóng luồng ghi
+            writer.close();
+
+            System.out.println("Ghi vào file thành công.");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}

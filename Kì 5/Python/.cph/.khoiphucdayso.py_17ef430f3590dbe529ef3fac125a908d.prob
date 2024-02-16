@@ -1,0 +1,1 @@
+{"name":"Local: khoiphucdayso","url":"d:\\Exercise\\Kì 5\\Python\\khoiphucdayso.py","tests":[{"id":1693903675980,"input":"4\n0 3 6 7\n3 0 5 6\n6 5 0 9\n7 6 9 0","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Exercise\\Kì 5\\Python\\khoiphucdayso.py","group":"local","local":true}

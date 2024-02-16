@@ -1,0 +1,1337 @@
+2023-12-24T08:17:03.727Z In(05) vmx Log for VMware Player pid=2188 version=17.0.2 build=build-21581411 option=Release
+2023-12-24T08:17:03.727Z In(05) vmx The host is x86_64.
+2023-12-24T08:17:03.727Z In(05) vmx Host codepage=windows-1252 encoding=windows-1252
+2023-12-24T08:17:03.727Z In(05) vmx Host is Windows 11 Home, 64-bit (Build 22621.2861)
+2023-12-24T08:17:03.727Z In(05) vmx Host offset from UTC is -07:00.
+2023-12-24T08:17:03.687Z In(05) vmx VTHREAD 15140 "vmx"
+2023-12-24T08:17:03.692Z In(05) vmx LOCALE windows-1252 -> NULL User=409 System=409
+2023-12-24T08:17:03.692Z In(05) vmx Msg_SetLocaleEx: HostLocale=windows-1252 UserLocale=NULL
+2023-12-24T08:17:03.703Z In(05) vmx DictionaryLoad: Cannot open file "C:\Users\Dell Gaming\AppData\Roaming\VMware\config.ini": The system cannot find the file specified.
+2023-12-24T08:17:03.703Z In(05) vmx Msg_Reset:
+2023-12-24T08:17:03.703Z In(05) vmx [msg.dictionary.load.openFailed] Cannot open file "C:\Users\Dell Gaming\AppData\Roaming\VMware\config.ini": The system cannot find the file specified.
+2023-12-24T08:17:03.703Z In(05) vmx ----------------------------------------
+2023-12-24T08:17:03.703Z In(05) vmx ConfigDB: Failed to load C:\Users\Dell Gaming\AppData\Roaming\VMware\config.ini
+2023-12-24T08:17:03.712Z In(05) vmx Win32U_GetFileAttributes: GetFileAttributesExW("D:\Exercise\Kì 5\Hệ Điều Hành\Tài liệu thực hành\Virtual\Windows 98 Fat16.vmpl", ...) failed, error: 2
+2023-12-24T08:17:03.712Z In(05) vmx OBJLIB-LIB: Objlib initialized.
+2023-12-24T08:17:03.712Z In(05) vmx DictionaryLoad: Cannot open file "C:\ProgramData\VMware\VMware Player\config.ini": The system cannot find the file specified.
+2023-12-24T08:17:03.712Z In(05) vmx [msg.dictionary.load.openFailed] Cannot open file "C:\ProgramData\VMware\VMware Player\config.ini": The system cannot find the file specified.
+2023-12-24T08:17:03.712Z In(05) vmx PREF Optional preferences file not found at C:\ProgramData\VMware\VMware Player\config.ini. Using default values.
+2023-12-24T08:17:03.712Z In(05) vmx DictionaryLoad: Cannot open file "C:\ProgramData\VMware\VMware Player\settings.ini": The system cannot find the file specified.
+2023-12-24T08:17:03.712Z In(05) vmx [msg.dictionary.load.openFailed] Cannot open file "C:\ProgramData\VMware\VMware Player\settings.ini": The system cannot find the file specified.
+2023-12-24T08:17:03.712Z In(05) vmx PREF Optional preferences file not found at C:\ProgramData\VMware\VMware Player\settings.ini. Using default values.
+2023-12-24T08:17:03.712Z In(05) vmx DictionaryLoad: Cannot open file "C:\ProgramData\VMware\VMware Player\config.ini": The system cannot find the file specified.
+2023-12-24T08:17:03.712Z In(05) vmx [msg.dictionary.load.openFailed] Cannot open file "C:\ProgramData\VMware\VMware Player\config.ini": The system cannot find the file specified.
+2023-12-24T08:17:03.712Z In(05) vmx PREF Optional preferences file not found at C:\ProgramData\VMware\VMware Player\config.ini. Using default values.
+2023-12-24T08:17:03.712Z In(05) vmx DictionaryLoad: Cannot open file "C:\Users\Dell Gaming\AppData\Roaming\VMware\config.ini": The system cannot find the file specified.
+2023-12-24T08:17:03.712Z In(05) vmx [msg.dictionary.load.openFailed] Cannot open file "C:\Users\Dell Gaming\AppData\Roaming\VMware\config.ini": The system cannot find the file specified.
+2023-12-24T08:17:03.712Z In(05) vmx PREF Optional preferences file not found at C:\Users\Dell Gaming\AppData\Roaming\VMware\config.ini. Using default values.
+2023-12-24T08:17:03.722Z In(05) vmx lib/ssl: OpenSSL using RAND_OpenSSL for RAND
+2023-12-24T08:17:03.722Z In(05) vmx lib/ssl: protocol list tls1.2
+2023-12-24T08:17:03.722Z In(05) vmx lib/ssl: protocol list tls1.2 (openssl flags 0x36000000)
+2023-12-24T08:17:03.722Z In(05) vmx lib/ssl: cipher list ECDHE+AESGCM:RSA+AESGCM:ECDHE+AES:RSA+AES
+2023-12-24T08:17:03.722Z In(05) vmx lib/ssl: curves list prime256v1:secp384r1:secp521r1
+2023-12-24T08:17:03.734Z In(05) vmx Hostname=DAT-GAMING
+2023-12-24T08:17:03.742Z In(05) vmx IP=fe80::16c7:fc5:5c80:a9d2%16
+2023-12-24T08:17:03.742Z In(05) vmx IP=fe80::1f97:ccc9:b2d9:adf2%9
+2023-12-24T08:17:03.742Z In(05) vmx IP=fe80::4e4e:361b:a9cb:a227%15
+2023-12-24T08:17:03.742Z In(05) vmx IP=192.168.21.1
+2023-12-24T08:17:03.742Z In(05) vmx IP=192.168.48.1
+2023-12-24T08:17:03.742Z In(05) vmx IP=192.168.2.17
+2023-12-24T08:17:03.766Z In(05) vmx System uptime 153591485879 us
+2023-12-24T08:17:03.766Z In(05) vmx Command line: "D:\Program Files (x86)\x64\vmware-vmx.exe" "-T" "querytoken" "-ssnapshot.numRollingTiers=0" "-sRemoteDisplay.vnc.enabled=FALSE" "-s" "vmx.stdio.keep=TRUE" "-#" "product=4;name=VMware Player;version=17.0.2;buildnumber=21581411;licensename=VMware Player;licenseversion=17.0;" "-@" "pipe=\\.\pipe\vmx5a1bc4c5fb4707a3;msgs=ui" "D:\Exercise\Kì 5\Hệ Điều Hành\Tài liệu thực hành\Virtual\Windows 98 Fat16.vmx"
+2023-12-24T08:17:03.766Z In(05) vmx Msg_SetLocaleEx: HostLocale=windows-1252 UserLocale=NULL
+2023-12-24T08:17:03.792Z In(05) vmx WQPoolAllocPoll : pollIx = 1, signalHandle = 512
+2023-12-24T08:17:03.792Z In(05) vmx WQPoolAllocPoll : pollIx = 2, signalHandle = 796
+2023-12-24T08:17:03.792Z In(05) vmx VigorTransport listening on fd 872
+2023-12-24T08:17:03.792Z In(05) vmx Vigor_Init 1
+2023-12-24T08:17:03.792Z In(05) vmx Connecting 'ui' to pipe '\\.\pipe\vmx5a1bc4c5fb4707a3' with user '(null)'
+2023-12-24T08:17:03.792Z In(05) vmx VMXVmdb: Local connection timeout: 60000 ms.
+2023-12-24T08:17:03.798Z In(05) vmx VmdbAddConnection: cnxPath=/db/connection/#1/, cnxIx=1
+2023-12-24T08:17:03.798Z In(05) vmx Vix: [mainDispatch.c:488]: VMAutomation: Initializing VMAutomation.
+2023-12-24T08:17:03.798Z In(05) vmx Vix: [mainDispatch.c:740]: VMAutomationOpenListenerSocket() listening
+2023-12-24T08:17:03.802Z In(05) vmx Vix: [mainDispatch.c:4213]: VMAutomation_ReportPowerOpFinished: statevar=0, newAppState=1870, success=1 additionalError=0
+2023-12-24T08:17:03.802Z In(05) vmx Transitioned vmx/execState/val to poweredOff
+2023-12-24T08:17:03.802Z In(05) vmx Vix: [mainDispatch.c:4213]: VMAutomation_ReportPowerOpFinished: statevar=1, newAppState=1873, success=1 additionalError=0
+2023-12-24T08:17:03.802Z In(05) vmx Vix: [mainDispatch.c:4213]: VMAutomation_ReportPowerOpFinished: statevar=2, newAppState=1877, success=1 additionalError=0
+2023-12-24T08:17:03.802Z In(05) vmx Vix: [mainDispatch.c:4213]: VMAutomation_ReportPowerOpFinished: statevar=3, newAppState=1881, success=1 additionalError=0
+2023-12-24T08:17:03.852Z In(05) vmx IOPL_VBSRunning: VBS is set to 0
+2023-12-24T08:17:03.852Z In(05) vmx IOCTL_VMX86_SET_MEMORY_PARAMS already set
+2023-12-24T08:17:03.852Z In(05) vmx FeatureCompat: No EVC masks.
+2023-12-24T08:17:03.892Z In(05) vmx hostCPUID vendor: GenuineIntel
+2023-12-24T08:17:03.892Z In(05) vmx hostCPUID family: 0x6 model: 0x9e stepping: 0xa
+2023-12-24T08:17:03.892Z In(05) vmx hostCPUID codename: Coffee Lake-S/H
+2023-12-24T08:17:03.892Z In(05) vmx hostCPUID name: Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz
+2023-12-24T08:17:03.892Z In(05) vmx hostCPUID level 00000000, 0: 0x00000016 0x756e6547 0x6c65746e 0x49656e69
+2023-12-24T08:17:03.892Z In(05) vmx hostCPUID level 00000001, 0: 0x000906ea 0x00100800 0x7ffafbbf 0xbfebfbff
+2023-12-24T08:17:03.892Z In(05) vmx hostCPUID level 00000002, 0: 0x76036301 0x00f0b5ff 0x00000000 0x00c30000
+2023-12-24T08:17:03.892Z In(05) vmx hostCPUID level 00000003, 0: 0x00000000 0x00000000 0x00000000 0x00000000
+2023-12-24T08:17:03.892Z In(05) vmx hostCPUID level 00000004, 0: 0x1c004121 0x01c0003f 0x0000003f 0x00000000
+2023-12-24T08:17:03.892Z In(05) vmx hostCPUID level 00000004, 1: 0x1c004122 0x01c0003f 0x0000003f 0x00000000
+2023-12-24T08:17:03.892Z In(05) vmx hostCPUID level 00000004, 2: 0x1c004143 0x00c0003f 0x000003ff 0x00000000
+2023-12-24T08:17:03.892Z In(05) vmx hostCPUID level 00000004, 3: 0x1c03c163 0x02c0003f 0x00002fff 0x00000006
+2023-12-24T08:17:03.892Z In(05) vmx hostCPUID level 00000004, 4: 0x00000000 0x00000000 0x00000000 0x00000000
+2023-12-24T08:17:03.892Z In(05) vmx hostCPUID level 00000005, 0: 0x00000040 0x00000040 0x00000003 0x11142120
+2023-12-24T08:17:03.892Z In(05) vmx hostCPUID level 00000006, 0: 0x000027f7 0x00000002 0x00000009 0x00000000
+2023-12-24T08:17:03.892Z In(05) vmx hostCPUID level 00000007, 0: 0x00000000 0x029c67af 0x40000000 0x9c002600
+2023-12-24T08:17:03.893Z In(05) vmx hostCPUID level 00000008, 0: 0x00000000 0x00000000 0x00000000 0x00000000
+2023-12-24T08:17:03.893Z In(05) vmx hostCPUID level 00000009, 0: 0x00000000 0x00000000 0x00000000 0x00000000
+2023-12-24T08:17:03.893Z In(05) vmx hostCPUID level 0000000a, 0: 0x07300404 0x00000000 0x00000000 0x00000603
+2023-12-24T08:17:03.893Z In(05) vmx hostCPUID level 0000000b, 0: 0x00000001 0x00000002 0x00000100 0x00000000
+2023-12-24T08:17:03.893Z In(05) vmx hostCPUID level 0000000b, 1: 0x00000004 0x0000000c 0x00000201 0x00000000
+2023-12-24T08:17:03.893Z In(05) vmx hostCPUID level 0000000b, 2: 0x00000000 0x00000000 0x00000002 0x00000000
+2023-12-24T08:17:03.893Z In(05) vmx hostCPUID level 0000000c, 0: 0x00000000 0x00000000 0x00000000 0x00000000
+2023-12-24T08:17:03.893Z In(05) vmx hostCPUID level 0000000d, 0: 0x0000001f 0x00000440 0x00000440 0x00000000
+2023-12-24T08:17:03.893Z In(05) vmx hostCPUID level 0000000d, 1: 0x0000000f 0x00000440 0x00000100 0x00000000
+2023-12-24T08:17:03.893Z In(05) vmx hostCPUID level 0000000d, 2: 0x00000100 0x00000240 0x00000000 0x00000000
+2023-12-24T08:17:03.893Z In(05) vmx hostCPUID level 0000000d, 3: 0x00000040 0x000003c0 0x00000000 0x00000000
+2023-12-24T08:17:03.893Z In(05) vmx hostCPUID level 0000000d, 4: 0x00000040 0x00000400 0x00000000 0x00000000
+2023-12-24T08:17:03.893Z In(05) vmx hostCPUID level 0000000d, 5: 0x00000000 0x00000000 0x00000000 0x00000000
+2023-12-24T08:17:03.893Z In(05) vmx hostCPUID level 0000000d, 6: 0x00000000 0x00000000 0x00000000 0x00000000
+2023-12-24T08:17:03.893Z In(05) vmx hostCPUID level 0000000d, 7: 0x00000000 0x00000000 0x00000000 0x00000000
+2023-12-24T08:17:03.893Z In(05) vmx hostCPUID level 0000000d, 8: 0x00000080 0x00000000 0x00000001 0x00000000
+2023-12-24T08:17:03.893Z In(05) vmx hostCPUID level 0000000e, 0: 0x00000000 0x00000000 0x00000000 0x00000000
+2023-12-24T08:17:03.893Z In(05) vmx hostCPUID level 0000000f, 0: 0x00000000 0x00000000 0x00000000 0x00000000
+2023-12-24T08:17:03.893Z In(05) vmx hostCPUID level 0000000f, 1: 0x00000000 0x00000000 0x00000000 0x00000000
+2023-12-24T08:17:03.893Z In(05) vmx hostCPUID level 00000010, 0: 0x00000000 0x00000000 0x00000000 0x00000000
+2023-12-24T08:17:03.893Z In(05) vmx hostCPUID level 00000010, 1: 0x00000000 0x00000000 0x00000000 0x00000000
+2023-12-24T08:17:03.893Z In(05) vmx hostCPUID level 00000010, 2: 0x00000000 0x00000000 0x00000000 0x00000000
+2023-12-24T08:17:03.893Z In(05) vmx hostCPUID level 00000010, 3: 0x00000000 0x00000000 0x00000000 0x00000000
+2023-12-24T08:17:03.893Z In(05) vmx hostCPUID level 00000011, 0: 0x00000000 0x00000000 0x00000000 0x00000000
+2023-12-24T08:17:03.893Z In(05) vmx hostCPUID level 00000012, 0: 0x00000001 0x00000000 0x00000000 0x0000241f
+2023-12-24T08:17:03.893Z In(05) vmx hostCPUID level 00000012, 1: 0x00000036 0x00000000 0x0000001f 0x00000000
+2023-12-24T08:17:03.893Z In(05) vmx hostCPUID level 00000012, 2: 0x70200001 0x00000000 0x05d80001 0x00000000
+2023-12-24T08:17:03.893Z In(05) vmx hostCPUID level 00000012, 3: 0x00000000 0x00000000 0x00000000 0x00000000
+2023-12-24T08:17:03.893Z In(05) vmx hostCPUID level 00000013, 0: 0x00000000 0x00000000 0x00000000 0x00000000
+2023-12-24T08:17:03.893Z In(05) vmx hostCPUID level 00000014, 0: 0x00000001 0x0000000f 0x00000007 0x00000000
+2023-12-24T08:17:03.893Z In(05) vmx hostCPUID level 00000014, 1: 0x02490002 0x003f3fff 0x00000000 0x00000000
+2023-12-24T08:17:03.893Z In(05) vmx hostCPUID level 00000015, 0: 0x00000002 0x000000b8 0x00000000 0x00000000
+2023-12-24T08:17:03.893Z In(05) vmx hostCPUID level 00000016, 0: 0x00000898 0x00001004 0x00000064 0x00000000
+2023-12-24T08:17:03.893Z In(05) vmx hostCPUID level 80000000, 0: 0x80000008 0x00000000 0x00000000 0x00000000
+2023-12-24T08:17:03.893Z In(05) vmx hostCPUID level 80000001, 0: 0x00000000 0x00000000 0x00000121 0x2c100800
+2023-12-24T08:17:03.893Z In(05) vmx hostCPUID level 80000002, 0: 0x65746e49 0x2952286c 0x726f4320 0x4d542865
+2023-12-24T08:17:03.893Z In(05) vmx hostCPUID level 80000003, 0: 0x37692029 0x3537382d 0x43204830 0x40205550
+2023-12-24T08:17:03.893Z In(05) vmx hostCPUID level 80000004, 0: 0x322e3220 0x7a484730 0x00000000 0x00000000
+2023-12-24T08:17:03.893Z In(05) vmx hostCPUID level 80000005, 0: 0x00000000 0x00000000 0x00000000 0x00000000
+2023-12-24T08:17:03.893Z In(05) vmx hostCPUID level 80000006, 0: 0x00000000 0x00000000 0x01006040 0x00000000
+2023-12-24T08:17:03.893Z In(05) vmx hostCPUID level 80000007, 0: 0x00000000 0x00000000 0x00000000 0x00000100
+2023-12-24T08:17:03.893Z In(05) vmx hostCPUID level 80000008, 0: 0x00003027 0x00000000 0x00000000 0x00000000
+2023-12-24T08:17:03.893Z In(05) vmx CPUID differences from hostCPUID.
+2023-12-24T08:17:03.893Z In(05) vmx Physical APIC IDs: 0-11
+2023-12-24T08:17:03.893Z In(05) vmx Physical X2APIC IDs: 0-11
+2023-12-24T08:17:03.893Z In(05) vmx Common: MSR       0x3a =            0x60005
+2023-12-24T08:17:03.893Z In(05) vmx Common: MSR      0x480 =   0xda040000000004
+2023-12-24T08:17:03.893Z In(05) vmx Common: MSR      0x481 =       0x7f00000016
+2023-12-24T08:17:03.893Z In(05) vmx Common: MSR      0x482 = 0xfff9fffe0401e172
+2023-12-24T08:17:03.893Z In(05) vmx Common: MSR      0x483 =  0x1ffffff00036dff
+2023-12-24T08:17:03.893Z In(05) vmx Common: MSR      0x484 =    0x3ffff000011ff
+2023-12-24T08:17:03.893Z In(05) vmx Common: MSR      0x485 =         0x7004c1e7
+2023-12-24T08:17:03.893Z In(05) vmx Common: MSR      0x486 =         0x80000021
+2023-12-24T08:17:03.893Z In(05) vmx Common: MSR      0x487 =         0xffffffff
+2023-12-24T08:17:03.893Z In(05) vmx Common: MSR      0x488 =             0x2000
+2023-12-24T08:17:03.893Z In(05) vmx Common: MSR      0x489 =           0x3727ff
+2023-12-24T08:17:03.893Z In(05) vmx Common: MSR      0x48a =               0x2e
+2023-12-24T08:17:03.893Z In(05) vmx Common: MSR      0x48b =   0x5fbcff00000000
+2023-12-24T08:17:03.893Z In(05) vmx Common: MSR      0x48c =      0xf0106734141
+2023-12-24T08:17:03.893Z In(05) vmx Common: MSR      0x48d =       0x7f00000016
+2023-12-24T08:17:03.893Z In(05) vmx Common: MSR      0x48e = 0xfff9fffe04006172
+2023-12-24T08:17:03.893Z In(05) vmx Common: MSR      0x48f =  0x1ffffff00036dfb
+2023-12-24T08:17:03.893Z In(05) vmx Common: MSR      0x490 =    0x3ffff000011fb
+2023-12-24T08:17:03.893Z In(05) vmx Common: MSR      0x491 =                0x1
+2023-12-24T08:17:03.893Z In(05) vmx Common: MSR      0x492 =                  0
+2023-12-24T08:17:03.893Z In(05) vmx Common: MSR 0xc0010114 =                  0
+2023-12-24T08:17:03.893Z In(05) vmx Common: MSR       0xce =         0x80000000
+2023-12-24T08:17:03.893Z In(05) vmx Common: MSR      0x10a =                  0
+2023-12-24T08:17:03.893Z In(05) vmx Common: MSR      0x122 =                  0
+2023-12-24T08:17:03.893Z In(05) vmx VMMon_GetkHzEstimate: Calculated 2208000 kHz
+2023-12-24T08:17:03.893Z In(05) vmx TSC Hz estimates: vmmon 2208000000, remembered 0, osReported 2208000000. Using 2208000000 Hz.
+2023-12-24T08:17:03.893Z In(05) vmx TSC first measured delta 255
+2023-12-24T08:17:03.893Z In(05) vmx TSC min delta 205
+2023-12-24T08:17:03.893Z In(05) vmx PTSC: RefClockToPTSC 0 @ 10000000Hz -> 0 @ 2208000000Hz
+2023-12-24T08:17:03.893Z In(05) vmx PTSC: RefClockToPTSC ((x * 3704409293) >> 24) + -141983556571742
+2023-12-24T08:17:03.893Z In(05) vmx PTSC: tscOffset -142029727445264
+2023-12-24T08:17:03.893Z In(05) vmx PTSC: using TSC
+2023-12-24T08:17:03.893Z In(05) vmx PTSC: hardware TSCs are synchronized.
+2023-12-24T08:17:03.893Z In(05) vmx PTSC: hardware TSCs may have been adjusted by the host.
+2023-12-24T08:17:03.893Z In(05) vmx PTSC: current PTSC=254826
+2023-12-24T08:17:03.902Z In(05) vmx WQPoolAllocPoll : pollIx = 3, signalHandle = 1088
+2023-12-24T08:17:03.952Z In(05) vmx ConfigCheck: No rules file found. Checks are disabled.
+2023-12-24T08:17:03.952Z In(05) vmx changing directory to D:\Exercise\Kì 5\Hệ Điều Hành\Tài liệu thực hành\Virtual\.
+2023-12-24T08:17:03.952Z In(05) vmx Config file: D:\Exercise\Kì 5\Hệ Điều Hành\Tài liệu thực hành\Virtual\Windows 98 Fat16.vmx
+2023-12-24T08:17:03.952Z In(05) vmx Vix: [mainDispatch.c:4213]: VMAutomation_ReportPowerOpFinished: statevar=1, newAppState=1873, success=1 additionalError=0
+2023-12-24T08:17:03.952Z In(05) vmx Vix: [mainDispatch.c:4213]: VMAutomation_ReportPowerOpFinished: statevar=2, newAppState=1878, success=1 additionalError=0
+2023-12-24T08:17:03.982Z Wa(03) vmx PowerOn
+2023-12-24T08:17:03.982Z In(05) vmx VMX_PowerOn: VMX build 21581411, UI build 21581411
+2023-12-24T08:17:03.982Z In(05) vmx HostWin32: WIN32 NUMA node 0, CPU mask 0x0000000000000fff
+2023-12-24T08:17:03.995Z In(05) vmx Vix: [mainDispatch.c:4213]: VMAutomation_ReportPowerOpFinished: statevar=0, newAppState=1871, success=1 additionalError=0
+2023-12-24T08:17:03.995Z In(05) vmx VMXSTATS: Successfully created statsfile: Windows 98 Fat16.scoreboard
+2023-12-24T08:17:03.995Z In(05) vmx VMXSTATS: Update Product Information: VMware Player	17.0.2	build-21581411	Release  TotalBlockSize: 64
+2023-12-24T08:17:03.995Z In(05) vmx HOST Windows version 10.0, build 22621, platform 2, ""
+2023-12-24T08:17:03.995Z In(05) vmx DICT --- GLOBAL SETTINGS C:\ProgramData\VMware\VMware Player\settings.ini
+2023-12-24T08:17:03.995Z In(05) vmx DICT --- NON PERSISTENT (null)
+2023-12-24T08:17:03.995Z In(05) vmx DICT --- USER PREFERENCES C:\Users\Dell Gaming\AppData\Roaming\VMware\preferences.ini
+2023-12-24T08:17:03.995Z In(05) vmx DICT pref.keyboardAndMouse.vmHotKey.enabled = "FALSE"
+2023-12-24T08:17:03.995Z In(05) vmx DICT pref.keyboardAndMouse.vmHotKey.count = "0"
+2023-12-24T08:17:03.995Z In(05) vmx DICT pref.vmplayer.firstRunDismissedVersion = "17.0.2"
+2023-12-24T08:17:03.995Z In(05) vmx DICT   pref.lastUpdateCheckSec = "1703335496"
+2023-12-24T08:17:03.995Z In(05) vmx DICT      pref.mruVM0.filename = "D:\Exercise\Kì 5\Hệ Điều Hành\Tài liệu thực hành\Virtual\Windows 98 Fat16.vmx"
+2023-12-24T08:17:03.995Z In(05) vmx DICT   pref.mruVM0.displayName = "Windows 98 Fat16"
+2023-12-24T08:17:03.995Z In(05) vmx DICT         pref.mruVM0.index = "0"
+2023-12-24T08:17:03.995Z In(05) vmx DICT      pref.mruVM1.filename = "D:\LabExercise_3\Virtual\Windows 98 Fat16.vmx"
+2023-12-24T08:17:03.995Z In(05) vmx DICT   pref.mruVM1.displayName = "Windows 98 Fat16"
+2023-12-24T08:17:03.995Z In(05) vmx DICT         pref.mruVM1.index = "1"
+2023-12-24T08:17:03.995Z In(05) vmx DICT             hints.hideAll = "FALSE"
+2023-12-24T08:17:03.995Z In(05) vmx DICT         vmWizard.guestKey = "win98"
+2023-12-24T08:17:03.995Z In(05) vmx DICT vmWizard.installMediaType = "later"
+2023-12-24T08:17:03.995Z In(05) vmx DICT      pref.mruVM2.filename = "E:\LabExercise_3\LabExercise_3\Virtual\Windows 98 Fat16.vmx"
+2023-12-24T08:17:03.995Z In(05) vmx DICT   pref.mruVM2.displayName = "Windows 98 Fat16"
+2023-12-24T08:17:03.995Z In(05) vmx DICT         pref.mruVM2.index = "2"
+2023-12-24T08:17:03.995Z In(05) vmx DICT      pref.mruVM3.filename = "D:\Virtual\Windows 98 Fat16.vmx"
+2023-12-24T08:17:03.995Z In(05) vmx DICT   pref.mruVM3.displayName = "Windows 98 Fat16"
+2023-12-24T08:17:03.995Z In(05) vmx DICT         pref.mruVM3.index = "3"
+2023-12-24T08:17:03.995Z In(05) vmx DICT      pref.mruVM4.filename = "C:\Users\Dell Gaming\Documents\Virtual Machines\Windows 981\Windows 981.vmx"
+2023-12-24T08:17:03.995Z In(05) vmx DICT   pref.mruVM4.displayName = "Windows 981"
+2023-12-24T08:17:03.995Z In(05) vmx DICT         pref.mruVM4.index = "4"
+2023-12-24T08:17:03.995Z In(05) vmx DICT hint.cui.toolsInfoBar.suppressible = "FALSE"
+2023-12-24T08:17:03.995Z In(05) vmx DICT      hint.disk.98buslogic = "FALSE"
+2023-12-24T08:17:03.995Z In(05) vmx DICT      pref.mruVM5.filename = "C:\Users\Dell Gaming\Documents\Virtual Machines\Windows 98 (2)\Windows 98 (2).vmx"
+2023-12-24T08:17:03.995Z In(05) vmx DICT   pref.mruVM5.displayName = "Windows 98 (2)mg;lkhf;gh;lf"
+2023-12-24T08:17:03.995Z In(05) vmx DICT         pref.mruVM5.index = "5"
+2023-12-24T08:17:03.995Z In(05) vmx DICT pref.updatesVersionIgnore.numItems = "1"
+2023-12-24T08:17:03.995Z In(05) vmx DICT pref.updatesVersionIgnore0.key = <not printed>
+2023-12-24T08:17:03.995Z In(05) vmx DICT pref.updatesVersionIgnore0.value = "e94d921d-2fa4-471f-8bb6-520ad7e4b4dc"
+2023-12-24T08:17:03.995Z In(05) vmx DICT      pref.mruVM6.filename = "C:\Users\Dell Gaming\Documents\Virtual Machines\Windows 98\Windows 98.vmx"
+2023-12-24T08:17:03.995Z In(05) vmx DICT   pref.mruVM6.displayName = "Windows 98"
+2023-12-24T08:17:03.995Z In(05) vmx DICT         pref.mruVM6.index = "6"
+2023-12-24T08:17:03.995Z In(05) vmx DICT      pref.mruVM7.filename = "D:\Exercise\Kì 5\HDH\Virtual\Windows 98 Fat16.vmx"
+2023-12-24T08:17:03.995Z In(05) vmx DICT   pref.mruVM7.displayName = "Windows 98 Fat16"
+2023-12-24T08:17:03.995Z In(05) vmx DICT         pref.mruVM7.index = "7"
+2023-12-24T08:17:03.995Z In(05) vmx DICT --- USER DEFAULTS C:\Users\Dell Gaming\AppData\Roaming\VMware\config.ini
+2023-12-24T08:17:03.995Z In(05) vmx DICT --- HOST DEFAULTS C:\ProgramData\VMware\VMware Player\config.ini
+2023-12-24T08:17:03.995Z In(05) vmx DICT --- SITE DEFAULTS C:\ProgramData\VMware\VMware Player\config.ini
+2023-12-24T08:17:03.995Z In(05) vmx DICT --- NONPERSISTENT
+2023-12-24T08:17:03.995Z In(05) vmx DICT  snapshot.numRollingTiers = "0"
+2023-12-24T08:17:03.995Z In(05) vmx DICT RemoteDisplay.vnc.enabled = "FALSE"
+2023-12-24T08:17:03.995Z In(05) vmx DICT            vmx.stdio.keep = "TRUE"
+2023-12-24T08:17:03.995Z In(05) vmx DICT             gui.available = "TRUE"
+2023-12-24T08:17:03.995Z In(05) vmx DICT --- COMMAND LINE
+2023-12-24T08:17:03.995Z In(05) vmx DICT  snapshot.numRollingTiers = "0"
+2023-12-24T08:17:03.995Z In(05) vmx DICT RemoteDisplay.vnc.enabled = "FALSE"
+2023-12-24T08:17:03.995Z In(05) vmx DICT            vmx.stdio.keep = "TRUE"
+2023-12-24T08:17:03.995Z In(05) vmx DICT             gui.available = "TRUE"
+2023-12-24T08:17:03.995Z In(05) vmx DICT --- RECORDING
+2023-12-24T08:17:03.995Z In(05) vmx DICT  snapshot.numRollingTiers = "0"
+2023-12-24T08:17:03.995Z In(05) vmx DICT RemoteDisplay.vnc.enabled = "FALSE"
+2023-12-24T08:17:03.995Z In(05) vmx DICT            vmx.stdio.keep = "TRUE"
+2023-12-24T08:17:03.995Z In(05) vmx DICT             gui.available = "TRUE"
+2023-12-24T08:17:03.995Z In(05) vmx DICT --- CONFIGURATION D:\Exercise\Kì 5\Hệ Điều Hành\Tài liệu thực hành\Virtual\Windows 98 Fat16.vmx 
+2023-12-24T08:17:03.995Z In(05) vmx DICT            config.version = "8"
+2023-12-24T08:17:03.995Z In(05) vmx DICT         virtualHW.version = "7"
+2023-12-24T08:17:03.995Z In(05) vmx DICT             scsi0.present = "TRUE"
+2023-12-24T08:17:03.995Z In(05) vmx DICT                   memsize = "256"
+2023-12-24T08:17:03.995Z In(05) vmx DICT            ide0:0.present = "TRUE"
+2023-12-24T08:17:03.995Z In(05) vmx DICT           ide0:0.fileName = "Windows 98 Fat16.vmdk"
+2023-12-24T08:17:03.995Z In(05) vmx DICT         ethernet0.present = "TRUE"
+2023-12-24T08:17:03.995Z In(05) vmx DICT  ethernet0.connectionType = "nat"
+2023-12-24T08:17:03.995Z In(05) vmx DICT   ethernet0.wakeOnPcktRcv = "FALSE"
+2023-12-24T08:17:03.995Z In(05) vmx DICT     ethernet0.addressType = "generated"
+2023-12-24T08:17:03.995Z In(05) vmx DICT             sound.present = "TRUE"
+2023-12-24T08:17:03.995Z In(05) vmx DICT            sound.fileName = "-1"
+2023-12-24T08:17:03.995Z In(05) vmx DICT          sound.autodetect = "TRUE"
+2023-12-24T08:17:03.995Z In(05) vmx DICT        pciBridge0.present = "TRUE"
+2023-12-24T08:17:03.995Z In(05) vmx DICT        pciBridge4.present = "TRUE"
+2023-12-24T08:17:03.995Z In(05) vmx DICT     pciBridge4.virtualDev = "pcieRootPort"
+2023-12-24T08:17:03.995Z In(05) vmx DICT      pciBridge4.functions = "8"
+2023-12-24T08:17:03.995Z In(05) vmx DICT        pciBridge5.present = "TRUE"
+2023-12-24T08:17:03.995Z In(05) vmx DICT     pciBridge5.virtualDev = "pcieRootPort"
+2023-12-24T08:17:03.995Z In(05) vmx DICT      pciBridge5.functions = "8"
+2023-12-24T08:17:03.995Z In(05) vmx DICT        pciBridge6.present = "TRUE"
+2023-12-24T08:17:03.995Z In(05) vmx DICT     pciBridge6.virtualDev = "pcieRootPort"
+2023-12-24T08:17:03.995Z In(05) vmx DICT      pciBridge6.functions = "8"
+2023-12-24T08:17:03.995Z In(05) vmx DICT        pciBridge7.present = "TRUE"
+2023-12-24T08:17:03.995Z In(05) vmx DICT     pciBridge7.virtualDev = "pcieRootPort"
+2023-12-24T08:17:03.995Z In(05) vmx DICT      pciBridge7.functions = "8"
+2023-12-24T08:17:03.995Z In(05) vmx DICT             vmci0.present = "TRUE"
+2023-12-24T08:17:03.995Z In(05) vmx DICT    roamingVM.exitBehavior = "go"
+2023-12-24T08:17:03.995Z In(05) vmx DICT               displayName = "Windows 98 Fat16"
+2023-12-24T08:17:03.995Z In(05) vmx DICT                   guestOS = "win98"
+2023-12-24T08:17:03.995Z In(05) vmx DICT                     nvram = "Windows 98 Fat16.nvram"
+2023-12-24T08:17:03.995Z In(05) vmx DICT virtualHW.productCompatibility = "hosted"
+2023-12-24T08:17:03.995Z In(05) vmx DICT          gui.exitOnCLIHLT = "FALSE"
+2023-12-24T08:17:03.995Z In(05) vmx DICT        extendedConfigFile = "Windows 98 Fat16.vmxf"
+2023-12-24T08:17:03.995Z In(05) vmx DICT ethernet0.generatedAddress = "00:0c:29:f5:ce:0e"
+2023-12-24T08:17:03.995Z In(05) vmx DICT            tools.syncTime = "FALSE"
+2023-12-24T08:17:03.995Z In(05) vmx DICT             uuid.location = "56 4d 88 c4 be 44 21 f4-13 0b ab 77 1d f5 ce 0e"
+2023-12-24T08:17:03.995Z In(05) vmx DICT                 uuid.bios = "56 4d 88 c4 be 44 21 f4-13 0b ab 77 1d f5 ce 0e"
+2023-12-24T08:17:03.995Z In(05) vmx DICT             cleanShutdown = "TRUE"
+2023-12-24T08:17:03.995Z In(05) vmx DICT          replay.supported = "FALSE"
+2023-12-24T08:17:03.995Z In(05) vmx DICT           replay.filename = ""
+2023-12-24T08:17:03.995Z In(05) vmx DICT               ide0:0.redo = ""
+2023-12-24T08:17:03.995Z In(05) vmx DICT  pciBridge0.pciSlotNumber = "17"
+2023-12-24T08:17:03.995Z In(05) vmx DICT  pciBridge4.pciSlotNumber = "21"
+2023-12-24T08:17:03.995Z In(05) vmx DICT  pciBridge5.pciSlotNumber = "22"
+2023-12-24T08:17:03.995Z In(05) vmx DICT  pciBridge6.pciSlotNumber = "23"
+2023-12-24T08:17:03.995Z In(05) vmx DICT  pciBridge7.pciSlotNumber = "24"
+2023-12-24T08:17:03.995Z In(05) vmx DICT       scsi0.pciSlotNumber = "16"
+2023-12-24T08:17:03.995Z In(05) vmx DICT   ethernet0.pciSlotNumber = "33"
+2023-12-24T08:17:03.995Z In(05) vmx DICT       sound.pciSlotNumber = "34"
+2023-12-24T08:17:03.995Z In(05) vmx DICT       vmci0.pciSlotNumber = "36"
+2023-12-24T08:17:03.995Z In(05) vmx DICT  vmotion.checkpointFBSize = "16777216"
+2023-12-24T08:17:03.995Z In(05) vmx DICT ethernet0.generatedAddressOffset = "0"
+2023-12-24T08:17:03.995Z In(05) vmx DICT                  vmci0.id = "457324298"
+2023-12-24T08:17:03.995Z In(05) vmx DICT        checkpoint.vmState = ""
+2023-12-24T08:17:03.995Z In(05) vmx DICT               usb.present = "TRUE"
+2023-12-24T08:17:03.995Z In(05) vmx DICT              ehci.present = "TRUE"
+2023-12-24T08:17:03.995Z In(05) vmx DICT         usb.pciSlotNumber = "32"
+2023-12-24T08:17:03.995Z In(05) vmx DICT        ehci.pciSlotNumber = "35"
+2023-12-24T08:17:03.995Z In(05) vmx DICT            ide0:1.present = "TRUE"
+2023-12-24T08:17:03.995Z In(05) vmx DICT           ide0:1.fileName = "Windows 98 Fat16-1.vmdk"
+2023-12-24T08:17:03.995Z In(05) vmx DICT               ide0:1.redo = ""
+2023-12-24T08:17:03.995Z In(05) vmx DICT            ide1:0.present = "FALSE"
+2023-12-24T08:17:03.995Z In(05) vmx DICT             usb:1.present = "FALSE"
+2023-12-24T08:17:03.995Z In(05) vmx DICT           floppy0.present = "FALSE"
+2023-12-24T08:17:03.995Z In(05) vmx DICT           scsi0:0.present = "TRUE"
+2023-12-24T08:17:03.995Z In(05) vmx DICT          scsi0:0.fileName = "E:\Temp\tempCD.iso"
+2023-12-24T08:17:03.995Z In(05) vmx DICT        scsi0:0.deviceType = "cdrom-image"
+2023-12-24T08:17:03.995Z In(05) vmx DICT         vmxstats.filename = "Windows 98 Fat16.scoreboard"
+2023-12-24T08:17:03.995Z In(05) vmx DICT      numa.autosize.cookie = "10001"
+2023-12-24T08:17:03.995Z In(05) vmx DICT numa.autosize.vcpu.maxPerVirtualNode = "1"
+2023-12-24T08:17:03.995Z In(05) vmx DICT    monitor.phys_bits_used = "40"
+2023-12-24T08:17:03.995Z In(05) vmx DICT              softPowerOff = "FALSE"
+2023-12-24T08:17:03.995Z In(05) vmx DICT       tools.remindInstall = "TRUE"
+2023-12-24T08:17:03.995Z In(05) vmx DICT --- USER DEFAULTS C:\Users\Dell Gaming\AppData\Roaming\VMware\config.ini 
+2023-12-24T08:17:03.995Z In(05) vmx DICT --- HOST DEFAULTS C:\ProgramData\VMware\VMware Workstation\config.ini 
+2023-12-24T08:17:03.995Z In(05) vmx DICT installerDefaults.simplifiedUI = "no"
+2023-12-24T08:17:03.995Z In(05) vmx DICT installerDefaults.autoSoftwareUpdateEnabled = "yes"
+2023-12-24T08:17:03.995Z In(05) vmx DICT installerDefaults.autoSoftwareUpdateEnabled.epoch = "25555"
+2023-12-24T08:17:03.995Z In(05) vmx DICT installerDefaults.componentDownloadEnabled = "yes"
+2023-12-24T08:17:03.995Z In(05) vmx DICT installerDefaults.dataCollectionEnabled = "yes"
+2023-12-24T08:17:03.995Z In(05) vmx DICT installerDefaults.dataCollectionEnabled.epoch = "25555"
+2023-12-24T08:17:03.995Z In(05) vmx DICT --- SITE DEFAULTS C:\ProgramData\VMware\VMware Workstation\config.ini 
+2023-12-24T08:17:03.995Z In(05) vmx DICT installerDefaults.simplifiedUI = "no"
+2023-12-24T08:17:03.995Z In(05) vmx DICT installerDefaults.autoSoftwareUpdateEnabled = "yes"
+2023-12-24T08:17:03.995Z In(05) vmx DICT installerDefaults.autoSoftwareUpdateEnabled.epoch = "25555"
+2023-12-24T08:17:03.995Z In(05) vmx DICT installerDefaults.componentDownloadEnabled = "yes"
+2023-12-24T08:17:03.995Z In(05) vmx DICT installerDefaults.dataCollectionEnabled = "yes"
+2023-12-24T08:17:03.995Z In(05) vmx DICT installerDefaults.dataCollectionEnabled.epoch = "25555"
+2023-12-24T08:17:03.995Z In(05) vmx DICT --- GLOBAL SETTINGS C:\ProgramData\VMware\VMware Workstation\settings.ini 
+2023-12-24T08:17:03.995Z In(05) vmx DICT          printers.enabled = "FALSE"
+2023-12-24T08:17:04.001Z In(05) vmx Powering on guestOS 'win98' using the configuration for 'win98'.
+2023-12-24T08:17:04.001Z In(05) vmx ToolsISO: open of D:\Program Files (x86)\isoimages_manifest.txt.sig failed: Could not find the file
+2023-12-24T08:17:04.001Z In(05) vmx ToolsISO: Unable to read signature file 'D:\Program Files (x86)\isoimages_manifest.txt.sig', ignoring.
+2023-12-24T08:17:04.001Z In(05) vmx ToolsISO: Updated cached value for imageName to 'winPre2k.iso'.
+2023-12-24T08:17:04.001Z In(05) vmx ToolsISO: Selected Tools ISO 'winPre2k.iso' for 'win98' guest.
+2023-12-24T08:17:04.001Z In(05) vmx Vix: [mainDispatch.c:4213]: VMAutomation_ReportPowerOpFinished: statevar=1, newAppState=1873, success=1 additionalError=0
+2023-12-24T08:17:04.001Z In(05) vmx DEVSWAP: GuestOS does not require LSI adapter swap.
+2023-12-24T08:17:04.002Z In(05) vmx Monitor Mode: CPL0
+2023-12-24T08:17:04.012Z In(05) vmx MemSched_EarlyPowerOn: balloon minGuestSize 13107 (80% of min required size 16384)
+2023-12-24T08:17:04.012Z In(05) vmx OvhdMem_PowerOn: initial admission: paged   292017 nonpaged     6638 anonymous     4482
+2023-12-24T08:17:04.012Z In(05) vmx VMMEM: Initial Reservation: 1184MB (MainMem=256MB)
+2023-12-24T08:17:04.012Z In(05) vmx llc: maximum vcpus per LLC: 1
+2023-12-24T08:17:04.012Z In(05) vmx llc: vLLC size: 1
+2023-12-24T08:17:04.012Z In(05) vmx MemSched: reserved mem (in MB) min 128 max 6228 recommended 6228
+2023-12-24T08:17:04.012Z In(05) vmx MemSched: pg 292017 np 6638 anon 4482 mem 65536
+2023-12-24T08:17:04.052Z In(05) vmx MemSched: numvm 1 locked pages: num 0 max 1507716
+2023-12-24T08:17:04.052Z In(05) vmx MemSched: locked Page Limit: host 1515908 config 1594368
+2023-12-24T08:17:04.052Z In(05) vmx MemSched: minmempct 50 minalloc 0 admitted 1
+2023-12-24T08:17:04.052Z In(05) PowerNotifyThread VTHREAD 13244 "PowerNotifyThread"
+2023-12-24T08:17:04.052Z In(05) PowerNotifyThread PowerNotify thread is alive.
+2023-12-24T08:17:04.052Z In(05) vmx VMXSTATS: Registering 1 stats: vmx.logDropChars
+2023-12-24T08:17:04.052Z In(05) vmx VMXSTATS: Registering 2 stats: vmx.logBytesLogged
+2023-12-24T08:17:04.052Z In(05) vmx VMXSTATS: Registering 3 stats: vmx.numTimesLogDrop
+2023-12-24T08:17:04.052Z In(05) vmx LICENSE: Running unlicensed VMX (VMware Player)
+2023-12-24T08:17:04.052Z In(05) vthread-7684 VTHREAD 7684 "vthread-7684"
+2023-12-24T08:17:04.052Z In(05) vmx Win32U_GetFileAttributes: GetFileAttributesExW("D:\Exercise\Kì 5\Hệ Điều Hành\Tài liệu thực hành\Virtual\Windows 98 Fat16.vmpl", ...) failed, error: 2
+2023-12-24T08:17:04.052Z In(05) vmx PolicyVMXFindPolicyKey: policy file does not exist.
+2023-12-24T08:17:04.052Z In(05) vmx Win32U_GetFileAttributes: GetFileAttributesExW("D:\Exercise\Kì 5\Hệ Điều Hành\Tài liệu thực hành\Virtual\Windows 98 Fat16.vmpl", ...) failed, error: 2
+2023-12-24T08:17:04.052Z In(05) vmx PolicyVMXFindPolicyKey: policy file does not exist.
+2023-12-24T08:17:04.052Z In(05) vmx Host PA size: 39 bits. Guest PA size: 40 bits.
+2023-12-24T08:17:04.057Z In(05) vmx ToolsISO: Refreshing imageName for 'win98' (refreshCount=1, lastCount=1).
+2023-12-24T08:17:04.057Z In(05) vmx ToolsISO: open of D:\Program Files (x86)\isoimages_manifest.txt.sig failed: Could not find the file
+2023-12-24T08:17:04.057Z In(05) vmx ToolsISO: Unable to read signature file 'D:\Program Files (x86)\isoimages_manifest.txt.sig', ignoring.
+2023-12-24T08:17:04.057Z In(05) vmx ToolsISO: Updated cached value for imageName to 'winPre2k.iso'.
+2023-12-24T08:17:04.057Z In(05) vmx ToolsISO: Selected Tools ISO 'winPre2k.iso' for 'win98' guest.
+2023-12-24T08:17:04.057Z In(05) deviceThread VTHREAD 15340 "deviceThread"
+2023-12-24T08:17:04.057Z In(05) deviceThread Device thread is alive
+2023-12-24T08:17:04.057Z In(05) vmx Host VT-x Capabilities:
+2023-12-24T08:17:04.057Z In(05) vmx Basic VMX Information (0x00da040000000004)
+2023-12-24T08:17:04.057Z In(05) vmx   VMCS revision ID                           4
+2023-12-24T08:17:04.057Z In(05) vmx   VMCS region length                      1024
+2023-12-24T08:17:04.057Z In(05) vmx   VMX physical-address width           natural
+2023-12-24T08:17:04.057Z In(05) vmx   SMM dual-monitor mode                    yes
+2023-12-24T08:17:04.057Z In(05) vmx   VMCS memory type                          WB
+2023-12-24T08:17:04.057Z In(05) vmx   Advanced INS/OUTS info                   yes
+2023-12-24T08:17:04.057Z In(05) vmx   True VMX MSRs                            yes
+2023-12-24T08:17:04.057Z In(05) vmx   Exception Injection ignores error code    no
+2023-12-24T08:17:04.057Z In(05) vmx True Pin-Based VM-Execution Controls (0x0000007f00000016)
+2023-12-24T08:17:04.057Z In(05) vmx   External-interrupt exiting               {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   NMI exiting                              {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   Virtual NMIs                             {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   Activate VMX-preemption timer            {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   Process posted interrupts                { 0 }
+2023-12-24T08:17:04.057Z In(05) vmx True Primary Processor-Based VM-Execution Controls (0xfff9fffe04006172)
+2023-12-24T08:17:04.057Z In(05) vmx   Interrupt-window exiting                 {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   Use TSC offsetting                       {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   HLT exiting                              {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   INVLPG exiting                           {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   MWAIT exiting                            {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   RDPMC exiting                            {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   RDTSC exiting                            {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   CR3-load exiting                         {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   CR3-store exiting                        {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   Activate tertiary controls               { 0 }
+2023-12-24T08:17:04.057Z In(05) vmx   CR8-load exiting                         {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   CR8-store exiting                        {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   Use TPR shadow                           {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   NMI-window exiting                       {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   MOV-DR exiting                           {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   Unconditional I/O exiting                {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   Use I/O bitmaps                          {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   Monitor trap flag                        {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   Use MSR bitmaps                          {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   MONITOR exiting                          {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   PAUSE exiting                            {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   Activate secondary controls              {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx Secondary Processor-Based VM-Execution Controls (0x005fbcff00000000)
+2023-12-24T08:17:04.057Z In(05) vmx   Virtualize APIC accesses                 {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   Enable EPT                               {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   Descriptor-table exiting                 {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   Enable RDTSCP                            {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   Virtualize x2APIC mode                   {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   Enable VPID                              {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   WBINVD exiting                           {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   Unrestricted guest                       {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   APIC-register virtualization             { 0 }
+2023-12-24T08:17:04.057Z In(05) vmx   Virtual-interrupt delivery               { 0 }
+2023-12-24T08:17:04.057Z In(05) vmx   PAUSE-loop exiting                       {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   RDRAND exiting                           {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   Enable INVPCID                           {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   Enable VM Functions                      {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   Use VMCS shadowing                       { 0 }
+2023-12-24T08:17:04.057Z In(05) vmx   ENCLS exiting                            {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   RDSEED exiting                           {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   Enable PML                               {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   EPT-violation #VE                        {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   Conceal VMX from PT                      {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   Enable XSAVES/XRSTORS                    {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   PASID translation                        { 0 }
+2023-12-24T08:17:04.057Z In(05) vmx   Mode-based execute control for EPT       {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   Sub-page write permissions for EPT       { 0 }
+2023-12-24T08:17:04.057Z In(05) vmx   PT uses guest physical addresses         { 0 }
+2023-12-24T08:17:04.057Z In(05) vmx   Use TSC scaling                          { 0 }
+2023-12-24T08:17:04.057Z In(05) vmx   Enable UMWAIT and TPAUSE                 { 0 }
+2023-12-24T08:17:04.057Z In(05) vmx   Enable ENCLV in VMX non-root mode        { 0 }
+2023-12-24T08:17:04.057Z In(05) vmx   Enable EPC Virtualization Extensions     { 0 }
+2023-12-24T08:17:04.057Z In(05) vmx   Bus lock exiting                         { 0 }
+2023-12-24T08:17:04.057Z In(05) vmx   Notification VM exits                    { 0 }
+2023-12-24T08:17:04.057Z In(05) vmx Tertiary Processor-Based VM-Execution Controls (0x0000000000000000)
+2023-12-24T08:17:04.057Z In(05) vmx   LOADIWKEY exiting                          no
+2023-12-24T08:17:04.057Z In(05) vmx   Enable HLAT                                no
+2023-12-24T08:17:04.057Z In(05) vmx   Enable Paging-Write                        no
+2023-12-24T08:17:04.057Z In(05) vmx   Enable Guest Paging Verification           no
+2023-12-24T08:17:04.057Z In(05) vmx   Enable IPI Virtualization                  no
+2023-12-24T08:17:04.057Z In(05) vmx True VM-Exit Controls (0x01ffffff00036dfb)
+2023-12-24T08:17:04.057Z In(05) vmx   Save debug controls                      {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   Host address-space size                  {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   Load IA32_PERF_GLOBAL_CTRL               {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   Acknowledge interrupt on exit            {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   Save IA32_PAT                            {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   Load IA32_PAT                            {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   Save IA32_EFER                           {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   Load IA32_EFER                           {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   Save VMX-preemption timer                {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   Clear IA32_BNDCFGS                       {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   Conceal VMX from processor trace         {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   Clear IA32_RTIT MSR                      { 0 }
+2023-12-24T08:17:04.057Z In(05) vmx   Clear IA32_LBR_CTL MSR                   { 0 }
+2023-12-24T08:17:04.057Z In(05) vmx   Clear user-interrupt notification vector { 0 }
+2023-12-24T08:17:04.057Z In(05) vmx   Load CET state                           { 0 }
+2023-12-24T08:17:04.057Z In(05) vmx   Load PKRS                                { 0 }
+2023-12-24T08:17:04.057Z In(05) vmx True VM-Entry Controls (0x0003ffff000011fb)
+2023-12-24T08:17:04.057Z In(05) vmx   Load debug controls                      {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   IA-32e mode guest                        {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   Entry to SMM                             {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   Deactivate dual-monitor mode             {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   Load IA32_PERF_GLOBAL_CTRL               {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   Load IA32_PAT                            {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   Load IA32_EFER                           {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   Load IA32_BNDCFGS                        {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   Conceal VMX from processor trace         {0,1}
+2023-12-24T08:17:04.057Z In(05) vmx   Load IA32_RTIT MSR                       { 0 }
+2023-12-24T08:17:04.057Z In(05) vmx   Load user-interrupt notification vector  { 0 }
+2023-12-24T08:17:04.057Z In(05) vmx   Load CET state                           { 0 }
+2023-12-24T08:17:04.057Z In(05) vmx   Load IA32_LBR_CTL MSR                    { 0 }
+2023-12-24T08:17:04.057Z In(05) vmx   Load PKRS                                { 0 }
+2023-12-24T08:17:04.057Z In(05) vmx VPID and EPT Capabilities (0x00000f0106734141)
+2023-12-24T08:17:04.057Z In(05) vmx   R=0/W=0/X=1                               yes
+2023-12-24T08:17:04.057Z In(05) vmx   Page-walk length 3                        yes
+2023-12-24T08:17:04.057Z In(05) vmx   EPT memory type WB                        yes
+2023-12-24T08:17:04.057Z In(05) vmx   2MB super-page                            yes
+2023-12-24T08:17:04.057Z In(05) vmx   1GB super-page                            yes
+2023-12-24T08:17:04.057Z In(05) vmx   INVEPT support                            yes
+2023-12-24T08:17:04.057Z In(05) vmx   Access & Dirty Bits                       yes
+2023-12-24T08:17:04.057Z In(05) vmx   Advanced VM exit information for EPT violations   yes
+2023-12-24T08:17:04.057Z In(05) vmx   Supervisor shadow-stack control            no
+2023-12-24T08:17:04.057Z In(05) vmx   Type 1 INVEPT                             yes
+2023-12-24T08:17:04.057Z In(05) vmx   Type 2 INVEPT                             yes
+2023-12-24T08:17:04.057Z In(05) vmx   INVVPID support                           yes
+2023-12-24T08:17:04.057Z In(05) vmx   Type 0 INVVPID                            yes
+2023-12-24T08:17:04.057Z In(05) vmx   Type 1 INVVPID                            yes
+2023-12-24T08:17:04.057Z In(05) vmx   Type 2 INVVPID                            yes
+2023-12-24T08:17:04.057Z In(05) vmx   Type 3 INVVPID                            yes
+2023-12-24T08:17:04.057Z In(05) vmx Miscellaneous VMX Data (0x000000007004c1e7)
+2023-12-24T08:17:04.057Z In(05) vmx   TSC to preemption timer ratio      7
+2023-12-24T08:17:04.057Z In(05) vmx   VM-Exit saves EFER.LMA           yes
+2023-12-24T08:17:04.057Z In(05) vmx   Activity State HLT               yes
+2023-12-24T08:17:04.057Z In(05) vmx   Activity State shutdown          yes
+2023-12-24T08:17:04.057Z In(05) vmx   Activity State wait-for-SIPI     yes
+2023-12-24T08:17:04.057Z In(05) vmx   Processor trace in VMX           yes
+2023-12-24T08:17:04.057Z In(05) vmx   RDMSR SMBASE MSR in SMM          yes
+2023-12-24T08:17:04.057Z In(05) vmx   CR3 targets supported              4
+2023-12-24T08:17:04.057Z In(05) vmx   Maximum MSR list size            512
+2023-12-24T08:17:04.057Z In(05) vmx   VMXOFF holdoff of SMIs           yes
+2023-12-24T08:17:04.057Z In(05) vmx   Allow all VMWRITEs               yes
+2023-12-24T08:17:04.057Z In(05) vmx   Allow zero instruction length    yes
+2023-12-24T08:17:04.057Z In(05) vmx   MSEG revision ID                   0
+2023-12-24T08:17:04.057Z In(05) vmx VMX-Fixed Bits in CR0 (0x0000000080000021/0x00000000ffffffff)
+2023-12-24T08:17:04.057Z In(05) vmx   Fixed to 0        0xffffffff00000000
+2023-12-24T08:17:04.057Z In(05) vmx   Fixed to 1        0x0000000080000021
+2023-12-24T08:17:04.057Z In(05) vmx   Variable          0x000000007fffffde
+2023-12-24T08:17:04.057Z In(05) vmx VMX-Fixed Bits in CR4 (0x0000000000002000/0x00000000003727ff)
+2023-12-24T08:17:04.057Z In(05) vmx   Fixed to 0        0xffffffffffc8d800
+2023-12-24T08:17:04.057Z In(05) vmx   Fixed to 1        0x0000000000002000
+2023-12-24T08:17:04.057Z In(05) vmx   Variable          0x00000000003707ff
+2023-12-24T08:17:04.057Z In(05) vmx VMCS Enumeration (0x000000000000002e)
+2023-12-24T08:17:04.057Z In(05) vmx   Highest index                   0x17
+2023-12-24T08:17:04.057Z In(05) vmx VM Functions (0x0000000000000001)
+2023-12-24T08:17:04.057Z In(05) vmx   Function  0 (EPTP-switching) supported.
+2023-12-24T08:17:04.057Z In(05) vmx Monitor_PowerOn: HostedVSMP skew tracking is disabled
+2023-12-24T08:17:04.057Z In(05) vmx vmm-modules: [vmm.vmm, vmce-none.vmm, viommu-none.vmm, vprobe-none.vmm, hv-vt.vmm, gphys-ept.vmm, callstack-none.vmm, gi-none.vmm, gmm-none.vmm, buslogic-buslogic.vmm, !busLogicShared=0x0, !tdxSharedVMData=0x40, !vmSamples=0x40, !theIOSpace=0x80, !ttGPPerVcpu=0x6e40, {UseUnwind}=0x0, numVCPUsAsAddr=0x1, {SharedAreaReservations}=0x6e80, {rodataSize}=0x204e0, {textAddr}=0xfffffffffc000000, {textSize}=0x8d279, <MonSrcFile>]
+2023-12-24T08:17:04.057Z In(05) vmx vmm-vcpus:   1
+2023-12-24T08:17:04.092Z In(05) vmx KHZEstimate 2208000
+2023-12-24T08:17:04.092Z In(05) vmx MHZEstimate 2208
+2023-12-24T08:17:04.097Z In(05) vmx NumVCPUs 1
+2023-12-24T08:17:04.097Z In(05) vmx AIOGNRC: numThreads=6 ide=2, scsi=0, passthru=1
+2023-12-24T08:17:04.097Z In(05) vmx WORKER: Creating new group with maxThreads=6 (6)
+2023-12-24T08:17:04.101Z In(05) vmx WORKER: Creating new group with maxThreads=1 (7)
+2023-12-24T08:17:04.101Z In(05) vmx MainMem: CPT Host WZ=0 PF=256 D=0
+2023-12-24T08:17:04.101Z In(05) vmx MainMem: CPT PLS=1 PLR=1 BS=1 BlkP=32 Mult=4 W=50
+2023-12-24T08:17:04.102Z In(05) vmx MainMem: Opened paging file, 'D:\Exercise\Kì 5\Hệ Điều Hành\Tài liệu thực hành\Virtual\564d88c4-be44-21f4-130b-ab771df5ce0e.vmem'.
+2023-12-24T08:17:04.102Z In(05) vmx MStat: Creating Stat vm.uptime
+2023-12-24T08:17:04.102Z In(05) vmx MStat: Creating Stat vm.suspendTime
+2023-12-24T08:17:04.102Z In(05) vmx MStat: Creating Stat vm.powerOnTimeStamp
+2023-12-24T08:17:04.102Z In(05) aioCompletion VTHREAD 4160 "aioCompletion"
+2023-12-24T08:17:04.102Z In(05) vmx VMXAIOMGR: Using: simple=Compl
+2023-12-24T08:17:04.102Z In(05) vmx WORKER: Creating new group with maxThreads=1 (8)
+2023-12-24T08:17:04.102Z In(05) vmx WORKER: Creating new group with maxThreads=14 (22)
+2023-12-24T08:17:04.102Z In(05) vmx FeatureCompat: No VM masks.
+2023-12-24T08:17:04.112Z In(05) vmx TimeTracker host to guest rate conversion 479854213 @ 2208000000Hz -> 0 @ 2208000000Hz
+2023-12-24T08:17:04.112Z In(05) vmx TimeTracker host to guest rate conversion ((x * 2147483648) >> 31) + -479854213
+2023-12-24T08:17:04.112Z In(05) vmx Disabling TSC scaling since host does not support it.
+2023-12-24T08:17:04.112Z In(05) vmx TSC offsetting enabled.
+2023-12-24T08:17:04.112Z In(05) vmx timeTracker.globalProgressMaxAllowanceMS: 2000
+2023-12-24T08:17:04.112Z In(05) vmx timeTracker.globalProgressToAllowanceNS: 1000
+2023-12-24T08:17:04.112Z In(05) vmx MKS PowerOn
+2023-12-24T08:17:04.112Z In(05) mks VTHREAD 17356 "mks"
+2023-12-24T08:17:04.112Z In(05) mks MKS thread is alive
+2023-12-24T08:17:04.116Z In(05) svga VTHREAD 16820 "svga"
+2023-12-24T08:17:04.116Z In(05) svga SVGA thread is alive
+2023-12-24T08:17:04.116Z In(05) mks MKS: SSE2=1, SSSE3=1, SSE4_1=1
+2023-12-24T08:17:04.116Z In(05) mouse VTHREAD 8496 "mouse"
+2023-12-24T08:17:04.116Z In(05) mks MKS-HookKeyboard: RegQueryValueEx(LowLevelHooksTimeout) failed: The system cannot find the file specified (2)
+2023-12-24T08:17:04.116Z In(05) kbh VTHREAD 3500 "kbh"
+2023-12-24T08:17:04.122Z In(05) mks MKS Win32: Registering top level window (0x80350) to receive session change notification.
+2023-12-24T08:17:04.122Z In(05) mks Current Display Settings:
+2023-12-24T08:17:04.122Z In(05) mks    Display: 0 size: 1920x1080  position: (0, 0) name: \\.\DISPLAY1  
+2023-12-24T08:17:04.122Z In(05) mks MKS Win32: MIL: 0x4000
+2023-12-24T08:17:04.122Z In(05) mks MKS-RenderMain: PowerOn allowed MKSBasicOps 
+2023-12-24T08:17:04.122Z In(05) mks MKS-RenderMain: ISB enabled by config
+2023-12-24T08:17:04.122Z In(05) mks MKS-RenderMain: Collecting RenderOps caps from MKSBasicOps
+2023-12-24T08:17:04.122Z In(05) mks MKS-RenderMain: Starting MKSBasicOps
+2023-12-24T08:17:04.122Z In(05) mks MKS-RenderMain: Started MKSBasicOps
+2023-12-24T08:17:04.122Z In(05) mks MKS-RenderMain: Found Full Renderer: MKSBasicOps
+2023-12-24T08:17:04.122Z In(05) mks MKS-RenderMain: maxTextureSize=32768
+2023-12-24T08:17:04.122Z In(05) mks KHBKL: Unable to parse keystring at: ''
+2023-12-24T08:17:04.122Z In(05) mks MKSRemoteMgr: Set default display name: Windows 98 Fat16
+2023-12-24T08:17:04.122Z In(05) mks MKSRemoteMgr: Loading VNC Configuration from VM config file
+2023-12-24T08:17:04.122Z In(05) mks MKSRemoteMgr: Using default VNC keymap table "us"
+2023-12-24T08:17:04.122Z In(05) vmx VLANCE: send cluster threshold is 80, size = 2 recalcInterval is 20000 us
+2023-12-24T08:17:04.122Z In(05) vmx VMXNET: send cluster threshold is 80, size = 2 recalcInterval is 20000 ticks, dontClusterSize is 128
+2023-12-24T08:17:04.122Z In(05) vmx Chipset version: 0x13
+2023-12-24T08:17:04.122Z In(05) vmx SOUNDLIB: Creating the Wave sound backend.
+2023-12-24T08:17:04.122Z No(00) vmx ConfigDB: Setting pciBridge4.pciSlotNumber = "-1"
+2023-12-24T08:17:04.122Z No(00) vmx ConfigDB: Setting pciBridge5.pciSlotNumber = "-1"
+2023-12-24T08:17:04.122Z No(00) vmx ConfigDB: Setting pciBridge6.pciSlotNumber = "-1"
+2023-12-24T08:17:04.122Z No(00) vmx ConfigDB: Setting pciBridge7.pciSlotNumber = "-1"
+2023-12-24T08:17:04.122Z No(00) vmx ConfigDB: Setting pciBridge4.pciSlotNumber = "21"
+2023-12-24T08:17:04.122Z No(00) vmx ConfigDB: Setting pciBridge5.pciSlotNumber = "22"
+2023-12-24T08:17:04.122Z No(00) vmx ConfigDB: Setting pciBridge6.pciSlotNumber = "23"
+2023-12-24T08:17:04.122Z No(00) vmx ConfigDB: Setting pciBridge7.pciSlotNumber = "24"
+2023-12-24T08:17:04.152Z In(05) vmx MigrateBusMemPrealloc: BusMem preallocation begins.
+2023-12-24T08:17:04.152Z In(05) vmx MigrateBusMemPrealloc: BusMem preallocation completes.
+2023-12-24T08:17:04.152Z In(05) vthread-5940 VTHREAD 5940 "vthread-5940"
+2023-12-24T08:17:04.152Z No(00) vmx ConfigDB: Setting ide0:1.redo = ""
+2023-12-24T08:17:04.152Z In(05) vmx DISK: OPEN ide0:1 'D:\Exercise\Kì 5\Hệ Điều Hành\Tài liệu thực hành\Virtual\Windows 98 Fat16-1.vmdk' persistent R[]
+2023-12-24T08:17:04.152Z No(00) worker-7684 ConfigDB: Setting ide0:0.redo = ""
+2023-12-24T08:17:04.152Z In(05) worker-7684 DISK: OPEN ide0:0 'D:\Exercise\Kì 5\Hệ Điều Hành\Tài liệu thực hành\Virtual\Windows 98 Fat16.vmdk' persistent R[]
+2023-12-24T08:17:04.152Z In(05) vmx DISKLIB-DSCPTR: DescriptorOpenGetLine: Unrecognized ddb entry. ID='isNativeSnapshot' Val='no'
+2023-12-24T08:17:04.152Z In(05) worker-7684 DISKLIB-LIB_MISC   : DiskLib_GetStorageBlockSizes: Failed to get storage block sizes, The virtual disk requires a feature not supported by this program.
+2023-12-24T08:17:04.152Z In(05) worker-7684 DiskGetGeometry: Reading of disk partition table
+2023-12-24T08:17:04.152Z In(05) worker-7684 DISK: Disk 'D:\Exercise\Kì 5\Hệ Điều Hành\Tài liệu thực hành\Virtual\Windows 98 Fat16.vmdk' has UUID '60 00 c2 9e bd 18 af 34-83 2e 51 43 9c 89 15 96'
+2023-12-24T08:17:04.152Z In(05) worker-7684 DISK: OPEN 'D:\Exercise\Kì 5\Hệ Điều Hành\Tài liệu thực hành\Virtual\Windows 98 Fat16.vmdk' Geo (207/16/63) BIOS Geo (828/4/63)
+2023-12-24T08:17:04.152Z In(05) vmx DISKLIB-LIB_MISC   : DiskLib_GetStorageBlockSizes: Failed to get storage block sizes, The virtual disk requires a feature not supported by this program.
+2023-12-24T08:17:04.152Z In(05) vmx DiskGetGeometry: Reading of disk partition table
+2023-12-24T08:17:04.152Z In(05) vmx DISK: Disk 'D:\Exercise\Kì 5\Hệ Điều Hành\Tài liệu thực hành\Virtual\Windows 98 Fat16-1.vmdk' has UUID '60 00 c2 90 05 5a ed 36-10 e8 a5 40 06 3d 83 38'
+2023-12-24T08:17:04.152Z In(05) vmx DISK: OPEN 'D:\Exercise\Kì 5\Hệ Điều Hành\Tài liệu thực hành\Virtual\Windows 98 Fat16-1.vmdk' Geo (207/16/63) BIOS Geo (828/4/63)
+2023-12-24T08:17:04.152Z In(05) vmx DISKLIB-DSCPTR: DescriptorOpenGetLine: Unrecognized ddb entry. ID='isNativeSnapshot' Val='no'
+2023-12-24T08:17:04.162Z In(05) worker-7684 DISKUTILWIN32: DiskUtilW32IsATASSDDevice: Reported rotation rate = 1
+2023-12-24T08:17:04.164Z In(05) vmx DISKUTILWIN32: DiskUtilW32IsATASSDDevice: Reported rotation rate = 1
+2023-12-24T08:17:04.164Z In(05) vmx DISK: Opening disks took 14 ms.
+2023-12-24T08:17:04.164Z In(05) vmx USBArbLib: USBArbLib initialized successfully, retryIntervalStart(5), retryIntervalMax(120), arbSocketName(\\.\pipe\vmware-usbarbpipe), useLocking(yes), tryUpgrading(no).
+2023-12-24T08:17:04.164Z In(05) vmx UsbEnum: Initializing UsbEnum library, disableLocking(no), allowBootableHid(yes).
+2023-12-24T08:17:04.164Z In(05) vmx USB: Initializing 'Virtual Hub' backend
+2023-12-24T08:17:04.164Z In(05) vmx USB: Initializing 'Generic' backend
+2023-12-24T08:17:04.164Z Wa(03) vmx USBArbLib: OUT SET_AUTO_CONNECT: Not connected to arbitrator, autoconnect(0) for client 'Windows 98 Fat16', connectState(1).
+2023-12-24T08:17:04.164Z In(05) vmx USB: Initializing 'Virtual HID' backend
+2023-12-24T08:17:04.164Z In(05) sensorThread VTHREAD 4396 "sensorThread"
+2023-12-24T08:17:04.164Z In(05) vmx USB: Initializing 'Remote Device' backend
+2023-12-24T08:17:04.164Z In(05) vmx RemoteUSBVMX: Retrieved hostId [44 45 4c 4c 59 00 10 36-80 4c ca c0 4f 46 50 32]
+2023-12-24T08:17:04.164Z In(05) vmx RemoteUSBVMX: Protocol version min:15 current:19
+2023-12-24T08:17:04.164Z In(05) vmx RemoteUSBVMX: no delay setting is TRUE.
+2023-12-24T08:17:04.164Z In(05) vmx USB: Initializing 'Virtual Mass Storage' backend
+2023-12-24T08:17:04.164Z In(05) vmx USB: Initializing 'Virtual RNG' backend
+2023-12-24T08:17:04.164Z In(05) vmx USB: Initializing 'Virtual CCID' backend
+2023-12-24T08:17:04.164Z In(05) vmx USB-CCID: Could not establish context: SCARD_E_NO_SERVICE(0x8010001d).
+2023-12-24T08:17:04.172Z In(05) vmx USB-CCID: Could not establish context: SCARD_E_NO_SERVICE(0x8010001d).
+2023-12-24T08:17:04.172Z In(05) usbCCIDEnumCards VTHREAD 6076 "usbCCIDEnumCards"
+2023-12-24T08:17:04.172Z In(05) usbCCIDEnumCards USB-CCID: Card enum thread created.
+2023-12-24T08:17:04.172Z In(05) vmx USB: Initializing 'Virtual Bluetooth' backend
+2023-12-24T08:17:04.172Z In(05) vmx USB: Initializing 'Virtual Audio' backend
+2023-12-24T08:17:04.172Z In(05) vmx USB: Initializing 'Virtual Video' backend
+2023-12-24T08:17:04.172Z In(05) vmx [msg.dictionary.badEncodedOutput] Value "D:\Exercise\Kì 5\Hệ Điều Hành\Tài liệu thực hành\Virtual" for variable "vmPath" is not valid in the "windows-1252" encoding.
+2023-12-24T08:17:04.172Z In(05) vmx Dictionary_WriteToBuffer: upgrading encoding from windows-1252 to UTF-8
+2023-12-24T08:17:04.172Z Wa(03) vmx USBGW: IOCTL_STORAGE_QUERY_PROPERTY failed. Error(0x0): The operation completed successfully.
+2023-12-24T08:17:04.172Z In(05) vmx USBGW: Skipping disk backing for path(D:\Exercise\Kì 5\Hệ Điều Hành\Tài liệu thực hành\Virtual\Windows 98 Fat16.vmx).
+2023-12-24T08:17:04.180Z Wa(03) vmx USBGW: IOCTL_STORAGE_QUERY_PROPERTY failed. Error(0x0): The operation completed successfully.
+2023-12-24T08:17:04.180Z In(05) vmx USBGW: Skipping disk backing for path(D:\Exercise\Kì 5\Hệ Điều Hành\Tài liệu thực hành\Virtual\Windows 98 Fat16-1.vmdk).
+2023-12-24T08:17:04.180Z Wa(03) vmx USBGW: IOCTL_STORAGE_QUERY_PROPERTY failed. Error(0x0): The operation completed successfully.
+2023-12-24T08:17:04.180Z In(05) vmx USBGW: Skipping disk backing for path(D:\Exercise\Kì 5\Hệ Điều Hành\Tài liệu thực hành\Virtual\Windows 98 Fat16.vmdk).
+2023-12-24T08:17:04.180Z Wa(03) vmx USBGW: IOCTL_STORAGE_QUERY_PROPERTY failed. Error(0x0): The operation completed successfully.
+2023-12-24T08:17:04.180Z In(05) vmx USBGW: Skipping disk backing for path(D:\Exercise\Kì 5\Hệ Điều Hành\Tài liệu thực hành\Virtual\Windows 98 Fat16.vmsd).
+2023-12-24T08:17:04.180Z Wa(03) vmx USBGW: IOCTL_STORAGE_QUERY_PROPERTY failed. Error(0x0): The operation completed successfully.
+2023-12-24T08:17:04.180Z In(05) vmx USBGW: Skipping disk backing for path(D:\Exercise\Kì 5\Hệ Điều Hành\Tài liệu thực hành\Virtual\Windows 98 Fat16.nvram).
+2023-12-24T08:17:04.182Z In(05) vmx MsgHint: msg.disk.98buslogic
+2023-12-24T08:17:04.182Z In(05)+ vmx The virtual machine has at least one virtual SCSI device and Windows 98 as the guest operating system. Windows 98 SE might not install properly on a SCSI disk.
+2023-12-24T08:17:04.182Z In(05)+ vmx The problem is common to both virtual and physical machines. VMware Player recommends installing Windows 98 SE on a virtual IDE drive.
+2023-12-24T08:17:04.182Z In(05)+ vmx Select OK to continue, Cancel to power off.
+2023-12-24T08:17:04.182Z In(05)+ vmx ---------------------------------------
+2023-12-24T08:17:04.182Z In(05) usbCCIDEnumCards USB-CCID: Could not establish context: SCARD_E_NO_SERVICE(0x8010001d).
+2023-12-24T08:17:04.182Z In(05) vmx DISKUTIL: ide0:0 : capacity=208896 logical sector size=512
+2023-12-24T08:17:04.182Z In(05) vmx SCSI DEVICE (ide0:0): Computed value of ide0:0.useBounceBuffers: default
+2023-12-24T08:17:04.182Z In(05) vmx DISKUTIL: ide0:0 : capacity=208896 logical sector size=512
+2023-12-24T08:17:04.182Z In(05) vmx DISKUTIL: ide0:0 : geometry=828/4/63
+2023-12-24T08:17:04.182Z In(05) vmx DISKUTIL: ide0:1 : capacity=208896 logical sector size=512
+2023-12-24T08:17:04.182Z In(05) vmx SCSI DEVICE (ide0:1): Computed value of ide0:1.useBounceBuffers: default
+2023-12-24T08:17:04.182Z In(05) vmx DISKUTIL: ide0:1 : capacity=208896 logical sector size=512
+2023-12-24T08:17:04.182Z In(05) vmx DISKUTIL: ide0:1 : geometry=828/4/63
+2023-12-24T08:17:04.182Z In(05) vmx SCSI0: UNTAGGED commands will be converted to ORDER tags.
+2023-12-24T08:17:04.182Z In(05) vmx SCSI DEVICE (scsi0:0): Computed value of scsi0:0.useBounceBuffers: default
+2023-12-24T08:17:04.182Z In(05) vmx DISKUTIL: scsi0:0 : capacity=0 logical sector size=2048
+2023-12-24T08:17:04.182Z In(05) vmx DISKUTIL: scsi0:0 : geometry=0/0/0
+2023-12-24T08:17:04.182Z In(05) vmx SVGA-GFB: Config settings: autodetect=1, numDisplays=1, maxWidth=2560, maxHeight=1600
+2023-12-24T08:17:04.182Z In(05) vmx SVGA-GFB: Desired maximum display topology: wh(6688, 5016)
+2023-12-24T08:17:04.182Z In(05) vmx SVGA-GFB: Autodetected target gfbSize = 268435456
+2023-12-24T08:17:04.182Z In(05) vmx SVGA-GFB: Using Initial       gfbSize = 16777216
+2023-12-24T08:17:04.182Z In(05) vmx SVGA-GFB: Truncated maximum resolution for register modes to VRAM size: VRAM=16777216 bytes, max wh(2360, 1773)
+2023-12-24T08:17:04.182Z In(05) vmx SVGA-GFB: Max wh(2360, 1773), number of displays: 10
+2023-12-24T08:17:04.182Z In(05) vmx SVGA-GFB: Allocated gfbSize=16777216
+2023-12-24T08:17:04.182Z No(00) vmx ConfigDB: Setting vmotion.checkpointFBSize = "16777216"
+2023-12-24T08:17:04.182Z In(05) vmx SVGA: SVGA DeviceLabel: svga2
+2023-12-24T08:17:04.182Z In(05) vmx SVGA: surfaceMemoryLimitKB=786432
+2023-12-24T08:17:04.182Z In(05) vmx SVGA: FIFO capabilities 0x0000007f
+2023-12-24T08:17:04.182Z In(05) vmx SVGAFeature renderer (before clamping) svga.supports3D bool 0
+2023-12-24T08:17:04.182Z In(05) vmx SVGAFeature renderer (before clamping) svga.baseCapsLevel num 11
+2023-12-24T08:17:04.182Z In(05) vmx SVGAFeature renderer (before clamping) svga.maxPointSize num 0
+2023-12-24T08:17:04.182Z In(05) vmx SVGAFeature renderer (before clamping) svga.maxTextureSize num 32768
+2023-12-24T08:17:04.182Z In(05) vmx SVGAFeature renderer (before clamping) svga.maxVolumeExtent num 0
+2023-12-24T08:17:04.182Z In(05) vmx SVGAFeature renderer (before clamping) svga.maxTextureAnisotropy num 0
+2023-12-24T08:17:04.182Z In(05) vmx SVGAFeature renderer (before clamping) svga.lineStipple bool 0
+2023-12-24T08:17:04.182Z In(05) vmx SVGAFeature renderer (before clamping) svga.dxMaxConstantBuffers num 0
+2023-12-24T08:17:04.182Z In(05) vmx SVGAFeature renderer (before clamping) svga.dxProvokingVertex bool 0
+2023-12-24T08:17:04.182Z In(05) vmx SVGAFeature renderer (before clamping) svga.sm41 bool 0
+2023-12-24T08:17:04.182Z In(05) vmx SVGAFeature renderer (before clamping) svga.multisample2x bool 0
+2023-12-24T08:17:04.182Z In(05) vmx SVGAFeature renderer (before clamping) svga.multisample4x bool 0
+2023-12-24T08:17:04.182Z In(05) vmx SVGAFeature renderer (before clamping) svga.msFullQuality bool 0
+2023-12-24T08:17:04.182Z In(05) vmx SVGAFeature renderer (before clamping) svga.logicOps bool 0
+2023-12-24T08:17:04.182Z In(05) vmx SVGAFeature renderer (before clamping) svga.bc67 num 0
+2023-12-24T08:17:04.182Z In(05) vmx SVGAFeature renderer (before clamping) svga.sm5 bool 0
+2023-12-24T08:17:04.182Z In(05) vmx SVGAFeature renderer (before clamping) svga.multisample8x bool 0
+2023-12-24T08:17:04.182Z In(05) vmx SVGAFeature renderer (before clamping) svga.logicBlendOps bool 0
+2023-12-24T08:17:04.182Z In(05) vmx SVGAFeature renderer (before clamping) svga.maxForcedSampleCount num 0
+2023-12-24T08:17:04.182Z In(05) vmx SVGAFeature renderer (before clamping) svga.gl43 bool 0
+2023-12-24T08:17:04.182Z In(05) vmx SVGAFeature renderer (after  clamping) svga.supports3D bool 0
+2023-12-24T08:17:04.182Z In(05) vmx SVGAFeature renderer (after  clamping) svga.baseCapsLevel num 0
+2023-12-24T08:17:04.182Z In(05) vmx SVGAFeature renderer (after  clamping) svga.maxPointSize num 0
+2023-12-24T08:17:04.182Z In(05) vmx SVGAFeature renderer (after  clamping) svga.maxTextureSize num 0
+2023-12-24T08:17:04.182Z In(05) vmx SVGAFeature renderer (after  clamping) svga.maxVolumeExtent num 0
+2023-12-24T08:17:04.182Z In(05) vmx SVGAFeature renderer (after  clamping) svga.maxTextureAnisotropy num 0
+2023-12-24T08:17:04.182Z In(05) vmx SVGAFeature renderer (after  clamping) svga.lineStipple bool 0
+2023-12-24T08:17:04.182Z In(05) vmx SVGAFeature renderer (after  clamping) svga.dxMaxConstantBuffers num 0
+2023-12-24T08:17:04.182Z In(05) vmx SVGAFeature renderer (after  clamping) svga.dxProvokingVertex bool 0
+2023-12-24T08:17:04.182Z In(05) vmx SVGAFeature renderer (after  clamping) svga.sm41 bool 0
+2023-12-24T08:17:04.182Z In(05) vmx SVGAFeature renderer (after  clamping) svga.multisample2x bool 0
+2023-12-24T08:17:04.182Z In(05) vmx SVGAFeature renderer (after  clamping) svga.multisample4x bool 0
+2023-12-24T08:17:04.182Z In(05) vmx SVGAFeature renderer (after  clamping) svga.msFullQuality bool 0
+2023-12-24T08:17:04.182Z In(05) vmx SVGAFeature renderer (after  clamping) svga.logicOps bool 0
+2023-12-24T08:17:04.182Z In(05) vmx SVGAFeature renderer (after  clamping) svga.bc67 num 0
+2023-12-24T08:17:04.182Z In(05) vmx SVGAFeature renderer (after  clamping) svga.sm5 bool 0
+2023-12-24T08:17:04.182Z In(05) vmx SVGAFeature renderer (after  clamping) svga.multisample8x bool 0
+2023-12-24T08:17:04.182Z In(05) vmx SVGAFeature renderer (after  clamping) svga.logicBlendOps bool 0
+2023-12-24T08:17:04.182Z In(05) vmx SVGAFeature renderer (after  clamping) svga.maxForcedSampleCount num 0
+2023-12-24T08:17:04.182Z In(05) vmx SVGAFeature renderer (after  clamping) svga.gl43 bool 0
+2023-12-24T08:17:04.182Z In(05) vmx SVGA3dClamp: Renderer Provides     BC67Level:     0 (    0,     0)
+2023-12-24T08:17:04.182Z In(05) vmx SVGA3dClamp: Renderer Provides BaseCapsLevel:     0 (    0,     0)
+2023-12-24T08:17:04.182Z In(05) vmx SVGA3dClamp: Renderer Provides    ClampLevel:     0 (    0,     0)
+2023-12-24T08:17:04.182Z In(05) vmx SVGA3dCaps: host, at power on (3d disabled)
+2023-12-24T08:17:04.182Z In(05) vmx SVGA3dClamp:     Host Provides     BC67Level:     0 (    0,     0)
+2023-12-24T08:17:04.182Z In(05) vmx SVGA3dClamp:     Host Provides BaseCapsLevel:     0 (    0,     0)
+2023-12-24T08:17:04.182Z In(05) vmx SVGA3dClamp:     Host Provides    ClampLevel:     0 (    0,     0)
+2023-12-24T08:17:04.182Z In(05) vmx SVGA3dCaps: Disabling 3d support
+2023-12-24T08:17:04.182Z In(05) vmx SVGA3dCaps: guest, compatibility level: 8
+2023-12-24T08:17:04.182Z In(05) vmx SVGA3dClamp:    Guest Requires     BC67Level:     0 (    0,     0)
+2023-12-24T08:17:04.182Z In(05) vmx SVGA3dClamp:    Guest Requires BaseCapsLevel:     0 (    0,     0)
+2023-12-24T08:17:04.182Z In(05) vmx SVGA3dClamp:    Guest Requires    ClampLevel:     0 (    0,     0)
+2023-12-24T08:17:04.182Z In(05) vmx USB: Initializing 'UHCI' host controller
+2023-12-24T08:17:04.182Z In(05) vmx Ethernet0 MAC Address: 00:0c:29:f5:ce:0e
+2023-12-24T08:17:04.182Z In(05) vmx USB: Initializing 'EHCI' host controller
+2023-12-24T08:17:04.192Z No(00) vmx ConfigDB: Setting vmci0.id = "457324298"
+2023-12-24T08:17:04.202Z In(05) vmx WORKER: Creating new group with maxThreads=1 (23)
+2023-12-24T08:17:04.202Z In(05) vmx DISKUTIL: (null) : max toolsVersion = 0, type = 0
+2023-12-24T08:17:04.202Z In(05) vmx DISKUTIL: Offline toolsVersion = 0, type = 0
+2023-12-24T08:17:04.202Z In(05) vmx TOOLS setting legacy tools version to '0' type 0, manifest status is 9
+2023-12-24T08:17:04.202Z In(05) vmx ToolsISO: Refreshing imageName for 'win98' (refreshCount=1, lastCount=1).
+2023-12-24T08:17:04.202Z In(05) vmx ToolsISO: open of D:\Program Files (x86)\isoimages_manifest.txt.sig failed: Could not find the file
+2023-12-24T08:17:04.202Z In(05) vmx ToolsISO: Unable to read signature file 'D:\Program Files (x86)\isoimages_manifest.txt.sig', ignoring.
+2023-12-24T08:17:04.202Z In(05) vmx ToolsISO: Updated cached value for imageName to 'winPre2k.iso'.
+2023-12-24T08:17:04.202Z In(05) vmx ToolsISO: Selected Tools ISO 'winPre2k.iso' for 'win98' guest.
+2023-12-24T08:17:04.202Z In(05) vmx TOOLS updated cached value for isoImageExists to 1.
+2023-12-24T08:17:04.202Z In(05) vmx VMXVmdb_SetToolsVersionStatus: status value set to 'noTools', 'noTools', install possible
+2023-12-24T08:17:04.202Z In(05) vmx ToolsISO: Refreshing imageName for 'win98' (refreshCount=1, lastCount=1).
+2023-12-24T08:17:04.202Z In(05) vmx ToolsISO: open of D:\Program Files (x86)\isoimages_manifest.txt.sig failed: Could not find the file
+2023-12-24T08:17:04.202Z In(05) vmx ToolsISO: Unable to read signature file 'D:\Program Files (x86)\isoimages_manifest.txt.sig', ignoring.
+2023-12-24T08:17:04.202Z In(05) vmx ToolsISO: Updated cached value for imageName to 'winPre2k.iso'.
+2023-12-24T08:17:04.202Z In(05) vmx ToolsISO: Selected Tools ISO 'winPre2k.iso' for 'win98' guest.
+2023-12-24T08:17:04.202Z In(05) vmx TOOLS updated cached value for isoImageExists to 1.
+2023-12-24T08:17:04.202Z In(05) vmx VMXVmdb_SetToolsVersionStatus: status value set to 'noTools', 'noTools', install possible
+2023-12-24T08:17:04.202Z In(05) vmx Tools: sending 'OS_PowerOn' (state = 3) state change request
+2023-12-24T08:17:04.202Z In(05) vmx Tools: Delaying state change request to state 3.
+2023-12-24T08:17:04.202Z In(05) vmx ToolsISO: Refreshing imageName for 'win98' (refreshCount=1, lastCount=1).
+2023-12-24T08:17:04.202Z In(05) vmx ToolsISO: open of D:\Program Files (x86)\isoimages_manifest.txt.sig failed: Could not find the file
+2023-12-24T08:17:04.202Z In(05) vmx ToolsISO: Unable to read signature file 'D:\Program Files (x86)\isoimages_manifest.txt.sig', ignoring.
+2023-12-24T08:17:04.202Z In(05) vmx ToolsISO: Updated cached value for imageName to 'winPre2k.iso'.
+2023-12-24T08:17:04.202Z In(05) vmx ToolsISO: Selected Tools ISO 'winPre2k.iso' for 'win98' guest.
+2023-12-24T08:17:04.202Z In(05) vmx MsgHint: msg.tools.toolsReminder
+2023-12-24T08:17:04.202Z In(05)+ vmx Install the VMware Tools package inside this virtual machine. After the guest operating system starts, select VM > Install VMware Tools… and follow the instructions.
+2023-12-24T08:17:04.202Z In(05)+ vmx ---------------------------------------
+2023-12-24T08:17:04.242Z In(05) vmx TOOLS INSTALL initializing state to IDLE on power on.
+2023-12-24T08:17:04.242Z In(05) vmx TOOLS INSTALL updating Rpc handlers registration.
+2023-12-24T08:17:04.242Z In(05) vmx TOOLS INSTALL register RPC: upgrader.setGuestFileRoot
+2023-12-24T08:17:04.242Z In(05) vmx TOOLS INSTALL register RPC: toolinstall.is_image_inserted
+2023-12-24T08:17:04.242Z In(05) vmx TOOLS INSTALL register RPC: toolinstall.installerActive
+2023-12-24T08:17:04.242Z In(05) vmx TOOLS INSTALL register RPC: guest.upgrader_send_cmd_line_args
+2023-12-24T08:17:04.242Z In(05) vmx P9FS_PowerOn: 9PFS server is not enabled.
+2023-12-24T08:17:04.242Z In(05) vmx HgfsServerManagerVigorInit: Initialize: dev api
+2023-12-24T08:17:04.242Z In(05) vmx MKSVMX: Copy/paste enabled = 1
+2023-12-24T08:17:04.242Z In(05) vmx DEPLOYPKG: No pending deploy package name set
+2023-12-24T08:17:04.242Z In(05) vmx DEPLOYPKG: ToolsDeployPkgPublishState: state=0, code=0, message=(null)
+2023-12-24T08:17:04.244Z In(05) vmx MonPmc: ctrBase 0x4c1 selBase 0x186/1 PGC 1/1 SMM 1 drain 0 AMD 0
+2023-12-24T08:17:04.244Z In(05)+ vmx MonPmc:   gen counters num: 4 width 48 write width 48
+2023-12-24T08:17:04.244Z In(05)+ vmx MonPmc:   fix counters num: 3 width 48; version 4
+2023-12-24T08:17:04.244Z In(05)+ vmx MonPmc:   unavailable counters: 0x70000000f
+2023-12-24T08:17:04.244Z No(00) vmx ConfigDB: Setting monitor.phys_bits_used = "40"
+2023-12-24T08:17:04.244Z In(05) vmx Full guest CPUID with differences from hostCPUID highlighted.
+2023-12-24T08:17:04.244Z In(05) vmx guest vs. host CPUID guest vendor: GenuineIntel
+2023-12-24T08:17:04.244Z In(05) vmx guest vs. host CPUID guest family: 0x6 model: 0x9e stepping: 0xa
+2023-12-24T08:17:04.244Z In(05) vmx guest vs. host CPUID guest codename: Coffee Lake-S/H
+2023-12-24T08:17:04.244Z In(05) vmx guest vs. host CPUID guest name: Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz
+2023-12-24T08:17:04.244Z In(05) vmx guest vs. host CPUID       level eaxIn, ecxIn:        eax        ebx        ecx        edx
+2023-12-24T08:17:04.244Z In(05) vmx guest vs. host CPUID guest level 00000000,  0: 0x00000016 0x756e6547 0x6c65746e 0x49656e69
+2023-12-24T08:17:04.244Z In(05) vmx guest vs. host CPUID guest level 00000001,  0: 0x000906ea 0x00010800 0x82d82203 0x0f8bfbff
+2023-12-24T08:17:04.244Z In(05) vmx guest vs. host CPUID *host level 00000001,  0: 0x000906ea 0x00100800 0x7ffafbbf 0xbfebfbff
+2023-12-24T08:17:04.244Z In(05) vmx guest vs. host CPUID guest level 00000002,  0: 0x76036301 0x00f0b5ff 0x00000000 0x00c30000
+2023-12-24T08:17:04.244Z In(05) vmx guest vs. host CPUID guest level 00000004,  0: 0x00000121 0x01c0003f 0x0000003f 0x00000000
+2023-12-24T08:17:04.244Z In(05) vmx guest vs. host CPUID *host level 00000004,  0: 0x1c004121 0x01c0003f 0x0000003f 0x00000000
+2023-12-24T08:17:04.244Z In(05) vmx guest vs. host CPUID guest level 00000004,  1: 0x00000122 0x01c0003f 0x0000003f 0x00000000
+2023-12-24T08:17:04.244Z In(05) vmx guest vs. host CPUID *host level 00000004,  1: 0x1c004122 0x01c0003f 0x0000003f 0x00000000
+2023-12-24T08:17:04.244Z In(05) vmx guest vs. host CPUID guest level 00000004,  2: 0x00000143 0x00c0003f 0x000003ff 0x00000000
+2023-12-24T08:17:04.244Z In(05) vmx guest vs. host CPUID *host level 00000004,  2: 0x1c004143 0x00c0003f 0x000003ff 0x00000000
+2023-12-24T08:17:04.244Z In(05) vmx guest vs. host CPUID guest level 00000004,  3: 0x00000163 0x02c0003f 0x00002fff 0x00000006
+2023-12-24T08:17:04.244Z In(05) vmx guest vs. host CPUID *host level 00000004,  3: 0x1c03c163 0x02c0003f 0x00002fff 0x00000006
+2023-12-24T08:17:04.244Z In(05) vmx guest vs. host CPUID guest level 00000006,  0: 0x00000004 0x00000000 0x00000000 0x00000000
+2023-12-24T08:17:04.244Z In(05) vmx guest vs. host CPUID *host level 00000006,  0: 0x000027f7 0x00000002 0x00000009 0x00000000
+2023-12-24T08:17:04.244Z In(05) vmx guest vs. host CPUID guest level 00000007,  0: 0x00000000 0x00000000 0x00000000 0x00000000
+2023-12-24T08:17:04.244Z In(05) vmx guest vs. host CPUID *host level 00000007,  0: 0x00000000 0x029c67af 0x40000000 0x9c002600
+2023-12-24T08:17:04.244Z In(05) vmx guest vs. host CPUID guest level 0000000a,  0: 0x07300401 0x000000ff 0x00000000 0x00000000
+2023-12-24T08:17:04.244Z In(05) vmx guest vs. host CPUID *host level 0000000a,  0: 0x07300404 0x00000000 0x00000000 0x00000603
+2023-12-24T08:17:04.244Z In(05) vmx guest vs. host CPUID guest level 0000000d,  0: 0x00000000 0x00000000 0x00000000 0x00000000
+2023-12-24T08:17:04.244Z In(05) vmx guest vs. host CPUID *host level 0000000d,  0: 0x0000001f 0x00000440 0x00000440 0x00000000
+2023-12-24T08:17:04.244Z In(05) vmx guest vs. host CPUID guest level 0000000d,  1: 0x00000000 0x00000000 0x00000000 0x00000000
+2023-12-24T08:17:04.244Z In(05) vmx guest vs. host CPUID *host level 0000000d,  1: 0x0000000f 0x00000440 0x00000100 0x00000000
+2023-12-24T08:17:04.244Z In(05) vmx guest vs. host CPUID guest level 40000000,  0: 0x40000010 0x61774d56 0x4d566572 0x65726177
+2023-12-24T08:17:04.244Z In(05) vmx guest vs. host CPUID guest level 40000010,  0: 0x0021b100 0x000101d0 0x00000000 0x00000000
+2023-12-24T08:17:04.244Z In(05) vmx guest vs. host CPUID guest level 80000000,  0: 0x80000008 0x00000000 0x00000000 0x00000000
+2023-12-24T08:17:04.244Z In(05) vmx guest vs. host CPUID guest level 80000001,  0: 0x00000000 0x00000000 0x00000101 0x28100800
+2023-12-24T08:17:04.244Z In(05) vmx guest vs. host CPUID *host level 80000001,  0: 0x00000000 0x00000000 0x00000121 0x2c100800
+2023-12-24T08:17:04.244Z In(05) vmx guest vs. host CPUID guest level 80000002,  0: 0x65746e49 0x2952286c 0x726f4320 0x4d542865
+2023-12-24T08:17:04.244Z In(05) vmx guest vs. host CPUID guest level 80000003,  0: 0x37692029 0x3537382d 0x43204830 0x40205550
+2023-12-24T08:17:04.244Z In(05) vmx guest vs. host CPUID guest level 80000004,  0: 0x322e3220 0x7a484730 0x00000000 0x00000000
+2023-12-24T08:17:04.244Z In(05) vmx guest vs. host CPUID guest level 80000006,  0: 0x00000000 0x00000000 0x01006040 0x00000000
+2023-12-24T08:17:04.244Z In(05) vmx guest vs. host CPUID guest level 80000007,  0: 0x00000000 0x00000000 0x00000000 0x00000100
+2023-12-24T08:17:04.244Z In(05) vmx guest vs. host CPUID guest level 80000008,  0: 0x00003028 0x00000000 0x00000000 0x00000000
+2023-12-24T08:17:04.244Z In(05) vmx guest vs. host CPUID *host level 80000008,  0: 0x00003027 0x00000000 0x00000000 0x00000000
+2023-12-24T08:17:04.244Z In(05) vmx Minimum ucode level: 0x000000de
+2023-12-24T08:17:04.244Z In(05) vmx VPMC: events will use hybrid freeze.
+2023-12-24T08:17:04.244Z In(05) vmx VPMC: gen counters: num 4 mask 0xffffffffffff
+2023-12-24T08:17:04.244Z In(05) vmx VPMC: fix counters: num 0 mask 0; version 1
+2023-12-24T08:17:04.244Z In(05) vmx VPMC: hardware counters: 0
+2023-12-24T08:17:04.244Z In(05) vmx SVGA-PCI: BAR gfbSize=134217728, fifoSize=8388608
+2023-12-24T08:17:04.244Z In(05) vmx SVGA: SVGA_REG_MEMORY_SIZE=822083584
+2023-12-24T08:17:04.244Z In(05) vmx SVGA: SVGA_REG_VRAM_SIZE=16777216
+2023-12-24T08:17:04.244Z In(05) vmx SVGA: Final Device caps : 0x001f83e2
+2023-12-24T08:17:04.244Z In(05) vmx SVGA: Final Device caps2: 0x00000000
+2023-12-24T08:17:04.244Z In(05) vmx BusMemSampleSetUpStats: touched: initPct 75 pages 49152 : dirtied: initPct 75 pages 49152
+2023-12-24T08:17:04.244Z In(05) vmx MemSched: caller 0 numvm 1 locked pages: num 540 max 1508338
+2023-12-24T08:17:04.244Z In(05) vmx MemSched: locked Page Limit: host 1516530 config 1594368
+2023-12-24T08:17:04.244Z In(05) vmx MemSched: minmempct 50  timestamp 64304
+2023-12-24T08:17:04.244Z In(05) vmx MemSched: VM 0 min 43888 max 76656 shares 65536 paged 292017 nonpaged 6638 anonymous 4482 locked 540 touchedPct 75 dirtiedPct 75 timestamp 64304 vmResponsive is 1
+2023-12-24T08:17:04.244Z In(05) vmx MemSched: locked 540 target 76656 balloon 0 0 0 swapped 0 0 allocd 0 512 state 0 100
+2023-12-24T08:17:04.244Z In(05) vmx MemSched: states: 0 1 : 1 0 : 2 0 : 3 0
+2023-12-24T08:17:04.244Z In(05) vmx MemSched: Balloon enabled 1 guestType 0 maxSize 0
+2023-12-24T08:17:04.244Z In(05) vmx PStrIntern expansion: nBkts=256
+2023-12-24T08:17:04.244Z In(05) vmx FeatureCompat: Capabilities:
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.sse3 = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.pclmulqdq = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.mwait = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.vmx = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.ssse3 = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.fma = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.cmpxchg16b = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.pcid = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.sse41 = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.sse42 = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.movbe = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.popcnt = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.aes = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.xsave = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.avx = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.f16c = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.rdrand = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.ds = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.ss = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.fsgsbase = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.bmi1 = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.avx2 = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.smep = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.bmi2 = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.enfstrg = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.invpcid = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.rdseed = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.adx = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.smap = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.clflushopt = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.mdclear = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.stibp = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.fcmd = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.ssbd = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.xcr0_master_sse = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.xcr0_master_ymm_h = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.xcr0_master_bndregs = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.xcr0_master_bndcsr = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.xsaveopt = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.xsavec = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.xgetbv_ecx1 = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.xsaves = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.lahf64 = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.abm = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.3dnprefetch = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.nx = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.pdpe1gb = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.rdtscp = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.lm = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.intel = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.ibrs = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.ibpb = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: cpuid.mpx = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: hv.capable = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: vt.realmode = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: vt.mbx = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: misc.cpuidfaulting = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: vt.advexitinfo = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: vt.eptad = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: vt.ple = 1
+2023-12-24T08:17:04.244Z In(05) vmx Capability Found: vt.zeroinstlen = 1
+2023-12-24T08:17:04.244Z In(05) vmx FeatureCompat: Requirements:
+2023-12-24T08:17:04.244Z In(05) vmx VM Features Required: cpuid.sse3 - Bool:Min:1
+2023-12-24T08:17:04.244Z In(05) vmx VM Features Required: cpuid.pclmulqdq - Bool:Min:1
+2023-12-24T08:17:04.244Z In(05) vmx VM Features Required: cpuid.ssse3 - Bool:Min:1
+2023-12-24T08:17:04.244Z In(05) vmx VM Features Required: cpuid.cmpxchg16b - Bool:Min:1
+2023-12-24T08:17:04.244Z In(05) vmx VM Features Required: cpuid.sse41 - Bool:Min:1
+2023-12-24T08:17:04.244Z In(05) vmx VM Features Required: cpuid.sse42 - Bool:Min:1
+2023-12-24T08:17:04.244Z In(05) vmx VM Features Required: cpuid.movbe - Bool:Min:1
+2023-12-24T08:17:04.244Z In(05) vmx VM Features Required: cpuid.popcnt - Bool:Min:1
+2023-12-24T08:17:04.244Z In(05) vmx VM Features Required: cpuid.aes - Bool:Min:1
+2023-12-24T08:17:04.244Z In(05) vmx VM Features Required: cpuid.ss - Bool:Min:1
+2023-12-24T08:17:04.244Z In(05) vmx VM Features Required: cpuid.lahf64 - Bool:Min:1
+2023-12-24T08:17:04.244Z In(05) vmx VM Features Required: cpuid.3dnprefetch - Bool:Min:1
+2023-12-24T08:17:04.244Z In(05) vmx VM Features Required: cpuid.nx - Bool:Min:1
+2023-12-24T08:17:04.244Z In(05) vmx VM Features Required: cpuid.rdtscp - Bool:Min:1
+2023-12-24T08:17:04.244Z In(05) vmx VM Features Required: cpuid.lm - Bool:Min:1
+2023-12-24T08:17:04.244Z In(05) vmx VM Features Required: cpuid.intel - Bool:Min:1
+2023-12-24T08:17:04.244Z In(05) vmx TOOLS received request in VMX to set option 'enableDnD' -> '1'
+2023-12-24T08:17:04.244Z In(05) vmx 
+2023-12-24T08:17:04.244Z In(05)+ vmx OvhdMem: Static (Power On) Overheads
+2023-12-24T08:17:04.244Z In(05) vmx                                                       reserved      |          used
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem excluded                                  cur    max    avg |    cur    max    avg
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdUser_MainMem                    :   65536  65536      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdUser_VmxText                    :    7680   7680      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdUser_VmxTextLibs                :   16000  16000      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem Total excluded                      :   89216  89216      - |      -      -      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem Actual maximum                      :          89216        |             -
+2023-12-24T08:17:04.244Z In(05)+ vmx 
+2023-12-24T08:17:04.244Z In(05) vmx                                                       reserved      |          used
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem paged                                     cur    max    avg |    cur    max    avg
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdUser_STATS_vmm                  :       2      2      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdUser_STATS_device               :       1      1      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdUser_DiskLibMemUsed             :    3075   3075      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdUser_SvgaSDirtyCache            :      96     96      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdUser_SvgaCursor                 :      10     10      - |     10     10      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdUser_VmxGlobals                 :   10240  10240      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdUser_VmxGlobalsLibs             :    3584   3584      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdUser_VmxHeap                    :    8704   8704      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdUser_VmxMks                     :      33     33      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdUser_VmxMksRenderOps            :     678    678      - |    492    492      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdUser_VmxMks3d                   :  200704 200704      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdUser_VmxMksScreenTemp           :    8450   8450      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdUser_VmxMksVnc                  :    6123   6123      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdUser_VmxMksScreen               :    8195   8195      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdUser_VmxMksSVGAVO               :    4096   4096      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdUser_VmxMksSwbCursor            :    2560   2560      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdUser_VmxPhysMemErrPages         :      10     10      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdUser_VmxSLEntryBuf              :     128    128      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdUser_VmxThreads                 :   35328  35328      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem Total paged                         :  292017 292017      - |    502    502      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem Actual maximum                      :         292017        |        292017
+2023-12-24T08:17:04.244Z In(05)+ vmx 
+2023-12-24T08:17:04.244Z In(05) vmx                                                       reserved      |          used
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem nonpaged                                  cur    max    avg |    cur    max    avg
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdUser_SharedArea                 :     138    138      - |    123    123      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdUser_BusMemTraceBitmap          :       7      7      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdUser_PFrame                     :     277   1352      - |    277    277      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdUser_VIDE_KSEG                  :      16     16      - |     16     16      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdUser_VGA                        :      64     64      - |     64     64      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdUser_BalloonMPN                 :       1      1      - |      1      1      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdUser_P2MUpdateBuffer            :       3      3      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdUser_ServicesMPN                :       3      3      - |      3      3      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdUser_LocalApic                  :       1      1      - |      1      1      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdUser_VBIOS                      :       8      8      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdUser_VnicGuest                  :      16     16      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdUser_SBIOS                      :      16     16      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdUser_FlashRam                   :     128    128      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdUser_SVGAFB                     :    4096   4096      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdUser_SVGAMEM                    :     512    512      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdUser_HDAudioReg                 :       3      3      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdUser_EHCIRegister               :       1      1      - |      1      1      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdUser_XhciRegister               :       1      1      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdUser_HyperV                     :       2      2      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdUser_ExtCfg                     :       4      4      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdUser_vhvCachedVMCS              :       1      1      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdUser_vhvNestedAPIC              :       1      1      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdUser_LBR                        :       1      1      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdUser_MonWired                   :      35     35      - |     35     35      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdUser_MonNuma                    :     227    227      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdUser_NVDC                       :       1      1      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem Total nonpaged                      :    5563   6638      - |    521    521      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem Actual maximum                      :           5563        |          6638
+2023-12-24T08:17:04.244Z In(05)+ vmx 
+2023-12-24T08:17:04.244Z In(05) vmx                                                       reserved      |          used
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem anonymous                                 cur    max    avg |    cur    max    avg
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdMon_Alloc                       :      98     98      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdMon_BusMemFrame                 :     133    190      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdMon_BusMem2MInfo                :       1      1      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdMon_BusMem1GInfo                :       1      1      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdMon_BusMemZapListMPN            :       1      1      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdMon_BusMemPreval                :       4      4      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdMon_MonAS                       :       1      1      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdMon_GuestMem                    :      40     40      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdMon_TC                          :     513    513      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdMon_BusMemMonAS                 :       4      4      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdMon_PlatformMonAS               :       5      5      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdMon_HVNuma                      :       2      2      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdMon_HV                          :       1      1      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdMon_HVMSRBitmap                 :       1      1      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdMon_VHVGuestMSRBitmap           :       1      1      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdMon_VHV                         :       3      3      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdMon_Numa                        :      24     24      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdMon_NumaTextRodata              :     200    200      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdMon_NumaDataBss                 :      27     27      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdMon_BaseWired                   :      29     29      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdMon_Bootstrap                   :    2303   2303      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdMon_GPhysTraced                 :     264    264      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdMon_GPhysHWMMU                  :     394    394      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdMon_GPhysNoTrace                :     264    264      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdMon_PhysMemGart                 :     104    104      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdMon_PhysMemErr                  :       6      6      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem OvhdMon_VProbe                      :       1      1      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem Total anonymous                     :    4425   4482      - |      0      0      -
+2023-12-24T08:17:04.244Z In(05) vmx OvhdMem Actual maximum                      :           4425        |          4482
+2023-12-24T08:17:04.244Z In(05)+ vmx 
+2023-12-24T08:17:04.244Z In(05) vmx VMMEM: Precise Reservation: 1179MB (MainMem=256MB)
+2023-12-24T08:17:04.244Z In(05) vmx VMXSTATS: Registering 4 stats: vmx.overheadMemSize
+2023-12-24T08:17:04.244Z In(05) vmx Vix: [mainDispatch.c:1058]: VMAutomation_PowerOn. Powering on.
+2023-12-24T08:17:04.244Z In(05) vmx VMX_PowerOn: ModuleTable_PowerOn = 1
+2023-12-24T08:17:04.244Z No(00) vmx ConfigDB: Setting cleanShutdown = "FALSE"
+2023-12-24T08:17:04.244Z No(00) vmx ConfigDB: Setting softPowerOff = "FALSE"
+2023-12-24T08:17:04.252Z In(05) vcpu-0 VTHREAD 14824 "vcpu-0"
+2023-12-24T08:17:04.252Z In(05) vcpu-0 MonTimer APIC:0/0 vec: 0
+2023-12-24T08:17:04.252Z In(05) vcpu-0 APIC: version = 0x15, max LVT = 6, LDR = 0x100, DFR = 0xffffffff
+2023-12-24T08:17:04.252Z In(05) vcpu-0 Active HV capabilities
+2023-12-24T08:17:04.252Z In(05) vcpu-0    Full decode
+2023-12-24T08:17:04.252Z In(05) vcpu-0    Nested paging A/D bits
+2023-12-24T08:17:04.252Z In(05) vcpu-0    Real-address mode
+2023-12-24T08:17:04.252Z In(05) vcpu-0    Skip debug state
+2023-12-24T08:17:04.252Z In(05) vcpu-0    X2APIC virtualization
+2023-12-24T08:17:04.252Z In(05) vcpu-0    BNDCFGS/MPX
+2023-12-24T08:17:04.252Z In(05) vcpu-0    Page-modification logging
+2023-12-24T08:17:04.252Z In(05) vcpu-0    ENCLS exiting
+2023-12-24T08:17:04.252Z In(05) vcpu-0    PAUSE-loop exiting
+2023-12-24T08:17:04.252Z In(05) vcpu-0    Advanced exit information for EPT violations
+2023-12-24T08:17:04.252Z In(05) vcpu-0    Mode-based execute control for nested paging
+2023-12-24T08:17:04.252Z In(05) vcpu-0    EPT-violation virtualization exception
+2023-12-24T08:17:04.252Z In(05) vcpu-0    Event injection with instruction length zero
+2023-12-24T08:17:04.252Z In(05) vcpu-0 CPU reset: hard (mode Emulation)
+2023-12-24T08:17:04.252Z In(05) vcpu-0 GuestRpc: Successfully created RPCI listening socket.
+2023-12-24T08:17:04.252Z In(05) vcpu-0 GuestRpc: Using vsocket for TCLO messaging is disabled.
+2023-12-24T08:17:04.260Z In(05) vcpu-0 memoryHotplug: Node 0: Present: 255 MB (100 %) Size:255 MB (100 %)
+2023-12-24T08:17:04.260Z In(05) vcpu-0 PIIX4: PM Resuming from suspend type 0x0, chipset.onlineStandby 0
+2023-12-24T08:17:04.292Z In(05) vcpu-0 SOUND 603.650358 ES1371Win32GetMixerCtl mixerGetLineInfo error 1024
+2023-12-24T08:17:04.292Z In(05) vcpu-0 VNET: 'ethernet0' enable link state propagation, lsp.state = 5
+2023-12-24T08:17:04.292Z In(05) vcpu-0 VNET: MACVNetConnectToNetwork 'ethernet0' lsp.state = 4
+2023-12-24T08:17:04.292Z In(05) vcpu-0 VNET: MACVNetConnectToNetwork 'Ethernet0' notify available.
+2023-12-24T08:17:04.292Z In(05) vcpu-0 CDROM: Connecting scsi0:0 to 'E:\Temp\tempCD.iso'. type=2 remote=0
+2023-12-24T08:17:04.292Z In(05) vcpu-0 AIOWIN32C: Failed to open 'E:\Temp\tempCD.iso' : Could not find the file (393219).
+2023-12-24T08:17:04.292Z In(05) vcpu-0 CDROM-IMG:  image open for 'E:\Temp\tempCD.iso' failed: Could not find the file (60003).
+2023-12-24T08:17:04.292Z In(05) vcpu-0 CDROM-IMG: Failed to connect 'E:\Temp\tempCD.iso'.
+2023-12-24T08:17:04.292Z In(05) vcpu-0 CDROM: Failed to connect CDROM device 'E:\Temp\tempCD.iso'.
+2023-12-24T08:17:04.292Z In(05) vcpu-0 Msg_Post: Warning
+2023-12-24T08:17:04.292Z In(05) vcpu-0 [msg.cdromImage.cantOpen] Cannot connect file "E:\Temp\tempCD.iso" as a CD-ROM image: Could not find the file
+2023-12-24T08:17:04.292Z In(05) vcpu-0 [msg.device.startdisconnected] Virtual device 'scsi0:0' will start disconnected.
+2023-12-24T08:17:04.292Z In(05) vcpu-0 ----------------------------------------
+2023-12-24T08:17:04.342Z In(05) vcpu-0 HGFSPublish: publishing 0 shares
+2023-12-24T08:17:04.342Z In(05) vcpu-0 Win32U_GetFileAttributes: GetFileAttributesExW("D:\Exercise\Kì 5\Hệ Điều Hành\Tài liệu thực hành\Virtual\Windows 98 Fat16.vmpl", ...) failed, error: 2
+2023-12-24T08:17:04.342Z In(05) vcpu-0 PolicyVMXFindPolicyKey: policy file does not exist.
+2023-12-24T08:17:04.342Z In(05) vcpu-0 DEVSWAP: GuestOS does not require LSI adapter swap.
+2023-12-24T08:17:04.352Z In(05) vcpu-0 Vix: [mainDispatch.c:4213]: VMAutomation_ReportPowerOpFinished: statevar=0, newAppState=1872, success=1 additionalError=0
+2023-12-24T08:17:04.352Z In(05) vcpu-0 Vix: [mainDispatch.c:4130]: VMAutomationReportPowerStateChange: Reporting power state change (opcode=0, err=0).
+2023-12-24T08:17:04.352Z In(05) vcpu-0 Vix: [mainDispatch.c:4130]: VMAutomationReportPowerStateChange: Reporting power state change (opcode=2, err=0).
+2023-12-24T08:17:04.352Z In(05) vcpu-0 Transitioned vmx/execState/val to poweredOn
+2023-12-24T08:17:04.352Z In(05) vcpu-0 Tools: Adding Tools inactivity timer.
+2023-12-24T08:17:04.352Z In(05) vcpu-0 Intel VT: FlexPriority disabled, VPID enabled.
+2023-12-24T08:17:04.352Z In(05) vmx VUsbUpdateVigorFieldsAndAutoconnect: New set of 3 USB devices
+2023-12-24T08:17:04.352Z In(05) vmx USB: Found device [name:Microdia\ Integrated_Webcam_HD vid:0c45 pid:6718 path:1/0/4 speed:high family:unknown instanceId:USB\\VID_0C45&PID_6718\\5&B6F046&0&5 arbRuntimeKey:3 version:5]
+2023-12-24T08:17:04.352Z In(05) vmx USB: Found device [name:Intel(R)\ Wireless\ Bluetooth(R) vid:8087 pid:0aaa path:1/0/13 speed:full family:wireless,bluetooth instanceId:USB\\VID_8087&PID_0AAA\\5&B6F046&0&14 arbRuntimeKey:4 version:5]
+2023-12-24T08:17:04.352Z In(05) vmx USB: Found device [name:Virtual\ Bluetooth\ Adapter vid:0e0f pid:0008 speed:full family:wireless,bluetooth deviceType:virtual-bluetooth info:0000001 version:5]
+2023-12-24T08:17:04.352Z In(05) vmx VNET: MACVNetLinkStateEventHandler: event, up:1, adapter:0
+2023-12-24T08:17:04.352Z In(05) vmx VNET: MACVNetLinkStateEventHandler: 'ethernet0' state from 4 to 6.
+2023-12-24T08:17:04.434Z In(05) vcpu-0 UHCI: HCReset
+2023-12-24T08:17:04.480Z In(05) mks MKSControlMgr: connected
+2023-12-24T08:17:04.485Z In(05) mks MKS-VMDB: VMDB requested a screenshot
+2023-12-24T08:17:04.485Z In(05) svga MKSScreenShotMgr: Taking a screenshot
+2023-12-24T08:17:04.491Z In(05) vmx [msg.dictionary.badEncodedOutput] Value "D:\Exercise\Kì 5\Hệ Điều Hành\Tài liệu thực hành\Virtual" for variable "vmPath" is not valid in the "windows-1252" encoding.
+2023-12-24T08:17:04.491Z In(05) vmx Dictionary_WriteToBuffer: upgrading encoding from windows-1252 to UTF-8
+2023-12-24T08:17:04.492Z In(05) mks KHBKL: Unable to parse keystring at: ''
+2023-12-24T08:17:04.496Z In(05) mks KHBKL: Unable to parse keystring at: ''
+2023-12-24T08:17:04.496Z In(05) svga SWBScreen: Screen 0 Defined: xywh(0, 0, 640, 480) flags=0x3
+2023-12-24T08:17:04.503Z In(05) vmx [msg.dictionary.badEncodedOutput] Value "D:\Exercise\Kì 5\Hệ Điều Hành\Tài liệu thực hành\Virtual" for variable "vmPath" is not valid in the "windows-1252" encoding.
+2023-12-24T08:17:04.503Z In(05) vmx Dictionary_WriteToBuffer: upgrading encoding from windows-1252 to UTF-8
+2023-12-24T08:17:04.525Z In(05) vcpu-0 SVGA: Registering MemSpace at 0xf0000000(0x0) and 0xfe000000(0x0)
+2023-12-24T08:17:04.525Z In(05) vcpu-0 SVGA: FIFO is already mapped
+2023-12-24T08:17:04.529Z In(05) vcpu-0 SVGA: Unregistering MemSpace at 0xf0000000(0xf0000000) and 0xfe000000(0xfe000000)
+2023-12-24T08:17:04.529Z In(05) vcpu-0 SVGA: FIFO is already mapped
+2023-12-24T08:17:04.599Z In(05) mks SWBWindow: Number of MKSWindows changed: 1 rendering MKSWindow(s) of total 1.
+2023-12-24T08:17:04.599Z In(05) mks SWBWindow: Window 0 Defined: src screenId=-1, src xywh(0, 0, 640, 480) dest xywh(0, 0, 640, 480) pixelScale=1, flags=0xF
+2023-12-24T08:17:04.599Z In(05) mks GDI-Backend: successfully started by HWinMux to do window composition.
+2023-12-24T08:17:04.604Z In(05) mks MKS-HWinMux: Started GDI presentation backend.
+2023-12-24T08:17:04.667Z In(05) vcpu-0 SVGA: Registering MemSpace at 0xf0000000(0xf0000000) and 0xfe000000(0xfe000000)
+2023-12-24T08:17:04.667Z In(05) vcpu-0 SVGA: FIFO is already mapped
+2023-12-24T08:17:04.671Z In(05) vcpu-0 SVGA: Unregistering MemSpace at 0xf0000000(0xf0000000) and 0xfe000000(0xfe000000)
+2023-12-24T08:17:04.671Z In(05) vcpu-0 SVGA: FIFO is already mapped
+2023-12-24T08:17:04.671Z In(05) vcpu-0 SVGA: Registering IOSpace at 0x10d0
+2023-12-24T08:17:04.671Z In(05) vcpu-0 SVGA: Registering MemSpace at 0xf0000000(0xf0000000) and 0xfe000000(0xfe000000)
+2023-12-24T08:17:04.671Z In(05) vcpu-0 SVGA: FIFO is already mapped
+2023-12-24T08:17:04.675Z In(05) vcpu-0 PCIBridge4: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.675Z In(05) vcpu-0 pciBridge4:1: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.675Z In(05) vcpu-0 pciBridge4:2: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.675Z In(05) vcpu-0 pciBridge4:3: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.676Z In(05) vcpu-0 pciBridge4:4: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.676Z In(05) vcpu-0 pciBridge4:5: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.676Z In(05) vcpu-0 pciBridge4:6: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.676Z In(05) vcpu-0 pciBridge4:7: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.677Z In(05) vcpu-0 PCIBridge5: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.677Z In(05) vcpu-0 pciBridge5:1: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.677Z In(05) vcpu-0 pciBridge5:2: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.677Z In(05) vcpu-0 pciBridge5:3: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.678Z In(05) vcpu-0 pciBridge5:4: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.678Z In(05) vcpu-0 pciBridge5:5: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.678Z In(05) vcpu-0 pciBridge5:6: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.678Z In(05) vcpu-0 pciBridge5:7: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.678Z In(05) vcpu-0 PCIBridge6: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.678Z In(05) vcpu-0 pciBridge6:1: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.679Z In(05) vcpu-0 pciBridge6:2: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.679Z In(05) vcpu-0 pciBridge6:3: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.679Z In(05) vcpu-0 pciBridge6:4: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.680Z In(05) vcpu-0 pciBridge6:5: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.680Z In(05) vcpu-0 pciBridge6:6: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.680Z In(05) vcpu-0 pciBridge6:7: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.680Z In(05) vcpu-0 PCIBridge7: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.681Z In(05) vcpu-0 pciBridge7:1: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.681Z In(05) vcpu-0 pciBridge7:2: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.681Z In(05) vcpu-0 pciBridge7:3: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.681Z In(05) vcpu-0 pciBridge7:4: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.681Z In(05) vcpu-0 pciBridge7:5: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.681Z In(05) vcpu-0 pciBridge7:6: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.682Z In(05) vcpu-0 pciBridge7:7: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.695Z In(05) vcpu-0 SVGA: FIFO is already mapped
+2023-12-24T08:17:04.695Z In(05) vmx VNET: MACVNetLinkStateTimerHandler: 'ethernet0' state from 6 to 1.
+2023-12-24T08:17:04.704Z In(05) vcpu-0 SVGA: FIFO is already mapped
+2023-12-24T08:17:04.914Z In(05) vcpu-0 PCIBridge4: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.915Z In(05) vcpu-0 pciBridge4:1: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.915Z In(05) vcpu-0 pciBridge4:2: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.915Z In(05) vcpu-0 pciBridge4:3: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.916Z In(05) vcpu-0 pciBridge4:4: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.916Z In(05) vcpu-0 pciBridge4:5: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.916Z In(05) vcpu-0 pciBridge4:6: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.917Z In(05) vcpu-0 pciBridge4:7: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.917Z In(05) vcpu-0 PCIBridge5: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.917Z In(05) vcpu-0 pciBridge5:1: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.918Z In(05) vcpu-0 pciBridge5:2: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.918Z In(05) vcpu-0 pciBridge5:3: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.918Z In(05) vcpu-0 pciBridge5:4: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.918Z In(05) vcpu-0 pciBridge5:5: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.919Z In(05) vcpu-0 pciBridge5:6: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.919Z In(05) vcpu-0 pciBridge5:7: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.919Z In(05) vcpu-0 PCIBridge6: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.919Z In(05) vcpu-0 pciBridge6:1: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.920Z In(05) vcpu-0 pciBridge6:2: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.920Z In(05) vcpu-0 pciBridge6:3: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.920Z In(05) vcpu-0 pciBridge6:4: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.920Z In(05) vcpu-0 pciBridge6:5: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.921Z In(05) vcpu-0 pciBridge6:6: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.921Z In(05) vcpu-0 pciBridge6:7: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.921Z In(05) vcpu-0 PCIBridge7: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.921Z In(05) vcpu-0 pciBridge7:1: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.921Z In(05) vcpu-0 pciBridge7:2: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.921Z In(05) vcpu-0 pciBridge7:3: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.921Z In(05) vcpu-0 pciBridge7:4: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.922Z In(05) vcpu-0 pciBridge7:5: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.922Z In(05) vcpu-0 pciBridge7:6: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:04.923Z In(05) vcpu-0 pciBridge7:7: ISA/VGA decoding enabled (ctrl 0004)
+2023-12-24T08:17:05.017Z In(05) vcpu-0 VIDE: Curr CHS info cyls: 207 heads: 16 sects: 63 lba_cap: 208896
+2023-12-24T08:17:05.017Z In(05) vcpu-0 VIDE: Curr CHS info cyls: 207 heads: 16 sects: 63 lba_cap: 208896
+2023-12-24T08:17:05.024Z In(05) vcpu-0 BIOS-UUID is 56 4d 88 c4 be 44 21 f4-13 0b ab 77 1d f5 ce 0e
+2023-12-24T08:17:05.073Z In(05) svga SWBScreen: Screen 0 Resized: xywh(0, 0, 720, 400) flags=0x3
+2023-12-24T08:17:05.150Z In(05) svga SWBScreen: Screen 0 Resized: xywh(0, 0, 640, 400) flags=0x3
+2023-12-24T08:17:05.173Z In(05) vmx VUsbUpdateVigorFieldsAndAutoconnect: New set of 3 USB devices
+2023-12-24T08:17:05.173Z In(05) vmx USB: Found device [name:Microdia\ Integrated_Webcam_HD vid:0c45 pid:6718 path:1/0/4 speed:high family:unknown instanceId:USB\\VID_0C45&PID_6718\\5&B6F046&0&5 arbRuntimeKey:3 version:5]
+2023-12-24T08:17:05.173Z In(05) vmx USB: Found device [name:Intel(R)\ Wireless\ Bluetooth(R) vid:8087 pid:0aaa path:1/0/13 speed:full family:wireless,bluetooth instanceId:USB\\VID_8087&PID_0AAA\\5&B6F046&0&14 arbRuntimeKey:4 version:5]
+2023-12-24T08:17:05.173Z In(05) vmx USB: Found device [name:Virtual\ Bluetooth\ Adapter vid:0e0f pid:0008 speed:full family:wireless,bluetooth deviceType:virtual-bluetooth info:0000001 version:5]
+2023-12-24T08:17:05.314Z In(05) svga SWBScreen: Screen 0 Resized: xywh(0, 0, 720, 400) flags=0x3
+2023-12-24T08:17:07.892Z In(05) vcpu-0 DDB: "longContentID" = "6b823748227cb85df3305446ed7d237d" (was "bf5a766901128f7b992f0f8311cce5a8")
+2023-12-24T08:17:07.898Z In(05) svga SWBScreen: Screen 0 Resized: xywh(0, 0, 640, 400) flags=0x3
+2023-12-24T08:17:10.273Z In(05) vcpu-0 DISKUTIL: scsi0:0 : geometry=0/0/0
+2023-12-24T08:17:10.273Z In(05) vcpu-0 DISKUTIL: scsi0:0 : capacity=0 logical sector size=2048
+2023-12-24T08:17:15.033Z In(05) vmx VNET: MACVNetLinkStateTimerHandler: 'ethernet0' state from 1 to 5.
+2023-12-24T08:17:52.858Z In(05) vcpu-0 CDROM: Unknown command 0xB.
+2023-12-24T08:17:52.859Z In(05) vcpu-0 CDROM scsi0:0: CMD 0xb (SEEK(6)) FAILED (key 0x5 asc 0x20 ascq 0)
+2023-12-24T08:17:52.867Z In(05) svga SWBScreen: Screen 0 Resized: xywh(0, 0, 720, 400) flags=0x3
+2023-12-24T08:20:04.526Z In(05) vmx GuestRpcSendTimedOut: message to toolbox timed out.
+2023-12-24T08:20:04.526Z In(05) vmx Vix: [guestCommands.c:1945]: Error VIX_E_TOOLS_NOT_RUNNING in VMAutomationTranslateGuestRpcError(): VMware Tools are not running in the guest
+2023-12-24T08:27:04.353Z In(05) vmx Tools: No activity for 10 minutes, resetting Tools version.
+2023-12-24T08:27:04.353Z In(05) vmx Tools_SetVersionAndType did nothing; new tools version (0) and type (0) match old Tools version and type
+2023-12-24T08:32:52.768Z Wa(03) vmx VMX: attempted to do a soft halt while not in the correct state. Ignored...
+2023-12-24T08:32:52.768Z In(05) vmx Vix: [vmxCommands.c:536]: VMAutomation_InitiatePowerOff. Tried to soft halt. Success = 0
+2023-12-24T08:32:52.768Z Wa(03) vmx VMAutomation: Unable to do soft power off.
+2023-12-24T08:32:52.768Z In(05) vmx Vix: [vmxCommands.c:558]: VMAutomation_InitiatePowerOff. Trying hard powerOff
+2023-12-24T08:32:52.769Z In(05) vmx Stopping VCPU threads...
+2023-12-24T08:32:52.769Z In(05) vmx MKSThread: Requesting MKS exit
+2023-12-24T08:32:52.769Z In(05) vmx Stopping MKS/SVGA threads
+2023-12-24T08:32:52.769Z In(05) svga SVGA thread is exiting the main loop
+2023-12-24T08:32:52.769Z In(05) mks SWBWindow: Window 0 Destroyed: src screenId=-1, src xywh(0, 0, 720, 400) dest xywh(0, 0, 720, 400) pixelScale=1, flags=0xF
+2023-12-24T08:32:52.769Z In(05) mks GDI-Backend: stopped by HWinMux to do window composition.
+2023-12-24T08:32:52.770Z In(05) mks SWBWindow: Number of MKSWindows changed: 0 rendering MKSWindow(s) of total 0.
+2023-12-24T08:32:52.770Z In(05) mks SWBScreen: Screen 0 Destroyed: xywh(0, 0, 720, 400) flags=0x3
+2023-12-24T08:32:52.771Z In(05) vmx MKS/SVGA threads are stopped
+2023-12-24T08:32:52.771Z In(05) vmx 
+2023-12-24T08:32:52.771Z In(05)+ vmx OvhdMem: Final (Power Off) Overheads
+2023-12-24T08:32:52.771Z In(05) vmx                                                       reserved      |          used
+2023-12-24T08:32:52.771Z In(05) vmx OvhdMem excluded                                  cur    max    avg |    cur    max    avg
+2023-12-24T08:32:52.771Z In(05) vmx OvhdMem OvhdUser_MainMem                    :   65536  65536      - |   1328   1328      -
+2023-12-24T08:32:52.771Z In(05) vmx OvhdMem OvhdUser_VmxText                    :    7680   7680      - |      0      0      -
+2023-12-24T08:32:52.771Z In(05) vmx OvhdMem OvhdUser_VmxTextLibs                :   16000  16000      - |      0      0      -
+2023-12-24T08:32:52.771Z In(05) vmx OvhdMem Total excluded                      :   89216  89216      - |      -      -      -
+2023-12-24T08:32:52.771Z In(05) vmx OvhdMem Actual maximum                      :          89216        |             -
+2023-12-24T08:32:52.771Z In(05)+ vmx 
+2023-12-24T08:32:52.771Z In(05) vmx                                                       reserved      |          used
+2023-12-24T08:32:52.771Z In(05) vmx OvhdMem paged                                     cur    max    avg |    cur    max    avg
+2023-12-24T08:32:52.771Z In(05) vmx OvhdMem OvhdUser_STATS_vmm                  :       2      2      - |      0      0      -
+2023-12-24T08:32:52.771Z In(05) vmx OvhdMem OvhdUser_STATS_device               :       1      1      - |      0      0      -
+2023-12-24T08:32:52.771Z In(05) vmx OvhdMem OvhdUser_DiskLibMemUsed             :    3075   3075      - |      0      0      -
+2023-12-24T08:32:52.771Z In(05) vmx OvhdMem OvhdUser_SvgaSDirtyCache            :      96     96      - |      0      0      -
+2023-12-24T08:32:52.771Z In(05) vmx OvhdMem OvhdUser_SvgaCursor                 :      10     10      - |     10     10      -
+2023-12-24T08:32:52.771Z In(05) vmx OvhdMem OvhdUser_VmxGlobals                 :   10240  10240      - |      0      0      -
+2023-12-24T08:32:52.771Z In(05) vmx OvhdMem OvhdUser_VmxGlobalsLibs             :    3584   3584      - |      0      0      -
+2023-12-24T08:32:52.771Z In(05) vmx OvhdMem OvhdUser_VmxHeap                    :    8704   8704      - |      0      0      -
+2023-12-24T08:32:52.771Z In(05) vmx OvhdMem OvhdUser_VmxMks                     :      33     33      - |      1      1      -
+2023-12-24T08:32:52.771Z In(05) vmx OvhdMem OvhdUser_VmxMksRenderOps            :     678    678      - |    492    492      -
+2023-12-24T08:32:52.771Z In(05) vmx OvhdMem OvhdUser_VmxMks3d                   :  200704 200704      - |      0      0      -
+2023-12-24T08:32:52.771Z In(05) vmx OvhdMem OvhdUser_VmxMksScreenTemp           :    8450   8450      - |      0      0      -
+2023-12-24T08:32:52.771Z In(05) vmx OvhdMem OvhdUser_VmxMksVnc                  :    6123   6123      - |      0      0      -
+2023-12-24T08:32:52.771Z In(05) vmx OvhdMem OvhdUser_VmxMksScreen               :    8195   8195      - |      0    376      -
+2023-12-24T08:32:52.771Z In(05) vmx OvhdMem OvhdUser_VmxMksSVGAVO               :    4096   4096      - |      0      0      -
+2023-12-24T08:32:52.771Z In(05) vmx OvhdMem OvhdUser_VmxMksSwbCursor            :    2560   2560      - |      0      0      -
+2023-12-24T08:32:52.771Z In(05) vmx OvhdMem OvhdUser_VmxPhysMemErrPages         :      10     10      - |      0      0      -
+2023-12-24T08:32:52.771Z In(05) vmx OvhdMem OvhdUser_VmxSLEntryBuf              :     128    128      - |      0      0      -
+2023-12-24T08:32:52.771Z In(05) vmx OvhdMem OvhdUser_VmxThreads                 :   35328  35328      - |      0      0      -
+2023-12-24T08:32:52.771Z In(05) vmx OvhdMem Total paged                         :  292017 292017      - |    503    879      -
+2023-12-24T08:32:52.771Z In(05) vmx OvhdMem Actual maximum                      :         292017        |        292017
+2023-12-24T08:32:52.771Z In(05)+ vmx 
+2023-12-24T08:32:52.771Z In(05) vmx                                                       reserved      |          used
+2023-12-24T08:32:52.771Z In(05) vmx OvhdMem nonpaged                                  cur    max    avg |    cur    max    avg
+2023-12-24T08:32:52.771Z In(05) vmx OvhdMem OvhdUser_SharedArea                 :     138    138      - |    123    123      -
+2023-12-24T08:32:52.771Z In(05) vmx OvhdMem OvhdUser_BusMemTraceBitmap          :       7      7      - |      0      0      -
+2023-12-24T08:32:52.771Z In(05) vmx OvhdMem OvhdUser_PFrame                     :     277   1352      - |    277    277      -
+2023-12-24T08:32:52.771Z In(05) vmx OvhdMem OvhdUser_VIDE_KSEG                  :      16     16      - |     16     16      -
+2023-12-24T08:32:52.771Z In(05) vmx OvhdMem OvhdUser_VGA                        :      64     64      - |     64     64      -
+2023-12-24T08:32:52.771Z In(05) vmx OvhdMem OvhdUser_BalloonMPN                 :       1      1      - |      1      1      -
+2023-12-24T08:32:52.771Z In(05) vmx OvhdMem OvhdUser_P2MUpdateBuffer            :       3      3      - |      0      0      -
+2023-12-24T08:32:52.771Z In(05) vmx OvhdMem OvhdUser_ServicesMPN                :       3      3      - |      3      3      -
+2023-12-24T08:32:52.771Z In(05) vmx OvhdMem OvhdUser_LocalApic                  :       1      1      - |      1      1      -
+2023-12-24T08:32:52.771Z In(05) vmx OvhdMem OvhdUser_VBIOS                      :       8      8      - |      8      8      -
+2023-12-24T08:32:52.771Z In(05) vmx OvhdMem OvhdUser_VnicGuest                  :      16     16      - |     16     16      -
+2023-12-24T08:32:52.772Z In(05) vmx OvhdMem OvhdUser_SBIOS                      :      16     16      - |      2      2      -
+2023-12-24T08:32:52.772Z In(05) vmx OvhdMem OvhdUser_FlashRam                   :     128    128      - |     57     57      -
+2023-12-24T08:32:52.772Z In(05) vmx OvhdMem OvhdUser_SVGAFB                     :    4096   4096      - |      0      0      -
+2023-12-24T08:32:52.772Z In(05) vmx OvhdMem OvhdUser_SVGAMEM                    :     512    512      - |      1      1      -
+2023-12-24T08:32:52.772Z In(05) vmx OvhdMem OvhdUser_HDAudioReg                 :       3      3      - |      0      0      -
+2023-12-24T08:32:52.772Z In(05) vmx OvhdMem OvhdUser_EHCIRegister               :       1      1      - |      1      1      -
+2023-12-24T08:32:52.772Z In(05) vmx OvhdMem OvhdUser_XhciRegister               :       1      1      - |      0      0      -
+2023-12-24T08:32:52.772Z In(05) vmx OvhdMem OvhdUser_HyperV                     :       2      2      - |      0      0      -
+2023-12-24T08:32:52.772Z In(05) vmx OvhdMem OvhdUser_ExtCfg                     :       4      4      - |      1      1      -
+2023-12-24T08:32:52.772Z In(05) vmx OvhdMem OvhdUser_vhvCachedVMCS              :       1      1      - |      0      0      -
+2023-12-24T08:32:52.772Z In(05) vmx OvhdMem OvhdUser_vhvNestedAPIC              :       1      1      - |      0      0      -
+2023-12-24T08:32:52.772Z In(05) vmx OvhdMem OvhdUser_LBR                        :       1      1      - |      0      0      -
+2023-12-24T08:32:52.772Z In(05) vmx OvhdMem OvhdUser_MonWired                   :      35     35      - |     35     35      -
+2023-12-24T08:32:52.772Z In(05) vmx OvhdMem OvhdUser_MonNuma                    :     227    227      - |      0      0      -
+2023-12-24T08:32:52.772Z In(05) vmx OvhdMem OvhdUser_NVDC                       :       1      1      - |      0      0      -
+2023-12-24T08:32:52.772Z In(05) vmx OvhdMem Total nonpaged                      :    5563   6638      - |    606    606      -
+2023-12-24T08:32:52.772Z In(05) vmx OvhdMem Actual maximum                      :           5563        |          6638
+2023-12-24T08:32:52.772Z In(05)+ vmx 
+2023-12-24T08:32:52.772Z In(05) vmx                                                       reserved      |          used
+2023-12-24T08:32:52.772Z In(05) vmx OvhdMem anonymous                                 cur    max    avg |    cur    max    avg
+2023-12-24T08:32:52.772Z In(05) vmx OvhdMem OvhdMon_Alloc                       :      98     98      - |     10     78      -
+2023-12-24T08:32:52.772Z In(05) vmx OvhdMem OvhdMon_BusMemFrame                 :     133    190      - |    133    133      -
+2023-12-24T08:32:52.772Z In(05) vmx OvhdMem OvhdMon_BusMem2MInfo                :       1      1      - |      1      1      -
+2023-12-24T08:32:52.772Z In(05) vmx OvhdMem OvhdMon_BusMem1GInfo                :       1      1      - |      1      1      -
+2023-12-24T08:32:52.772Z In(05) vmx OvhdMem OvhdMon_BusMemZapListMPN            :       1      1      - |      1      1      -
+2023-12-24T08:32:52.772Z In(05) vmx OvhdMem OvhdMon_BusMemPreval                :       4      4      - |      0      0      -
+2023-12-24T08:32:52.772Z In(05) vmx OvhdMem OvhdMon_MonAS                       :       1      1      - |      1      1      -
+2023-12-24T08:32:52.772Z In(05) vmx OvhdMem OvhdMon_GuestMem                    :      40     40      - |     40     40      -
+2023-12-24T08:32:52.772Z In(05) vmx OvhdMem OvhdMon_TC                          :     513    513      - |    476    476      -
+2023-12-24T08:32:52.772Z In(05) vmx OvhdMem OvhdMon_BusMemMonAS                 :       4      4      - |      4      4      -
+2023-12-24T08:32:52.772Z In(05) vmx OvhdMem OvhdMon_PlatformMonAS               :       5      5      - |      2      2      -
+2023-12-24T08:32:52.772Z In(05) vmx OvhdMem OvhdMon_HVNuma                      :       2      2      - |      0      0      -
+2023-12-24T08:32:52.772Z In(05) vmx OvhdMem OvhdMon_HV                          :       1      1      - |      1      1      -
+2023-12-24T08:32:52.772Z In(05) vmx OvhdMem OvhdMon_HVMSRBitmap                 :       1      1      - |      0      0      -
+2023-12-24T08:32:52.772Z In(05) vmx OvhdMem OvhdMon_VHVGuestMSRBitmap           :       1      1      - |      0      0      -
+2023-12-24T08:32:52.772Z In(05) vmx OvhdMem OvhdMon_VHV                         :       3      3      - |      0      0      -
+2023-12-24T08:32:52.772Z In(05) vmx OvhdMem OvhdMon_Numa                        :      24     24      - |     14     24      -
+2023-12-24T08:32:52.772Z In(05) vmx OvhdMem OvhdMon_NumaTextRodata              :     200    375      - |    175    350      -
+2023-12-24T08:32:52.772Z In(05) vmx OvhdMem OvhdMon_NumaDataBss                 :      27     27      - |     27     27      -
+2023-12-24T08:32:52.772Z In(05) vmx OvhdMem OvhdMon_NumaLargeData               :       0    512      - |      0      0      -
+2023-12-24T08:32:52.772Z In(05) vmx OvhdMem OvhdMon_BaseWired                   :      28     29      - |     24     24      -
+2023-12-24T08:32:52.772Z In(05) vmx OvhdMem OvhdMon_Bootstrap                   :       0   2303      - |      0    335      -
+2023-12-24T08:32:52.772Z In(05) vmx OvhdMem OvhdMon_GPhysTraced                 :     264    264      - |     69     70      -
+2023-12-24T08:32:52.772Z In(05) vmx OvhdMem OvhdMon_GPhysHWMMU                  :     394    394      - |    137    142      -
+2023-12-24T08:32:52.772Z In(05) vmx OvhdMem OvhdMon_GPhysNoTrace                :     264    264      - |     67     70      -
+2023-12-24T08:32:52.772Z In(05) vmx OvhdMem OvhdMon_PhysMemGart                 :     104    104      - |     96     96      -
+2023-12-24T08:32:52.772Z In(05) vmx OvhdMem OvhdMon_PhysMemErr                  :       6      6      - |      0      0      -
+2023-12-24T08:32:52.772Z In(05) vmx OvhdMem OvhdMon_VProbe                      :       1      1      - |      0      0      -
+2023-12-24T08:32:52.772Z In(05) vmx OvhdMem Total anonymous                     :    2121   5169      - |   1279   1876      -
+2023-12-24T08:32:52.772Z In(05) vmx OvhdMem Actual maximum                      :           2121        |          4482
+2023-12-24T08:32:52.772Z In(05)+ vmx 
+2023-12-24T08:32:52.772Z In(05) vmx VMMEM: Maximum Reservation: 1186MB (MainMem=256MB)
+2023-12-24T08:32:52.772Z In(05) vmx MemSched: BALLOON HIST [0, 65536]: 949 949 0 0 0 0 0 0 0 0 0 0
+2023-12-24T08:32:52.772Z In(05) vmx MemSched: BALLOON P50 1 P70 1 P90 1 MIN 0 MAX 0
+2023-12-24T08:32:52.772Z In(05) vmx MemSched: SWAP HIST [0, 65536]: 949 949 0 0 0 0 0 0 0 0 0 0
+2023-12-24T08:32:52.772Z In(05) vmx MemSched: SWAP P50 1 P70 1 P90 1 MIN 0 MAX 0
+2023-12-24T08:32:52.772Z In(05) vmx MemSched: LOCK HIST [0, 65536]: 0 949 0 0 0 0 0 0 0 0 0 0
+2023-12-24T08:32:52.772Z In(05) vmx MemSched: LOCK P50 10 P70 10 P90 10 MIN 540 MAX 3210
+2023-12-24T08:32:52.772Z In(05) vmx MemSched: LOCK_TARGET HIST [0, 65536]: 0 0 0 0 0 0 0 0 0 0 949 949
+2023-12-24T08:32:52.772Z In(05) vmx MemSched: LOCK_TARGET P50 100 P70 100 P90 100 MIN 65536 MAX 76656
+2023-12-24T08:32:52.772Z In(05) vmx MemSched: ACTIVE_PCT HIST [0, 100]: 0 217 149 75 76 75 75 0 282 0 0 0
+2023-12-24T08:32:52.772Z In(05) vmx MemSched: ACTIVE_PCT P50 40 P70 60 P90 80 MIN 4 MAX 75
+2023-12-24T08:32:52.772Z In(05) vmx MemSched: NUM_VMS HIST [0, 10]: 0 0 949 0 0 0 0 0 0 0 0 0
+2023-12-24T08:32:52.772Z In(05) vmx MemSched: NUM_VMS P50 20 P70 20 P90 20 MIN 1 MAX 1
+2023-12-24T08:32:52.772Z In(05) vmx MemSched: HOSTLOCK HIST [0, 1507716]: 0 949 0 0 0 0 0 0 0 0 0 0
+2023-12-24T08:32:52.772Z In(05) vmx MemSched: HOSTLOCK P50 10 P70 10 P90 10 MIN 540 MAX 3210
+2023-12-24T08:32:52.772Z In(05) vmx TOOLS received request in VMX to set option 'enableDnD' -> '0'
+2023-12-24T08:32:52.772Z In(05) vmx TOOLS received request in VMX to set option 'copypaste' -> '0'
+2023-12-24T08:32:52.772Z In(05) vmx HgfsServerManagerVigorExit: Destroy:
+2023-12-24T08:32:52.773Z In(05) vmx ToolsISO: Refreshing imageName for 'win98' (refreshCount=1, lastCount=1).
+2023-12-24T08:32:52.773Z In(05) vmx ToolsISO: open of D:\Program Files (x86)\isoimages_manifest.txt.sig failed: Could not find the file
+2023-12-24T08:32:52.773Z In(05) vmx ToolsISO: Unable to read signature file 'D:\Program Files (x86)\isoimages_manifest.txt.sig', ignoring.
+2023-12-24T08:32:52.773Z In(05) vmx ToolsISO: Updated cached value for imageName to 'winPre2k.iso'.
+2023-12-24T08:32:52.773Z In(05) vmx ToolsISO: Selected Tools ISO 'winPre2k.iso' for 'win98' guest.
+2023-12-24T08:32:52.773Z In(05) vmx TOOLS updated cached value for isoImageExists to 1.
+2023-12-24T08:32:52.773Z In(05) vmx Tools: ToolsRunningStatus_Exit, delayedRequest is 0x22A292DBD70
+2023-12-24T08:32:52.773Z In(05) vmx Tools: [AppStatus] Last heartbeat value 0 (never received)
+2023-12-24T08:32:52.773Z In(05) vmx TOOLS: appName=toolbox, oldStatus=0, status=0, guestInitiated=0.
+2023-12-24T08:32:52.782Z In(05) usbCCIDEnumCards USB-CCID: Card enum thread exiting.
+2023-12-24T08:32:52.785Z In(05) vmx SOUNDLIB: Closing Wave sound backend.
+2023-12-24T08:32:52.786Z In(05) mks MKSControlMgr: disconnected
+2023-12-24T08:32:52.786Z In(05) mks MKS-RenderMain: Stopped MKSBasicOps
+2023-12-24T08:32:52.788Z In(05) mks MKS PowerOff
+2023-12-24T08:32:52.788Z In(05) svga SVGA thread is exiting
+2023-12-24T08:32:52.788Z In(05) mks MKS thread is exiting
+2023-12-24T08:32:52.789Z Wa(03) vmx 
+2023-12-24T08:32:52.789Z In(05) vmx ide0:1: numIOs = 8 numMergedIOs = 0 numSplitIOs = 0 ( 0.0%)
+2023-12-24T08:32:52.789Z In(05) vmx Closing disk 'ide0:1'
+2023-12-24T08:32:52.789Z In(05) vmx ide0:0: numIOs = 744 numMergedIOs = 36 numSplitIOs = 0 ( 0.0%)
+2023-12-24T08:32:52.789Z In(05) vmx Closing disk 'ide0:0'
+2023-12-24T08:32:52.791Z In(05) vmx AIOWIN32C: asyncOps=754 syncOps=14 bufSize=0Kb fixedOps=0
+2023-12-24T08:32:52.791Z In(05) aioCompletion AIO thread processed 754 completions
+2023-12-24T08:32:52.792Z In(05) deviceThread Device thread is exiting
+2023-12-24T08:32:52.793Z In(05) vmx Vix: [mainDispatch.c:1171]: VMAutomationPowerOff: Powering off.
+2023-12-24T08:32:52.793Z In(05) vmx Win32U_GetFileAttributes: GetFileAttributesExW("D:\Exercise\Kì 5\Hệ Điều Hành\Tài liệu thực hành\Virtual\Windows 98 Fat16.vmpl", ...) failed, error: 2
+2023-12-24T08:32:52.793Z In(05) vmx Policy_SavePolicyFile: invalid arguments to function.
+2023-12-24T08:32:52.793Z In(05) vmx PolicyVMX_Exit: Could not write out policies: 15.
+2023-12-24T08:32:52.793Z In(05) vmx WORKER: asyncOps=2 maxActiveOps=2 maxPending=2 maxCompleted=0
+2023-12-24T08:32:52.796Z In(05) PowerNotifyThread PowerNotify thread exiting.
+2023-12-24T08:32:52.810Z In(05) vmx Vix: [mainDispatch.c:4213]: VMAutomation_ReportPowerOpFinished: statevar=1, newAppState=1873, success=1 additionalError=0
+2023-12-24T08:32:52.810Z In(05) vmx Vix: [mainDispatch.c:4231]: VMAutomation: Ignoring ReportPowerOpFinished because the VMX is shutting down.
+2023-12-24T08:32:52.810Z In(05) vmx VMXSTATS: Ready to cleanup and munmap 22A27EB0000.
+2023-12-24T08:32:52.810Z No(00) vmx ConfigDB: Setting cleanShutdown = "TRUE"
+2023-12-24T08:32:52.825Z In(05) vmx Vix: [mainDispatch.c:4213]: VMAutomation_ReportPowerOpFinished: statevar=0, newAppState=1870, success=1 additionalError=0
+2023-12-24T08:32:52.825Z In(05) vmx Vix: [mainDispatch.c:4231]: VMAutomation: Ignoring ReportPowerOpFinished because the VMX is shutting down.
+2023-12-24T08:32:52.825Z In(05) vmx Transitioned vmx/execState/val to poweredOff
+2023-12-24T08:32:52.825Z In(05) vmx VMX idle exit
+2023-12-24T08:32:52.825Z In(05) vmx WQPoolFreePoll : pollIx = 3, signalHandle = 1088
+2023-12-24T08:32:52.831Z In(05) vmx Vix: [mainDispatch.c:817]: VMAutomation_LateShutdown()
+2023-12-24T08:32:52.831Z In(05) vmx Vix: [mainDispatch.c:772]: VMAutomationCloseListenerSocket. Closing listener socket.
+2023-12-24T08:32:52.831Z In(05) vmx Flushing VMX VMDB connections
+2023-12-24T08:32:52.831Z In(05) vmx VmdbDbRemoveCnx: Removing Cnx from Db for '/db/connection/#1/'
+2023-12-24T08:32:52.831Z In(05) vmx VmdbCnxDisconnect: Disconnect: closed pipe for pub cnx '/db/connection/#1/' (0)
+2023-12-24T08:32:52.831Z In(05) vmx VigorTransport_ServerDestroy: server destroyed.
+2023-12-24T08:32:52.831Z In(05) vmx WQPoolFreePoll : pollIx = 2, signalHandle = 796
+2023-12-24T08:32:52.831Z In(05) vmx WQPoolFreePoll : pollIx = 1, signalHandle = 512
+2023-12-24T08:32:52.835Z In(05) vmx VMX exit (0).
+2023-12-24T08:32:52.835Z In(05) vmx OBJLIB-LIB: ObjLib cleanup done.
+2023-12-24T08:32:52.835Z In(05) vmx AIOMGR-S : stat o=5 r=39 w=0 i=0 br=231920 bw=0

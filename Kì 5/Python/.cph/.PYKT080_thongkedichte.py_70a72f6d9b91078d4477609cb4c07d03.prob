@@ -1,0 +1,1 @@
+{"name":"Local: PYKT080_thongkedichte","url":"d:\\Exercise\\Kì 5\\Python\\PYKT080_thongkedichte.py","tests":[{"id":1694153826223,"input":"4 4\n1 1 0 1\n2 -1 4 5\n0 0 0 0\n1 0 2 1","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Exercise\\Kì 5\\Python\\PYKT080_thongkedichte.py","group":"local","local":true}
