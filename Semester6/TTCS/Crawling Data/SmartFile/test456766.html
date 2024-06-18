@@ -1,0 +1,1650 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>애플파일</title>
+	<meta id="viewport" name="viewport" content="width=750, user-scalable=no">
+	<meta name="format-detection" content="telephone=no" />
+	<script type="text/javascript" src="/js/swiper/swiper.min.js"></script>
+	<script src="/js/jquery-3.4.1.min.js"></script>
+	<script src="/js/jquery_ui/jquery-ui.min.js"></script>
+	<script src="/js/swiper/swiper.min.js"></script>
+	<script src="/js/jquery.ba-bbq.min.js"></script>
+	<script src="/js/ua-parser.js"></script>
+	<script src="/js/jquery.cookie.js"></script>
+	<script src="/js/bxslider/jquery.bxslider.min.js"></script>
+
+	<script src="/js/script_mo.js?v=1686119988"></script>
+	<script src="/js/m_common.js?v=1674023146"></script>
+	<script src="/js/m_main.js?v=1665541952"></script>
+	<script src="/js/m_download.js?v=1675676367"></script>
+	<script src="/js/jquery.formchk.js?v=1665541952"></script>
+	<script src="/js/font.js?v=1681970226"></script>
+	<script>
+		//로그인 중복요청에 대한 변수.
+		var overlap_request = true;
+	</script>
+
+	<!-- Global site tag (gtag.js) - Google Ads: 502572867 -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=AW-502572867"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'AW-502572867');
+	</script>
+
+	<script type="text/javascript">
+		(function(a,g,e,n,t){a.enp=a.enp||function(){(a.enp.q=a.enp.q||[]).push(arguments)};n=g.createElement(e);n.async=!0;n.defer=!0;n.src="https://cdn.megadata.co.kr/dist/prod/enp_tracker_self_hosted.min.js";t=g.getElementsByTagName(e)[0];t.parentNode.insertBefore(n,t)})(window,document,"script");
+		enp('create', 'common', 'mobonapple', { device: 'M' }); // W:웹, M: 모바일, B: 반응형
+		enp('send', 'common', 'mobonapple');
+	</script>
+
+
+
+	<link rel="shortcut icon" href="/favicon2.ico">
+	<link rel="stylesheet" type="text/css" href="/js/swiper/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/font/font.css?v=1681971092">
+	<link rel="stylesheet" type="text/css" href="/css/common.css?v=1665541942">
+	<link rel="stylesheet" type="text/css" href="/css/sub.css?v=1684721234">
+	<link rel="stylesheet" type="text/css" href="/css/style.css?v=1665541942">
+
+	<script>
+	</script>
+</head>
+<body>
+
+
+
+<div class="wrap_all">
+<script>
+$(function(){
+	top_search();
+
+	$("#top_search").submit(function(){
+
+		var tab = $("#tab").val() ? $("#tab").val() : "ALL";
+		//var tab2 = $("#tab2").val() ? "&tab2=" + $("#tab2").val() : "";
+		var s_value = $("#s_value").val();
+
+		$(".sub_nav").find(".current").removeClass("current");
+		if(tab != "ALL") $("#" + tab).find(".sub_").addClass("current");
+
+		if(tab == "top100") tab = "ALL";
+	
+		// 검색시 항상 상당으로 이동해야 한다고 하여 처리
+		if(s_value)
+		{
+			$('html').scrollTop(0);
+			$('#s_value').blur();
+		}
+		else
+		{
+			alert("검색어를 입력해 주세요.");
+			return false;
+		}
+
+		location.href = "/contents/#tab=" + tab + "&s_type=title&s_value=" + s_value;
+		return false;
+	});
+	
+
+	if(!$hash.tab2)
+	{
+		$(".clearfix").find("li").removeClass("selected");
+		$("#ALL").addClass("selected");
+	}
+	else
+	{
+		$(".clearfix").find("#"+$hash.tab2).addClass("selected");
+	}
+
+	if($hash.tab == "top100")
+	{
+		$("#top100").hide();
+	}
+
+	//tab1_class();
+});
+
+function tab1_class()
+{
+	if( typeof $hash.tab2 === "undefined") $hash.tab2 = "";
+
+	$(".main_" + $hash.tab).addClass("current");
+	$(".sub_" + $hash.tab2).addClass("current");		
+
+	var first = $('.header .gnb .swiper-slide.current').index();
+	//alert(first);
+	//var first2 = $('.sub_nav .lnb .swiper-slide.current').index();
+	main_navi.slideTo(first);
+}
+
+$(window).bind("hashchange", function(){
+
+	$hash = $.deparam.fragment();
+	$("#tab").val($hash.tab);
+	$("#tab2").val($hash.tab2);
+
+	//urldecode (익스나 모바일)
+	if($hash.s_value) $hash.s_value =  decodeURIComponent($hash.s_value);
+	if($hash.s_value) $("#s_value").val($hash.s_value);
+
+	if(!$hash.tab2)
+	{
+		$(".clearfix").find("li").removeClass("selected");
+		$("#ALL").addClass("selected");
+	}
+	else
+	{
+		$("#"+$hash.tab2).addClass("selected");
+	}
+
+	if($hash.tab == "top100")
+	{
+		$("#top100").hide();
+	}
+
+	if($hash.s_value)
+	{
+		$("#s_value").val($hash.s_value);
+	}
+	else
+	{
+		$("#s_value").val("");
+	}
+});
+
+function top_search()
+{
+	$hash = $.deparam.fragment();
+	if(url.path == "/contents/")
+	{
+		$("#tab").val($hash.tab);
+		$("#tab2").val($hash.tab2);
+
+		//urldecode (익스나 모바일)
+		if($hash.s_value) $hash.s_value =  decodeURIComponent($hash.s_value);
+		if($hash.s_value) $("#s_value").val($hash.s_value);
+	}
+}
+
+function menu_click(val)
+{
+	$(".clearfix").find("li").removeClass("selected");
+	$(val).addClass("selected");
+}
+</script>
+<!-- HEADER -->
+<header class="header">
+	<div class="hd_top">
+		<form id="top_search" class="clearfix" onsubmit="return false;">
+			<h1 class="logo"><a href="/" title="애플파일">애플파일</a></h1>
+			<div class="searchArea">
+				<div class="search_inner">
+					<input type="hidden" id="tab" name="tab" value="">
+					<input type="hidden" id="tab2" name="tab2" value="">
+					<input type="text" title="통합검색어 입력" id="s_value" name="s_value" value="">
+					<button type="submit">검색</button>
+				</div>
+			</div>
+			<a href="#" id="login_btn" onclick="array_link({'login' : 'login'}); return false;" class="loginBtn" title="로그인 페이지 이동">로그인</a>
+			<a href="/mypage/#tab=1" id="mypage_btn" class="myBtn" title="마이 페이지 이동">my</a>
+		</form>
+	</div>
+
+	<nav class="nav">
+		<div class="nav_prev"></div>
+		<div class="nav_next"></div>
+		<div class="wrap">
+			<div class="gnb swiper-container">
+				<div class="swiper-wrapper">
+					<div class="cate1 main_ swiper-slide">홈</div>
+					<div class="cate1 main_top100 swiper-slide">실시간인기</div>
+					<div class="cate1 main_MVO swiper-slide">영화</div>
+					<div class="cate1 main_DRA swiper-slide">드라마</div>
+					<div class="cate1 main_MED swiper-slide">동영상</div>
+					<div class="cate1 main_ANI swiper-slide">애니</div>
+					<div class="cate1 main_CAT swiper-slide">만화</div>
+					<div class="cate1 main_DOC swiper-slide">도서</div>
+					<div class="cate1 main_IMG swiper-slide">이미지</div>
+					<div class="cate1 main_toptoon swiper-slide">웹툰</div>
+					<div class="cate1 main_pandatv swiper-slide">BJ방송</div>
+					<div class="cate1 main_vod swiper-slide" val="5">VOD</div>
+					<!-- <div class="cate1 main_theme swiper-slide" onclick="alert('링크없음'); return false;">테마관</div> -->
+				</div>
+			</div>
+		</div>
+		<!-- <a href="#" onclick="auth_link('/contents/#tab=ADT'); return false;" class="cate1 main_ADT adult">성인</a> -->
+		<div class="cate1 main_ADT adult">
+			<a href="#" onclick="auth_link('/contents/#tab=ADT&tab2=001'); return false;">
+				<img src="/img/common/icon_adult.png" alt="" />
+				성인
+			</a>
+		</div>
+	</nav>
+
+	<!-- top100 소카테고리 -->
+	<div id="top100" class="sub_nav" style="display:none">
+		<div class="wrap">
+			<div class="lnb swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide current" onclick="menu_link({'tab' : 'top100', 'tab2' : 'MVO', 'pn' : '', 's_type' : '', 's_value' : '', 'login' : '', 'sale' : '', 'sale' : '', 'adult' : ''}); return false;"><a>영화</a></div>
+					<div class="swiper-slide" onclick="menu_link({'tab' : 'top100', 'tab2' : 'DRA', 'pn' : '', 's_type' : '', 's_value' : '', 'login' : '', 'sale' : '', 'sale' : '', 'adult' : ''}); return false;"><a>드라마</a></div>
+					<div class="swiper-slide" onclick="menu_link({'tab' : 'top100', 'tab2' : 'MED', 'pn' : '', 's_type' : '', 's_value' : '', 'login' : '', 'sale' : '', 'sale' : '', 'adult' : ''}); return false;"><a>동영상</a></div>
+					<div class="swiper-slide" onclick="menu_link({'tab' : 'top100', 'tab2' : 'ANI', 'pn' : '', 's_type' : '', 's_value' : '', 'login' : '', 'sale' : '', 'sale' : '', 'adult' : ''}); return false;"><a>애니</a></div>
+					<div class="swiper-slide" onclick="menu_link({'tab' : 'top100', 'tab2' : 'CAT', 'pn' : '', 's_type' : '', 's_value' : '', 'login' : '', 'sale' : '', 'sale' : '', 'adult' : ''}); return false;"><a>만화</a></div>
+					<div class="swiper-slide" onclick="menu_link({'tab' : 'top100', 'tab2' : 'DOC', 'pn' : '', 's_type' : '', 's_value' : '', 'login' : '', 'sale' : '', 'sale' : '', 'adult' : ''}); return false;"><a>도서</a></div>
+					<div class="swiper-slide" onclick="menu_link({'tab' : 'top100', 'tab2' : 'IMG', 'pn' : '', 's_type' : '', 's_value' : '', 'login' : '', 'sale' : '', 'sale' : '', 'adult' : ''}); return false;"><a>이미지</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 영화 소카테고리 -->
+	<div id="MVO" class="sub_nav" style="display:none">
+		<div class="wrap">
+			<div class="lnb swiper-container">
+				<div class="swiper-wrapper">
+					<div class="sub_ swiper-slide"><a>전체</a></div>
+					<div class="sub_001 swiper-slide"><a>최신</a></div>
+					<div class="sub_002 swiper-slide"><a>한국</a></div>
+					<div class="sub_007 swiper-slide"><a>멜로</a></div>
+					<div class="sub_006 swiper-slide"><a>액션</a></div>
+					<div class="sub_004 swiper-slide"><a>판타지</a></div>
+					<div class="sub_005 swiper-slide"><a>코미디</a></div>
+					<div class="sub_003 swiper-slide"><a>공포</a></div>
+					<div class="sub_008 swiper-slide"><a>드라마</a></div>
+					<div class="sub_009 swiper-slide"><a>가족</a></div>
+					<div class="sub_101 swiper-slide"><a>일반</a></div>
+					<div class="sub_ADT swiper-slide"><a>성인</a></div>
+					<div class="sub_012 swiper-slide"><a>제휴</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 드라마 소카테고리 -->
+	<div id="DRA" class="sub_nav" style="display:none">
+		<div class="wrap">
+			<div class="lnb swiper-container">
+				<div class="swiper-wrapper">
+					<div class="sub_ swiper-slide"><a>전체</a></div>
+					<div class="sub_001 swiper-slide"><a>시리즈</a></div>
+					<div class="sub_002 swiper-slide"><a>시트콤</a></div>
+					<div class="sub_003 swiper-slide"><a>연속극</a></div>
+					<div class="sub_004 swiper-slide"><a>사극</a></div>
+					<div class="sub_005 swiper-slide"><a>미드</a></div>
+					<div class="sub_007 swiper-slide"><a>중드</a></div>
+					<div class="sub_006 swiper-slide"><a>일드</a></div>
+					<div class="sub_009 swiper-slide"><a>일반</a></div>
+					<div class="sub_ADT swiper-slide"><a>성인</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 동영상 소카테고리 -->
+	<div id="MED" class="sub_nav" style="display:none">
+		<div class="wrap">
+			<div class="lnb swiper-container">
+				<div class="swiper-wrapper">
+					<div class="sub_ swiper-slide"><a>전체</a></div>
+					<div class="sub_001 swiper-slide"><a>오락</a></div>
+					<div class="sub_002 swiper-slide"><a>교양</a></div>
+					<div class="sub_003 swiper-slide"><a>스포츠</a></div>
+					<div class="sub_004 swiper-slide"><a>다큐</a></div>
+					<div class="sub_005 swiper-slide"><a>가족</a></div>
+					<div class="sub_008 swiper-slide"><a>e스포츠</a></div>
+					<div class="sub_007 swiper-slide"><a>해외</a></div>
+					<div class="sub_009 swiper-slide"><a>교육</a></div>
+					<div class="sub_006 swiper-slide"><a>일반</a></div>
+					<div class="sub_ADT swiper-slide"><a>성인</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 애니 소카테고리 -->
+	<div id="ANI" class="sub_nav" style="display:none">
+		<div class="wrap">
+			<div class="lnb swiper-container">
+				<div class="swiper-wrapper">
+					<div class="sub_ swiper-slide"><a>전체</a></div>
+					<div class="sub_007 swiper-slide"><a>최신</a></div>
+					<div class="sub_001 swiper-slide"><a>코미디</a></div>
+					<div class="sub_002 swiper-slide"><a>액션</a></div>
+					<div class="sub_003 swiper-slide"><a>연애</a></div>
+					<div class="sub_004 swiper-slide"><a>판타지</a></div>
+					<div class="sub_005 swiper-slide"><a>공포</a></div>
+					<div class="sub_008 swiper-slide"><a>스포츠</a></div>
+					<div class="sub_006 swiper-slide"><a>가족</a></div>
+					<div class="sub_010 swiper-slide"><a>극장판</a></div>
+					<div class="sub_009 swiper-slide"><a>일반</a></div>
+					<div class="sub_ADT swiper-slide"><a>성인</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 만화 소카테고리 -->
+	<div id="CAT" class="sub_nav" style="display:none">
+		<div class="wrap">
+			<div class="lnb swiper-container">
+				<div class="swiper-wrapper">
+					<div class="sub_ swiper-slide"><a>전체</a></div>
+					<div class="sub_002 swiper-slide"><a>액션</a></div>
+					<div class="sub_004 swiper-slide"><a>순정</a></div>
+					<div class="sub_009 swiper-slide"><a>BL</a></div>
+					<div class="sub_008 swiper-slide"><a>일반</a></div>
+					<div class="sub_ADT swiper-slide"><a>성인</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 도서 소카테고리 -->
+	<div id="DOC" class="sub_nav" style="display:none">
+		<div class="wrap">
+			<div class="lnb swiper-container">
+				<div class="swiper-wrapper">
+					<div class="sub_ swiper-slide"><a>전체</a></div>
+					<div class="sub_001 swiper-slide"><a>일반</a></div>
+					<!-- <div class="sub_002 swiper-slide"><a>전자/오디오북</a></div> -->
+					<div class="sub_005 swiper-slide"><a>잡지</a></div>
+					<div class="sub_008 swiper-slide"><a>BL</a></div>
+					<div class="sub_novel swiper-slide"><a>웹소설</a></div>
+					<div class="sub_novel_noadult swiper-slide"><a>웹소설2</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 이미지 소카테고리 -->
+	<div id="IMG" class="sub_nav" style="display:none">
+		<div class="wrap">
+			<div class="lnb swiper-container">
+				<div class="swiper-wrapper">
+					<div class="sub_ swiper-slide"><a>전체</a></div>
+					<div class="sub_001 swiper-slide"><a>일반</a></div>
+					<div class="sub_002 swiper-slide"><a>배경</a></div>
+					<div class="sub_ADT swiper-slide"><a>성인</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 성인 소카테고리 -->
+	<div id="ADT" class="sub_nav adt" style="display:none">
+		<div class="sub_nav_prev"></div>
+		<div class="sub_nav_next"></div>
+		<div class="wrap">
+			<div class="lnb swiper-container">
+				<div class="swiper-wrapper">
+					<div class="sub_ swiper-slide"><a>전체</a></div>
+					<div class="sub_top swiper-slide"><a>실시간</a></div>
+					<div class="sub_001 swiper-slide"><a>일반</a></div>
+					<div class="sub_MVO swiper-slide"><a>영화</a></div>
+					<div class="sub_DRA swiper-slide"><a>드라마</a></div>
+					<div class="sub_MED swiper-slide"><a>동영상</a></div>
+					<div class="sub_ANI swiper-slide"><a>애니</a></div>
+					<div class="sub_CAT swiper-slide"><a>만화</a></div>
+					<div class="sub_IMG swiper-slide"><a>이미지</a></div>
+					<div class="sub_adult_novel swiper-slide"><a>웹소설</a></div>
+					<!-- <div class="swiper-slide"><a>BJ방송</a></div> -->
+					<div class="swiper-slide taste_19"><a href="/module/app/pc/shop/index.php">취향존중</a></div>
+				</div>
+			</div>
+		</div>
+		<div class="adult">
+			<a href="#" onclick="login_chk_pop('pandatv', '', '', 'panda_point'); return false;">BJ방송</a>
+		</div>
+	</div>
+
+	<div class="top_eventBanner" style="display:none;">
+		<a href="/contents/#tab=top100" style="background-image: url(/img/top_banner/top_banner3.jpg);">
+			<img src="/img/top_banner/top_banner3.jpg" alt="">
+		</a>
+	</div> 
+
+	<div class="board_tabList" style="display:none;">
+		<ul class="clearfix">
+			<li id="ALL" onclick="menu_link({'tab' : 'top100', 'tab2' : '', 'pn' : '', 's_type' : '', 's_value' : '', 'login' : '', 'sale' : '', 'sale' : '', 'adult' : ''}); return false;"><a><span>전체</span></a></li>
+			<li id="MVO" onclick="menu_link({'tab' : 'top100', 'tab2' : 'MVO', 'pn' : '', 's_type' : '', 's_value' : '', 'login' : '', 'sale' : '', 'sale' : '', 'adult' : ''}); return false;"><a><span>영화</span></a></li>
+			<li id="DRA" onclick="menu_link({'tab' : 'top100', 'tab2' : 'DRA', 'pn' : '', 's_type' : '', 's_value' : '', 'login' : '', 'sale' : '', 'sale' : '', 'adult' : ''}); return false;"><a><span>드라마</span></a></li>
+			<li id="MED" onclick="menu_link({'tab' : 'top100', 'tab2' : 'MED', 'pn' : '', 's_type' : '', 's_value' : '', 'login' : '', 'sale' : '', 'sale' : '', 'adult' : ''}); return false;"><a><span>동영상</span></a></li>
+			<li id="ANI" onclick="menu_link({'tab' : 'top100', 'tab2' : 'ANI', 'pn' : '', 's_type' : '', 's_value' : '', 'login' : '', 'sale' : '', 'sale' : '', 'adult' : ''}); return false;"><a><span>애니</span></a></li>
+			<li id="CAT" onclick="menu_link({'tab' : 'top100', 'tab2' : 'CAT', 'pn' : '', 's_type' : '', 's_value' : '', 'login' : '', 'sale' : '', 'sale' : '', 'adult' : ''}); return false;"><a><span>만화</span></a></li>
+			<li id="DOC" onclick="menu_link({'tab' : 'top100', 'tab2' : 'DOC', 'pn' : '', 's_type' : '', 's_value' : '', 'login' : '', 'sale' : '', 'sale' : '', 'adult' : ''}); return false;"><a><span>도서</span></a></li>
+			<li id="IMG" onclick="menu_link({'tab' : 'top100', 'tab2' : 'IMG', 'pn' : '', 's_type' : '', 's_value' : '', 'login' : '', 'sale' : '', 'sale' : '', 'adult' : ''}); return false;"><a><span>이미지</span></a></li>
+			<!-- <li id="MUS" onclick="menu_link({'tab' : 'top100', 'tab2' : 'MUS', 'pn' : '', 's_type' : '', 's_value' : '', 'login' : ''}); return false;"><a><span>음악</span></a></li> -->
+		</ul>
+	</div>
+
+	<!-- 검색결과 카테고리 -->
+	<div class="boardList_result" hidden>
+		<ul class="clearfix">
+			<li><a href="#">전체<span class="num">(11,238)</span></a></li>
+			<li class="selected"><a href="#">영화<span class="num">(5)</span></a></li>
+			<li><a href="#">드라마<span class="num">(32)</span></a></li>
+			<li><a href="#">동영상<span class="num">(11,184)</span></a></li>
+			<li><a href="#">애니<span class="num">(1)</span></a></li>
+			<li><a href="#">성인<span class="num">(0)</span></a></li>
+		</ul>
+	</div>
+
+	<!-- 컨텐츠 목록 체크 -->
+	<div class="checkList" style="display:none">
+		<div class="checkList_inner">
+			<ul class="clearfix">
+<script>
+$(function(){
+
+	$hash = $.deparam.fragment();
+
+	//새로고침할때 체크박스 유지
+	if($hash.sale)
+	{
+		$("#sale_chk").attr("checked", true);
+	}
+	if($hash.down_chk)
+	{
+		$("#down_chk").attr("checked", true);
+	}
+	if($hash.adult)
+	{
+		$("#adult_chk").attr("checked", true);
+	}
+
+	cate_chk_box();
+
+	$(document).on("click", "input[name='cont_chk']", function(e){
+		//p("클릭!!");
+		array_link({'sort' : $(this).val()});
+	});
+
+	$(document).on("click", "#down_chk", function(e){
+		
+		//if($(this).attr("checked") == "checked")
+		if($(this).is(":checked") == true)
+		{
+			array_link({'down_chk' : '1'});
+		}
+		else
+		{
+			array_link({'down_chk' : ''});
+		}
+	});
+
+	$(document).on("click", "#adult_chk", function(e){
+		
+		//if($(this).attr("checked") == "checked")
+		if($(this).is(":checked") == true)
+		{
+			array_link({'adult' : '0'});
+		}
+		else
+		{
+			array_link({'adult' : ''});
+		}
+	});
+
+
+	$(document).on("click", "#sale_chk", function(e){
+
+		//if($(this).attr("checked") == "checked")
+		if($(this).is(":checked") == true)
+		{
+			array_link({'sale' : '1'});
+		}
+		else
+		{
+			array_link({'sale' : ''});
+		}
+	});
+});
+
+
+function cate_chk_box()
+{
+	$hash = $.deparam.fragment();
+
+	// 할인 아이콘 체크가 되어있지 않으면 체크 해지
+	if(!$hash.sale)
+	{
+		$("#sale_chk").prop("checked", false);
+	}
+
+	// 성인제외 아이콘 체크가 되어있지 않으면 체크 해지
+	if(!$hash.adult)
+	{
+		$("#adult_chk").prop("checked", false);
+	}
+
+	// top100 에서는 받은 파일 제외 버츨 노출 안됨
+	if($hash.tab == "top100" || !$.cookie("userid"))
+	{
+		$("#down_chk").parent().hide();
+	}
+	else
+	{
+		$("#down_chk").parent().show();
+	}
+
+	// 카테고리가 성인 카테고리일 경우 [성인 제외] 비 활성화
+	if($hash.tab == "ADT" || $hash.tab2 == "ADT" || ($hash.tab == "IMG" && $hash.tab2 == "003"))
+	{
+		$("#adult_chk").parent().hide();
+	}
+	else
+	{
+		$("#adult_chk").parent().show();
+	}
+
+
+	// 할인 체크박스 노출 카테고리(드라마, 동영상, 애니, 만화, 교육, 성인)
+	if($hash.tab != "DRA" &&  $hash.tab != "MED" &&  $hash.tab != "ANI" &&  $hash.tab != "EDU" &&  $hash.tab != "ADT")
+	{
+		$("#sale_chk").parent().hide();
+	}
+	// [] 무료&할인 보이기
+	else
+	{
+		$("#sale_chk").parent().show();
+	}
+}
+
+</script>
+				<!--
+				<li class="contents_radio"><label for="new_chk" class="radio"><input type="radio" id="new_chk" name="cont_chk" value="date" checked><span></span>최신순</label></li>
+				<li class="contents_radio"><label for="popular_chk" class="radio"><input type="radio" id="popular_chk" name="cont_chk" value="hot"><span></span>인기순</label></li>
+				-->
+				<!-- <li><label for="sale_chk"><input type="checkbox" id="sale_chk" value="1"><span></span>무료&할인</label></li> -->
+				<li><label for="down_chk"><input type="checkbox" id="down_chk" value="1"><span></span>받은파일 제외</label></li>
+				<li><label for="adult_chk"><input type="checkbox" id="adult_chk" value="1"><span></span>성인 제외</label></li>
+			</ul>
+
+<script>
+
+// 최신순, 인기순 정렬
+function checksort(val)
+{
+	$hash = $.deparam.fragment();
+	array_link({"sort" : $(val).val()});
+
+	//인기순,개봉순 checked 하기
+	if($hash.sort == "hot")		$("#popular_chk").click();
+	if($hash.sort == "date")	$("#sale_chk").click();
+}
+
+// 컨텐츠 리스트 뷰 타입 변경
+function view_type_change()
+{
+	//안쓰는 함수인듯??????
+	$hash = $.deparam.fragment();
+	var view_type = $hash.view_type;
+
+	if(!view_type) view_type = 1;
+
+	if(view_type == 1)
+	{
+		kind_val = 2;
+		$("#view_type_change_list").hide();
+		$("#view_type_change_change").hide();
+		$("#view_type_change_poster").show();
+		array_link({'poster' : '1'});
+
+		$(".list_view").hide();
+		$("#poster_view").show();
+		$("#thum_view").hide();
+
+	}
+	else if(view_type == 2){
+		kind_val = 3;
+		$("#view_type_change_list").hide();
+		$("#view_type_change_poster").hide();
+		$("#view_type_change_change").show();
+		array_link({'poster' : '1'});
+
+		$(".list_view").hide();
+		$("#poster_view").hide();
+		$("#thum_view").show();
+
+	}
+	else
+	{
+		kind_val = 1;
+		$("#view_type_change_change").hide();
+		$("#view_type_change_poster").hide();
+		$("#view_type_change_list").show();
+		array_link({'view_type' : kind_val});
+		array_link({'poster' : '0'});
+		$(".list_view").show();
+		$("#poster_view").hide();
+		$("#thum_view").hide();
+
+	}
+
+	array_link({'view_type' : kind_val});
+	get_contents();
+}
+
+function view_type_change2()
+{
+	if($hash.text)
+	{
+		$(".text_type_btn").addClass("on");
+		$(".list_type_btn").removeClass("on");
+	}
+	else
+	{
+		$(".text_type_btn").removeClass("on");
+		$(".list_type_btn").addClass("on");
+	}
+
+	if(!$hash.poster && !$hash.text)
+	{
+		$(".list").show();
+		$(".poster").hide();
+		$(".thum").hide();
+	}
+
+	if($hash.poster == "1")
+	{
+		$(".list").hide();
+		$(".poster").show();
+		$(".thum").hide();
+	}
+
+	if($hash.poster == "2")
+	{
+		$(".list").hide();
+		$(".poster").hide();
+		$(".thum").show();
+	}
+}
+
+$(function(){
+
+	$hash = $.deparam.fragment();
+
+	view_type_change2();
+
+	$(document).on("click", ".list_type", function(e){
+
+		//현재 보여지는 버튼의 뷰타입
+		click_view_btn = $(this).attr("class");
+
+		//현재 보여지는 버튼의 활성화 여부
+		click_on_btn = $(".list_type_btn").attr("class");
+
+		//on 활성화시
+		if(click_on_btn == "list_type_btn on")
+		{
+			if(click_view_btn == "list_type list")
+			{
+				array_link({"poster" : "1", "text" : ""});
+				$.cookie("view_type", "1", {path : "/"});
+				return false;
+			}
+			if(click_view_btn == "list_type poster")
+			{
+				array_link({"poster" : "2", "text" : ""});
+				$.cookie("view_type", "2", {path : "/"});
+				return false;
+			}
+			if(click_view_btn == "list_type thum")
+			{
+				array_link({"poster" : "", "text" : ""});
+				$.cookie("view_type", "", {path : "/"});
+				return false;
+			}
+		}
+		else
+		{
+			if(click_view_btn == "list_type list")
+			{
+				array_link({"poster" : "", "text" : ""});
+				$.cookie("view_type", "", {path : "/"});
+				return false;
+			}
+			if(click_view_btn == "list_type poster")
+			{
+				array_link({"poster" : "1", "text" : ""});
+				$.cookie("view_type", "1", {path : "/"});
+				return false;
+			}
+			if(click_view_btn == "list_type thum")
+			{
+				array_link({"poster" : "2", "text" : ""});
+				$.cookie("view_type", "2", {path : "/"});
+				return false;
+			}
+		}
+
+		//if(!$hash.poster)
+		//{
+			//array_link({"poster" : "1", "text" : ""});
+			//$.cookie("view_type", "1", {path : "/"});
+			//return false;
+		//}
+		//if($hash.poster == "1")
+		//{
+			//array_link({"poster" : "2", "text" : ""});
+			//$.cookie("view_type", "2", {path : "/"});
+			//return false;
+		//}
+		//if($hash.poster == "2")
+		//{
+			//array_link({"poster" : "", "text" : ""});
+			//$.cookie("view_type", "", {path : "/"});
+			//return false;
+		//}
+	});
+
+	$(document).on("click", ".list_type_text", function(e){
+
+		array_link({"poster" : "", "text" : "1"});
+		$.cookie("view_type", "text", {path : "/"});
+		return false;
+
+	});
+
+});
+
+$(window).bind("hashchange", function(){
+	$hash = $.deparam.fragment();
+
+	cate_chk_box();
+
+	view_type_change2();
+
+});
+</script>
+			<!-- 텍스트뷰 버튼 추가 -->
+			<div class="text_type_btn"> <!-- 활성화 on 추가 -->
+				<button type="button" class="list_type_text textView">텍스트보기</button>
+			<div>
+			
+						<div class="list_type_btn on"> <!-- 활성화 on 추가 -->
+				<button type="button" class="list_type list" val="">리스트보기</button>
+				<button type="button" class="list_type poster" style="display:none" val="1">포스터보기</button>
+				<button type="button" class="list_type thum" style="display:none" val="2">이미지보기</button>
+			</div>
+					</div>
+	</div>
+
+	<div class="sub_head" style="display:none">
+		<a href="#" onclick="array_link({'login': 'reg'}); return false;">회원가입</a>
+	</div>
+</header>
+
+	
+<style>
+.hit_keyword {
+    background-color: #FFFF66;
+    margin: 0px;
+    padding: 0px;
+}
+</style>
+<section id="main" class="board">
+
+<script>
+$(function(){
+	$hash = $.deparam.fragment();
+	
+	if($hash.tab == "CAT" || $hash.tab == "DOC" || $hash.tab == "IMG" || $hash.tab == "ADT")
+	{
+		$("#top_bn").show();
+	}
+	else
+	{
+		$("#top_bn").hide();
+	}
+	pn = 0;
+	//if(!$hash.idx && !$old.idx) get_contents("새로고침");
+	reload();
+
+	//$("#page").click(function(){
+	//	pn = pn + 1;
+	//	get_contents();
+	//	//array_link({"pn" : pn});
+	//});
+
+	$("#page, #page2").click(function(){
+		//e.attr("pn") = pn + 1;
+		pn = parseInt($(this).attr("pn")) + 1;
+		get_contents("버튼클릭");
+		get_cate();
+		//array_link({"pn" : pn});
+	});
+	
+	//스크롤시 헤더 크기만큼 padding 
+	var hd_h2 = $('.header').outerHeight();
+	$('.wrap_all').css({paddingTop: hd_h2});
+
+	//뷰타입 기억
+	if(
+		//url.path == "/contents/"
+		$.cookie("view_type") 
+		&& $.cookie("view_type") != ""
+	)
+	{
+		if(
+			(location.href.indexOf("text") == -1)
+			&& (location.href.indexOf("poster") == -1)
+		)
+		{
+			if($.cookie("view_type") == "text")		add = "&text=1";
+			if($.cookie("view_type") == "1")		add = "&poster=1";
+			if($.cookie("view_type") == "2")		add = "&poster=2";
+
+			location.href = location.href + add;
+			return true;
+		}
+	}
+});
+
+function reload()
+{
+	$(".list_view").html("");
+	$(".poster_view").html("");
+	$(".thum_view").html("");
+	$(".text_view").html("");
+
+	$(".btn_more").show();
+	$("#page2").show();
+
+	get_contents("새로고침");
+	get_cate();
+
+	$old = $.deparam.fragment();
+
+	//리스트뷰 포스터뷰 썸네일뷰 텍스트뷰 
+	$(".boardList_view").hide();
+	if($hash.text)
+	{
+		$("#text_view").show();
+	}
+	if(!$hash.poster && !$hash.text)
+	{
+		$("#list_view").show();
+	}
+	if($hash.poster == "1")
+	{
+		$("#poster_view").show();
+	}
+	if($hash.poster == "2")
+	{
+		$("#thum_view").show();
+	}
+
+}
+
+$(window).bind("hashchange", function(){
+	$hash = $.deparam.fragment();
+
+	if(($hash.tab == "CAT" || $hash.tab == "DOC" || $hash.tab == "IMG" || $hash.tab == "ADT") && !$hash.idx > 0)
+	{
+		$("#top_bn").show();
+	}
+	else
+	{
+		$("#top_bn").hide();
+	}
+
+	//검색하지 않은경우
+	if( !$hash.s_type || !$hash.s_value)
+	{
+		//$(".search_cont_new").addClass("hide");
+		//$(".recommend_contents").addClass("hide");
+	}
+
+	//컨텐츠 리스트를 초기화 해야하는 경우(검색한 단어가 있을때)
+	if($hash.s_value && $hash.s_value != $old.s_value)
+	{
+		reload();
+
+		return true;
+	}
+
+	//컨텐츠 리스트를 초기화 해야하는 경우(카테고리 이동)
+	if($hash.tab != $old.tab || $hash.tab2 != $old.tab2)
+	{
+		//alert();
+		reload();
+		
+		return true;
+	}
+
+	//컨텐츠 리스트를 초기화 해야하는 경우(리스트뷰 포스터뷰 전환시)
+	if($hash.poster != $old.poster)
+	{
+		reload();
+
+		return true;
+	}
+
+	//컨텐츠 리스트를 초기화 해야하는 경우(텍스트뷰 전환시)
+	//if(!$hash.poster && $hash.text || !$hash.text && $old.text)
+	if($hash.text != $old.text && !$hash.idx)
+	{
+		reload();
+
+		return true;
+	}
+
+	//컨텐츠 리스트를 초기화 해야하는 경우()
+	//if($hash.orderby != $old.orderby || $hash.down != $old.down || $hash.chkcopy != $old.chkcopy || $hash.adult_chk != $old.adult_chk || $hash.year != $old.year || $hash.view_chk != $old.view_chk)
+	if($hash.sale != $old.sale || $hash.down_chk != $old.down_chk || $hash.adult != $old.adult)
+	{
+		reload();
+
+		return true;
+	}
+
+	//상세페이지에서 새로고침 했을때
+	if(url.path == "/contents/" && $(".list_view a").length == 0)
+	{
+		//location.reload();
+	}
+	
+	//스크롤시 헤더 크기만큼 padding
+	hd_h2 = $('.header').outerHeight();
+
+	$('.wrap_all').css({paddingTop: hd_h2});
+
+	$old = $.deparam.fragment();
+	return true;
+});
+
+function get_contents(val)
+{
+	$hash = $.deparam.fragment();
+
+	//top100 페이지 100개 모두 출력 시 더보기 버튼 숨김처리.
+	if($hash.tab == "top100" && pn >= 4)
+	{
+		$(".btn_more").hide();
+	}
+
+	//urldecode (익스나 모바일)
+	if($hash.s_value) $hash.s_value =  decodeURIComponent($hash.s_value);
+
+	$data = {"tab" : $hash.tab, "tab2" : $hash.tab2, "s_type" : $hash.s_type, "s_value" : $hash.s_value, "pn" : pn, "limit" : 20, "sale" : $hash.sale, "down_chk" : $hash.down_chk, "adult" : $hash.adult, "poster" : $hash.poster, "text" : $hash.text, "sort" : $hash.sort}
+	$.post("/module/contents/list.php", $data, function(data){
+
+		$(".recommCont").hide();
+		//검색 금칙어에 해당 되고 게시물이 있으면 - 진민욱
+		if(data.notice && data.total != 0)
+		{
+			var html_data = "";
+				html_data+='<p>입력하신 "<span style="color:blue;">' + $hash.s_value + '</span>" 키워드는 <span style="color:red">금칙어</span> 입니다.<br />' + data.notice[0] + '<br />' + data.notice[1] + '</p>';
+			$(".boardList_notice").html(html_data);
+		}
+		//검색결과 없을때
+		else if(data.total == 0)
+		{
+			var html_data = "";
+			//금칙어일때
+			if(data.notice)
+			{
+				var html_data = "";
+				html_data+='<p>입력하신 "<span style="color:blue;">' + $hash.s_value + '</span>" 키워드는 <span style="color:red">금칙어</span> 입니다.<br />' + data.notice[0] + '<br />' + data.notice[1] + '</p>';
+				$(".boardList_notice").html(html_data);
+			}
+			else
+			{
+				//검색결과가 없을때 추천컨텐츠
+									html_data += '<p class="boardList_recomm"> 지금 애플파일에서 가장 인기가 많아요!</p>';
+								html_data += '<div class="poster_wrap clearfix">';
+				$.each(data.noresult, function(key, val)
+				{
+					html_data += '	<div class="poster_view">';
+					html_data += '		<a href="javascript:void(0);" onclick="contents_view('+val.bbs_idx+')">';
+					html_data += '		<ul class="list_cont">';
+					html_data += '			<li class="img"><img src="'+val.poster_img1+'" alt="" /></li>';
+					html_data += '			<li class="txtBox">';
+					html_data += '				<span class="tit">'+val.title+'</span>';
+					html_data += '				<ul class="info">';
+					html_data += '					<li>';
+					html_data += '						<ul class="cate">';
+					html_data += '							<li>'+val.cate1+'</li>';
+					html_data += '							<li>'+val.cate2+'</li>';
+					html_data += '						</ul>';
+					html_data += '						<span class="cmt">'+val.c_cnt+'</span>';
+					html_data += '					</li>';
+					html_data += '				</ul>';
+					html_data += '			</li>';
+					html_data += '		</ul>';
+					html_data += '		</a>';
+					html_data += '	</div>';
+				});
+				html_data += '</div>';
+
+				$(".recommCont").html(html_data);
+				$(".recommCont").show();
+				$(".boardList_notice").html("");
+			}
+		}
+		else
+		{
+			$(".boardList_notice").html("");
+		}
+
+		// 리스트 뷰
+		if(data.list)
+		{
+			$(".result_none").remove();
+			$.each(data.list, function(key, val){
+
+				var copyright = ($hash.tab == "ADT" &&  val.copyright == "1")  ? '<mark class="greenfile"></mark>' : "";
+				var adult = (val.adult == 1) ? '<span class="adult">19</span>' : "";
+				var c_cnt = val.c_cnt ? '<span class="cmt">'+ val.c_cnt +'</span>' : "";
+				var thum_copyright = ($hash.tab == "ADT" &&  val.copyright == "1") ? '<mark class="greenfile"></mark>' : "";
+				var free = (val.free && val.free == "1") ? '<span class="free"></span>' : "";
+				var icon = (!val.free && val.icon != "") ? val.icon : '';
+				//p(val);
+
+				var sale = "";
+				if(val.sale == '1') sale = '<span class="sale"></span>';
+
+				val.poster3 = (val.poster3) ? val.poster3 : "";
+				var video_time = "00:00:00";
+				var video_resolution = "";
+				if(val.video)
+				{
+					video_time			= (val.video.time) ? val.video.time : " - ";
+					video_resolution	= (val.video.resolution == "HD")  ? '<span class="hd">HD</span>' : '';
+				}
+				else
+				{
+					video_time = val.runtime;
+				}
+
+				var num = val.num && $hash.tab == "top100" ? '<span class="live_num">' + val.num + '</span>' : '';
+
+				var bbs_idx = val.bbs_idx ? val.bbs_idx : val.idx;
+
+				if((!$hash.poster || $hash.poster == 0) && !$hash.text)
+				{
+
+					var html_data = "";
+					////비로그인 상태에서 성인컨텐츠를 눌렀을 시 로그인 창으로 이동
+					//if(!$.cookie("userid") && val.adult == 1)			html += '<a href="#" onclick="array_link({\'login\' : \'login\'}); return false;">';
+					////로그인 후 쿠키의 adult 값이 0 이고 성인컨텐츠를 클릭했을 때 인증 창을 띄움
+					//else if($.cookie("adult") == 0 && val.adult == 1)	html += '<a href="#" onclick="auth_link({\'auth\' : \'1\'}); return false;">';
+					////로그인 후 성인 일 떄 컨텐츠 창 보여줌
+					//else												html += '<a href="#" onclick="contents_view(' + val.idx + ', '+ val.adult +'); return false;">';
+
+					// 기존에 여기서 체크하던거 contents_view 내부에서 체크하도록 수정 ( 로그인 후 링크가 갱신이 안되서 계속 로그인창으로 보내는 버그 때문에 )
+					html_data += '<a href="#" onclick="contents_view2(' + bbs_idx + ', '+ val.adult +'); return false;">';
+					html_data += '	<ul class="list_cont">';
+					html_data += '		<li class="img">' + num + adult + video_resolution +'<img src="'+ val.img +'" alt="" /></li>';
+					html_data += '		<li class="txtBox">';
+					html_data += '			<span class="tit"><span class="'+ icon +'"></span>'+ free + sale + val.title +'</span>';
+					html_data += '			<ul class="info">';
+					html_data += '				<li><span class="sct">'+ video_time +'</span>'+ c_cnt + copyright +'</li>';
+					html_data += '				<li>';
+					html_data += '					<ul class="cate">';
+					html_data += '						<li>'+ val.cate1 +'</li>';
+					html_data += '						<li>'+ val.cate2 +'</li>';
+					html_data += '					</ul>';
+					html_data += '					<span class="name">'+ val.nickname +'</span>';
+					html_data += '				</li>';
+					html_data += '			</ul>';
+					html_data += '		</li>';
+					html_data += '	</ul>';
+					html_data += '</a>';
+				
+					// 리스트
+					$(".list_view").append(html_data);
+				}
+
+				// 포스터 뷰
+				if($hash.poster == 1)
+				{
+					var html_data = "";
+					html_data += '<div class="poster_view">';
+					if(!$.cookie("userid") && val.adult == 1)			html_data += '<a href="#" onclick="array_link({\'login\' : \'login\'}); return false;">';
+					else if($.cookie("adult") == 0 && val.adult == 1)	html_data += '<a href="#" onclick="auth_link({\'auth\' : \'1\'}); return false;">';
+					else												html_data += '<a href="#" onclick="contents_view(' + bbs_idx + '); return false;">';
+					html_data += '	<ul class="list_cont">';
+					html_data += '		<li class="img">' + num + adult +'<img src="'+ val.img +'" alt="" /></li>';
+					html_data += '		<li class="txtBox">';
+					html_data += '			<span class="tit">'+ val.title +'</span>';
+					html_data += '			<ul class="info">';
+					html_data += '				<li>';
+					html_data += '					<ul class="cate">';
+					html_data += '						<li>'+ val.cate1 +'</li>';
+					html_data += '						<li>'+ val.cate2 +'</li>';
+					html_data += '					</ul>';
+					html_data += 					c_cnt;
+					html_data += 					copyright;
+					html_data += '				</li>';
+					html_data += '			</ul>';
+					html_data += '		</li>';
+					html_data += '	</ul>';
+					html_data += '</a>';
+					html_data += '</div>';
+
+					// 리스트
+					$("#poster_view").append(html_data);
+				}
+ 
+				// 썸네일 뷰
+				if($hash.poster == 2)
+				{
+					var html_data = "";
+					html_data += '<div class="thum_view">';
+					if(!$.cookie("userid") && val.adult == 1)			html_data += '	<a href="#" onclick="array_link({\'login\' : \'login\'}); return false;">';
+					else if($.cookie("adult") == 0 && val.adult == 1)	html_data += '	<a href="#" onclick="auth_link({\'auth\' : \'1\'}); return false;">';
+					else												html_data += '	<a href="#" onclick="contents_view(' + bbs_idx + '); return false;">';
+					html_data += '		<ul class="list_cont">';
+					html_data += '			<li class="img">' + num + adult + video_resolution +'<img src="'+ val.img +'" alt="" /></li>';
+					html_data += '			<li class="txtBox">';
+					html_data += '				<span class="tit">'+ val.title +'</span>';
+					html_data += '				<ul class="info">';
+					html_data += '					<li>';
+					html_data += '						<ul class="cate">';
+					html_data += '							<li>'+ val.cate1 +'</li>';
+					html_data += '							<li>'+ val.cate1 +'</li>';
+					html_data += '						</ul>';
+					html_data += '						<span class="name">'+ val.nickname +'</span>';
+					html_data += '					</li>';
+					html_data += '					<li><span class="sct">'+ video_time +'</span>'+ c_cnt + thum_copyright +'</li>';
+					html_data += '				</ul>';
+					html_data += '				<div class="iconBox">';
+					html_data += 					sale;
+					html_data += '					<span class="'+ icon +'"></span>';
+					html_data +=						free;
+					html_data += '				</div>';
+					html_data += '			</li>';
+					html_data += '		</ul>';
+					html_data += '	</a>';
+					html_data += '</div>	';
+
+					// 리스트
+					$("#thum_view").append(html_data);
+				}
+
+				// 텍스트 뷰
+				if($hash.text == 1)
+				{
+					var title = val.title;
+					//title = (val.item[1])? '<font color="' + val.item[1] + '">' + title + '</font>' : title;
+					//title = (val.item[2] == "bold" || val.item[2] == "Y")? "<b>" + title + "</b>" : title;
+
+					var mark19 = (val.adult == 1) ? '<span class="mark19"></span>' : "";
+
+					var html_data = "";
+					html_data += '<a href="#" onclick="contents_view2(' + bbs_idx + ', '+ val.adult +'); return false;">';
+					html_data += '	<ul class="list_cont">';
+					//html += '		<li class="img">' + num + adult + video_resolution +'<img src="'+ val.img +'" alt="" /></li>';
+					html_data += '		<li class="txtBox">';
+					html_data += '			<span class="tit"><span class="'+ icon +'"></span>' + mark19 + free + title + sale +'</span>';
+					html_data += '			<ul class="info">';
+					html_data += '				<li><span class="sct">'+ video_time +'</span>'+ c_cnt + copyright +'</li>';
+					html_data += '				<li>';
+					html_data += '					<ul class="cate">';
+					html_data += '						<li>'+ val.cate1 +'</li>';
+					html_data += '						<li>'+ val.cate2 +'</li>';
+					html_data += '					</ul>';
+					html_data += '					<span class="name">'+ val.nickname +'</span>';
+					html_data += '				</li>';
+					html_data += '			</ul>';
+					html_data += '		</li>';
+					html_data += '	</ul>';
+					html_data += '</a>';
+
+					// 리스트
+					$(".text_view").append(html_data);
+				}
+			});
+		}
+		else
+		{
+
+			//페이징 버튼 숨김
+			$(".btn_more").hide();
+			$("#page2").hide();
+			$(".result_none").remove();
+
+			//데이터가 아예 없을때만 이미지 표시 (더보기 클릭시 리스트가 없는 경우엔 더보기 버튼만 없어지도록 구분)
+			if(data.pn == 0)
+			{
+
+				var html_data = "";
+				html_data += '<div class="result_none">';
+				html_data += '	<p class="txt1">검색된 파일이 <b>없습니다.</b></p>';
+				html_data += '</div>';
+			}
+			
+			//
+			$(".boardList_notice").after(html_data);
+			////리스트뷰
+			//if(!$hash.poster || $hash.poster == 0 && $hash.view_type == 1)
+			//{
+				//$(".list_view").append(html);
+			//}
+
+			//// 포스터 뷰
+			//if($hash.poster && $hash.poster == 1)
+			//{
+				//$("#poster_view").append(html);
+			//}
+
+			//// 썸네일 뷰
+			//if($hash.poster && $hash.poster == 2)
+			//{
+				//$("#thum_view").append(html);
+			//}
+
+			
+		}
+		$("#page, #page2").attr("pn", data.pn);
+
+	}, "json");
+
+	referer_hash();
+
+	return false;
+}
+
+function get_cate()
+{
+	//검색했을경우
+	if($hash.s_type && $hash.s_value && !$hash.idx)
+	{
+		//카테고리
+		$.post("/module/contents/cate.php", $data, function(data){
+			
+			if(data.group)
+			{
+				//모든카테고리 초기화
+				$(".boardList_result").find("li").remove();
+
+				$.each(data.group, function(k,v){
+
+					if(!$.cookie("userid") && v['key'] == "ADT")
+					{
+						$html = '<li class="on"><a href="#" onclick="alert(\'로그인 후 이용해주세요.\'); array_link({\'login\' : \'login\'}); return false;">'+v['name']+' <span class="num">('+ v['cnt'] +')</span></a></li>';
+					}
+					else
+					{
+						if($.cookie("adult") == "0" && v['key'] == "ADT")
+						{
+							$html = '<li class="on"><a href="#" onclick="alert(\'성인인증 후 이용해주세요.\'); array_link({\'auth\' : \'1\'}); return false;">'+v['name']+' <span class="num">('+ v['cnt'] +')</span></a></li>';
+						}
+						else
+						{
+							if($hash.tab == v['key'])
+							{
+								$html = '<li class="selected"><a href="#" onclick="array_link({\'tab\' : \''+ v['key'] +'\', \'tab2\' : \'\'}); return false;">'+v['name']+' <span class="num">('+ v['cnt'] +')</span></a></li>';				
+							}
+							else
+							{
+								$html = '<li><a href="#" onclick="array_link({\'tab\' : \''+ v['key'] +'\', \'tab2\' : \'\'}); return false;">'+v['name']+' <span class="num">('+ v['cnt'] +')</span></a></li>';				
+							}
+						}
+					}
+
+					$(".boardList_result").find("ul").append($html);
+				});
+
+				$(".boardList_result").show();
+			}
+			else
+			{
+				$(".boardList_result").hide();
+			}
+			
+		},"json");
+	}
+	else
+	{
+		$(".boardList_result").hide();
+	}
+	return false;
+}
+
+$(window).scroll(function(){
+	//p("1 : " + parseInt($(window).scrollTop() + 20));
+	//p("2 : " + ($(document).height() - $(window).height()));
+	//if(parseInt($(window).scrollTop() + 20) >= ($(document).height() - $(window).height()))
+	//{
+	//	var html = "";
+	//	html += '<a href="#">';
+	//	html += '	<ul class="list_cont">';
+	//	html += '		<li class="img"><img src="/img/test/test11.jpg" alt="" /></li>';
+	//	html += '		<li class="txtBox">';
+	//	html += '			<span class="tit">[사악한 마녀 말레피센트] 안젤리나 졸리 초고화질 자체 자막(영화)<span class="dc90"></span></span>';
+	//	html += '			<ul class="info">';
+	//	html += '				<li><span class="sct">02:20:10</span><span class="cmt">13</span></li>';
+	//	html += '				<li>';
+	//	html += '					<ul class="cate">';
+	//	html += '						<li>영화</li>';
+	//	html += '						<li>최신 / 미개봉</li>';
+	//	html += '					</ul>';
+	//	html += '					<span class="name">데일리 무비</span>';
+	//	html += '				</li>';
+	//	html += '			</ul>';
+	//	html += '		</li>';
+	//	html += '	</ul>';
+	//	html += '</a>';
+
+	//	p(html);
+	//	$(".list_view").append(html);
+    //}
+});
+</script>
+	<!-- 금칙어 -->
+	<div class="boardList_notice">
+	</div>
+	<!-- 리스트뷰 -->
+	<div class="boardList_view list" id="list_view">
+		<div class="list_view">
+			<!-- <a href="#"> -->
+			<!-- 	<ul class="list_cont"> -->
+			<!-- 		<li class="img"><img src="/img/test/test11.jpg" alt="" /></li> -->
+			<!-- 		<li class="txtBox"> -->
+			<!-- 			<span class="tit">[사악한 마녀 말레피센트] 안젤리나 졸리 초고화질 자체 자막(영화)<span class="dc90"></span></span> -->
+			<!-- 			<ul class="info"> -->
+			<!-- 				<li><span class="sct">02:20:10</span><span class="cmt">13</span></li> -->
+			<!-- 				<li> -->
+			<!-- 					<ul class="cate"> -->
+			<!-- 						<li>영화</li> -->
+			<!-- 						<li>최신 / 미개봉</li> -->
+			<!-- 					</ul> -->
+			<!-- 					<span class="name">데일리 무비</span> -->
+			<!-- 				</li> -->
+			<!-- 			</ul> -->
+			<!-- 		</li> -->
+			<!-- 	</ul> -->
+			<!-- </a> -->
+		</div>
+		<div class="recommCont" style="display: none"></div>
+	</div>
+	
+	<!-- 포스터뷰 -->
+	<div class="boardList_view poster" id="poster_view">
+		<!-- <div class="poster_view"> -->
+			<!-- <a href="#"> -->
+			<!-- 	<ul class="list_cont"> -->
+			<!-- 		<li class="img"><span class="adult">19</span><img src="/img/test/test15.jpg" alt="" /></li> -->
+			<!-- 		<li class="txtBox"> -->
+			<!-- 			<span class="tit">[케빈에 대하여 2011] - 틴다 스윈트, 에즈라 밀러 주연</span> -->
+			<!-- 			<ul class="info"> -->
+			<!-- 				<li> -->
+			<!-- 					<ul class="cate"> -->
+			<!-- 						<li>영화</li> -->
+			<!-- 						<li>최신 / 미개봉</li> -->
+			<!-- 					</ul> -->
+			<!-- 					<span class="cmt">13</span> -->
+			<!-- 				</li> -->
+			<!-- 			</ul> -->
+			<!-- 		</li> -->
+			<!-- 	</ul> -->
+			<!-- </a> -->
+		<!-- </div> -->
+	</div>
+
+	<!-- 썸네일뷰 -->
+	<div class="boardList_view thum" id="thum_view">
+		<!-- <div class="thum_view"> -->
+			<!-- <a href="#"> -->
+			<!-- 	<ul class="list_cont"> -->
+			<!-- 		<li class="img"><span class="adult">19</span><span class="hd">HD</span><img src="/img/test/test14.jpg" alt="" /></li> -->
+			<!-- 		<li class="txtBox"> -->
+			<!-- 			<span class="tit"><mark class="greenfile"></mark>[케빈에 대하여 2011] - 틴다 스윈트, 에즈라 밀러 주연</span> -->
+			<!-- 			<ul class="info"> -->
+			<!-- 				<li> -->
+			<!-- 					<ul class="cate"> -->
+			<!-- 						<li>영화</li> -->
+			<!-- 						<li>최신 / 미개봉</li> -->
+			<!-- 					</ul> -->
+			<!-- 					<span class="name">데일리 무비</span> -->
+			<!-- 				</li> -->
+			<!-- 				<li><span class="sct">02:20:10</span><span class="cmt">13</span></li> -->
+			<!-- 			</ul> -->
+			<!-- 			<div class="iconBox"> -->
+			<!-- 				<span class="sale"></span> -->
+			<!-- 				<span class="dc50"></span> -->
+			<!-- 			</div> -->
+			<!-- 		</li> -->
+			<!-- 	</ul> -->
+			<!-- </a> -->
+		<!-- </div> -->
+	</div>
+
+	<!-- 텍스트뷰 (리스트뷰 고대로 써도 됨 list_view => text_view 클래스만 변경) -->
+	<div class="boardList_view text" id="text_view">
+		<div class="text_view">
+			<!-- <a href="#"> -->
+			<!-- 	<ul class="list_cont"> -->
+			<!-- 		<li class="txtBox"> -->
+			<!-- 			<span class="tit">[사악한 마녀 말레피센트] 안젤리나 졸리 초고화질 자체 자막(영화)<span class="dc90"></span></span> -->
+			<!-- 			<ul class="info"> -->
+			<!-- 				<li><span class="sct">02:20:10</span><span class="cmt">13</span></li> -->
+			<!-- 				<li> -->
+			<!-- 					<ul class="cate"> -->
+			<!-- 						<li>영화</li> -->
+			<!-- 						<li>최신 / 미개봉</li> -->
+			<!-- 					</ul> -->
+			<!-- 					<span class="name">데일리 무비</span> -->
+			<!-- 				</li> -->
+			<!-- 			</ul> -->
+			<!-- 		</li> -->
+			<!-- 	</ul> -->
+			<!-- </a> -->
+		</div>
+	</div>
+
+	<!-- 더보기 -->
+	<div class="btn_more">
+		<div id="page" type="button" pn="0">더보기</div>
+	</div>
+
+</section>
+		<div id="chatting_test"></div>
+		
+		<!-- FOOTER -->
+		<footer class="footer">
+			
+			<!-- 하단 이벤트 배너 -->
+			<div class="bt_eventBanner">
+				<a href="#" onclick="login_link('/charge/#tab=point'); return false;" style="background-image: url(/img/bt_banner/charge_230531_m.jpg);"><img src="/img/bt_banner/charge_230531_m.jpg" /></a>
+				<!-- <a href="#" onclick="login_link('/charge/#tab=point'); return false;" style="background-image: url(charge_230531_m.jpg);"><img src="charge_230531_m.jpg" /></a> -->
+			</div>
+
+			<!-- 메인 FOOTER  -->
+			<div class="main_footer">
+				<div class="ft_company">
+					<button type="button">(주)M&T 사업자정보.<span></span></button>
+					<div class="ft_company_info">
+						<ul>
+							<li>
+								<span class="title01">대표이사</span>
+								<span class="info">최제헌 대표</span>
+							</li>
+							<li>
+								<span class="title01">주소</span>
+								<span class="info">서울특별시 강남구 선릉로 703, HS Tower 10층</span>
+							</li>
+							<li>
+								<span class="title01">전화</span>
+								<span class="info">1599-9054</span>
+							</li>
+							<li>
+								<span class="title01">이메일</span>
+								<span class="info">applefile@mntcompany.co.kr</span>
+							</li>
+							<li>
+								<span class="title02">사업자등록번호</span>
+								<span class="info">898-81-00236</span>
+							</li>
+							<li>
+								<span class="title02">통신판매업신고번호</span>
+								<span class="info">제2020-서울강남-02277호</span>
+							</li>
+							<li>
+								<span class="title02">웹하드등록번호</span>
+								<span class="info">제3-01-16-0007호</span>
+							</li>
+							<li style="height: auto">
+								<span class="title02">저작권/청소년/<br>정보보호 책임자</span>
+								<span class="info"> 최제헌 대표</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<ul class="ft_nav">
+					<li><a href="/company/#tab=agreement1">이용약관</a></li>
+					<li><a href="/company/#tab=agreement2"><b>개인정보처리방침</b></a></li>
+					<!--<li><a href="#">환불규정안내</a></li>-->
+					<li><a href="/company/#tab=agreement3">청소년 보호정책</a></li>
+					<li class="bottom_login"><a href="#" onclick="array_link({'login' : 'login'}); $('.all_menu').hide(); return false;">로그인</a></li>
+				</ul>
+				<p class="copyright">Copyright ⓒ Applefile. All right reserved.</p>
+				<p class="copyright">아동 청소년 이용음란물을 제작/배포/소지시 아동청소년의 성보호에 관한 법률 제 11조에 따라 형사처벌 받을 수 있습니다. <br/>
+				불법촬영물등을 게재할 경우 전기통신사업법 제22조의5제1항에 따라 삭제,접속차단 등의 조치가 취해질 수 있으며, 관련 법률에 따라 처벌받을 수 있습니다.</p>
+			</div>
+
+			<div class="ft_menu">
+				<ul>
+					<li onclick="location.href='/'; return false;"><button type="button" class="ft_menu1">홈</button></li>
+					<li id="download" onclick="AppControl.showArchiveList(); return false;"><button type="button" class="ft_menu2">다운로드</button></li>
+					<!-- <li onclick="array_link({'menu' : '1'});; return false;"><button type="button" class="ft_menu3">전체메뉴</button></li> -->
+					<li><button type="button" class="ft_menu3">전체메뉴</button></li>
+
+					<li><button type="button" class="ft_menu4" onclick="login_chk_pop('charge', '/charge/#tab=point', '', 'bottom_point'); return false;">충전샵</button></li>
+					<li class="ft_menu_login"><button type="button" class="ft_menu5" onclick="array_link({'login' : 'login'}); return false;">로그인</button></li>
+				</ul>
+			</div>
+			<div class="ft_bar">
+				<ul>
+					<li><button type="button" class="ft_bar1">뒤로</button></li>
+					<li><button type="button" class="ft_bar2">앞으로</button></li>
+					<li><button type="button" class="ft_bar3">새로고침</button></li>
+					<li><button type="button" class="ft_bar4">위로</button></li>
+				</ul>
+			</div>
+
+			<!-- 전체메뉴 -->
+			<div class="all_menu" style="display:none;">
+				<div class="all_menu_inner">
+					<button type="button" class="close">닫기</button>
+					<div class="top_group">
+						<!-- 로그인 전 -->
+						<ul>
+							<li><a href="#" onclick="array_link({'menu' : '' , 'login' : 'login'}); $('.all_menu').hide(); return false;" class="login">로그인</a></li>
+							<li><a href="#" onclick="array_link({'menu' : '' , 'login' : 'reg'}); $('.all_menu').hide(); return false;" class="join">회원가입</a></li>
+						</ul>
+					</div>
+
+<script>
+$(function(){
+	$(".cate_group, .bt_group").click(function(){
+		array_link({"menu" : ""});
+	});
+
+	//$('.ft_menu7').click(function(){
+		//$('#ch-plugin-launcher').trigger('click');
+			////$("#ch-new-plugin-viewport").remove();
+			////var test = '<meta id="viewport" name="viewport" content="width=1350, user-scalable=no">';
+			////$("head").append(test);
+	//});
+
+	if(bw.app == true)
+	{
+		// true
+		$("#down_keep").attr("onclick", "AppControl.showArchiveList(); return false;");
+		$("#download").attr("onclick", "AppControl.showArchiveList(); return false;");
+	}
+	else
+	{
+		// false
+		$("#down_keep").attr("onclick", "app_download_page(); return false;");
+		$("#download").attr("onclick", "app_download_page(); return false;");
+	}
+	//사업자정보 토글
+	$('.ft_company button').on('click',function(){
+		if($('.ft_company_info').css('display') === 'none'){
+			$(this).parent().addClass('on');
+		} else {
+			$(this).parent().removeClass('on');
+		}
+	});
+});
+
+function menu_location(val)
+{
+	location.href = val;
+	$('.all_menu .close').click();
+}
+</script>
+					<div class="cate_group">
+						<ul class="clearfix">
+							<li><a href="#" onclick="menu_location('/contents/#tab=top100'); return false;" class="m1">실시간인기</a></li>
+							<li><a href="#" onclick="menu_location('/contents/#tab=MVO'); return false;" class="m2">영화</a></li>
+							<li><a href="#" onclick="menu_location('/contents/#tab=DRA'); return false;" class="m3">드라마</a></li>
+							<li><a href="#" onclick="menu_location('/contents/#tab=MED'); return false;" class="m4">동영상</a></li>
+							<li><a href="#" onclick="menu_location('/contents/#tab=ANI'); return false;" class="m5">애니</a></li>
+							<li><a href="#" onclick="menu_location('/contents/#tab=CAT'); return false;" class="m6">만화</a></li>
+							<li><a href="#" onclick="menu_location('/contents/#tab=DOC'); return false;" class="m7">도서</a></li>
+							<li><a href="#" onclick="menu_location('/contents/#tab=IMG'); return false;" class="m8">이미지</a></li>
+							<!-- <li><a href="/contents/#tab=ADT" class="m9">성인</a></li> -->
+							<li><a href="#" onclick="auth_link('/contents/#tab=ADT&tab2=001'); $('.all_menu').hide(); return false;" class="m9">성인</a></li>
+							<li><a href="#" onclick="login_chk_pop('webtoon', '/toptoon/', '', 'toptoon_point'); $('.all_menu').hide(); return false;" class="m10">성인웹툰</a></li>
+							<li><a href="#" onclick="login_chk_pop('pandatv', '', '', 'panda_point'); $('.all_menu').hide(); return false;" class="m11">BJ방송</a></li>
+							<li><a href="#" onclick="login_link('/broadcast/#tab=1'); $('.all_menu').hide(); return false;" class="m15">VOD</a></li>
+							<!-- <li><a href="#" onclick="alert('링크없음'); return false;" class="m12">테마관</a></li> -->
+							<li><a href="#" onclick="login_link('/customer/#tab=3'); $('.all_menu').hide(); return false;" class="m13">고객센터</a></li>
+							<li><a href="#" onclick="login_link('/mypage/#tab=4'); $('.all_menu').hide(); return false;" class="m14">요청파일</a></li>
+							<li><a href="#" onclick="login_chk_pop('event', '/event/#tab=list', '', 'layout_event'); return false;" class="m16">이벤트</a></li>
+<!-- 							<li><a href="#" onclick="auth_link('/gravia/'); $('.all_menu').hide(); return false;" class="m17">웹화보</a></li> -->
+						</ul>
+					</div>
+
+					<div class="bt_group">
+						<ul class="clearfix">
+							<li><a href="#" onclick="login_link('/mypage/#tab=1'); $('.all_menu').hide(); return false;">마이페이지</a></li>
+							<li><a href="#" onclick="login_chk_pop('charge', '/charge/#tab=point', '', 'layout_point'); $('.all_menu').hide(); return false;">충전샵</a></li>
+							<li><a href="#" onclick="login_link('/mypage/#tab=2&tab2=1'); $('.all_menu').hide(); return false;">받은파일</a></li>
+							<li><a href="#" id="down_keep">다운로드보관함</a></li>
+							<li><a href="#" onclick="menu_location('/coupon/'); $('.all_menu').hide(); return false;">쿠폰등록</a></li>
+							<li><a href="#" onclick="login_link('/mypage/#tab=3'); $('.all_menu').hide(); return false;">찜한파일</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<div id="etc">
+	</div>
+
+	<div id="hbd_layer">
+		<div class="layer_img">
+			<img src="/img/event/birthday_popup/img_ap_mo_birth_pop.png" alt="HAPPY BIRTHDAY!">
+			<div class="layer_close"><img src="/img/event/birthday_popup/btn_birth_x.png" alt="닫기"></div>
+		</div>
+	</div>
+	<style>
+		#hbd_layer {display: none;}
+		#hbd_layer.on {display: block; position: fixed; left: 0; top: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.7); z-index: 10000000;}
+		#hbd_layer .layer_img{width: 90%; height: 700px; max-width: 660px; position: absolute; margin: 0 auto; left: 50%; top: 50%; margin-left: -45%; margin-top: -50%;}
+		#hbd_layer .layer_img img{width: 100%;}
+		#hbd_layer .layer_close {width: 10%; max-width: 60px; position: absolute; right: 0%; top: -6%;}
+		#hbd_layer .layer_close img {width: 100%;}
+	</style>
+	<script>
+		$(function(){
+			$("#hbd_layer .layer_img .layer_close").click(function(){ 
+				$("#hbd_layer").removeClass('on');
+				$.cookie("hbd_layer_view", "", {expires: 0, domain: "applefile.com"});
+			});
+		});
+	</script>
+
+</body>
+</html>

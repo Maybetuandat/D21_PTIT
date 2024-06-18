@@ -1,0 +1,159 @@
+[
+    {
+        "id_khach_hang": 1,
+        "ten_khach_hang": "Phạm Thị Thùy Dung",
+        "dia_chi": "Ha Noi",
+        "email": "dungptt@gmail.com",
+        "sdt": "0912345678",
+        "cccd": "123456789012"
+    },
+    {
+        "id_khach_hang": 2,
+        "ten_khach_hang": "Nguyễn Văn An",
+        "dia_chi": "Da Nang",
+        "email": "anv@gmail.com",
+        "sdt": "0987654321",
+        "cccd": "234567890123"
+    },
+    {
+        "id_khach_hang": 3,
+        "ten_khach_hang": "Trần Minh Tuấn",
+        "dia_chi": "TP HCM",
+        "email": "tuanmt@gmail.com",
+        "sdt": "0975318642",
+        "cccd": "345678901234"
+    },
+    {
+        "id_khach_hang": 4,
+        "ten_khach_hang": "Lê Thị Mai Anh",
+        "dia_chi": "Ha Noi",
+        "email": "anhltm@gmail.com",
+        "sdt": "0934671825"
+    },
+    {
+        "id_khach_hang": 5,
+        "ten_khach_hang": "Hoàng Văn Hải",
+        "dia_chi": "Da Nang",
+        "email": "haihv@gmail.com",
+        "sdt": "0921547386",
+        "cccd": "567890123456"
+    },
+    {
+        "id_khach_hang": 6,
+        "ten_khach_hang": "Vũ Ngọc Trâm",
+        "dia_chi": "TP HCM",
+        "email": "tramvn@gmail.com",
+        "sdt": "0946321758",
+        "cccd": "678901234567"
+    },
+    {
+        "id_khach_hang": 7,
+        "ten_khach_hang": "Nguyễn Thị Hương Giang",
+        "dia_chi": "Ha Noi",
+        "email": "giangnth@gmail.com",
+        "sdt": "0968392745",
+        "cccd": "789012345678"
+    },
+    {
+        "id_khach_hang": 8,
+        "ten_khach_hang": "Đặng Văn Hòa",
+        "dia_chi": "Da Nang",
+        "email": "hoadv@gmail.com",
+        "sdt": "0981234765",
+        "cccd": "890123456789"
+    },
+    {
+        "id_khach_hang": 9,
+        "ten_khach_hang": "Trịnh Thị Lan Anh",
+        "dia_chi": "TP HCM",
+        "email": "anhltm@gmail.com",
+        "sdt": "0953671824",
+        "cccd": "901234567890"
+    },
+    {
+        "id_khach_hang": 10,
+        "ten_khach_hang": "Đinh Minh Quân",
+        "dia_chi": "Ha Noi",
+        "email": "quandm@gmail.com",
+        "sdt": "0918283746",
+        "cccd": "012345678901"
+    },
+    {
+        "id_khach_hang": 11,
+        "ten_khach_hang": "Lý Thị Kim Ngân",
+        "dia_chi": "Da Nang",
+        "email": "nganltk@gmail.com",
+        "sdt": "0975382641",
+        "cccd": "123456789012"
+    },
+    {
+        "id_khach_hang": 12,
+        "ten_khach_hang": "Bùi Văn Đức",
+        "dia_chi": "TP HCM",
+        "email": "ducbv@gmail.com",
+        "sdt": "0926483751",
+        "cccd": "234567890123"
+    },
+    {
+        "id_khach_hang": 13,
+        "ten_khach_hang": "Phan Thị Thanh Hằng",
+        "dia_chi": "Ha Noi",
+        "email": "hangptth@gmail.com",
+        "sdt": "0963547182",
+        "cccd": "345678901234"
+    },
+    {
+        "id_khach_hang": 14,
+        "ten_khach_hang": "Hồ Văn Hùng",
+        "dia_chi": "Da Nang",
+        "email": "hunghv@gmail.com",
+        "sdt": "0981627345",
+        "cccd": "456789012345"
+    },
+    {
+        "id_khach_hang": 15,
+        "ten_khach_hang": "Nghiêm Thị Thu Hà",
+        "dia_chi": "Ha Noi",
+        "email": "hanth@gmail.com",
+        "sdt": "0927384651",
+        "cccd": "567890123456"
+    },
+    {
+        "id_khach_hang": 16,
+        "ten_khach_hang": "Mai Văn Tuấn",
+        "dia_chi": "Da Nang",
+        "email": "tuanmv@gmail.com",
+        "sdt": "0918273645",
+        "cccd": "678901234567"
+    },
+    {
+        "id_khach_hang": 17,
+        "ten_khach_hang": "Vương Thị Thanh Thảo",
+        "dia_chi": "TP HCM",
+        "email": "thaovtt@gmail.com",
+        "sdt": "0972364851"
+    },
+    {
+        "id_khach_hang": 18,
+        "ten_khach_hang": "Quách Văn Dũng",
+        "dia_chi": "Ha Noi",
+        "email": "dungqv@gmail.com",
+        "sdt": "0937281645"
+    },
+    {
+        "id_khach_hang": 19,
+        "ten_khach_hang": "Đỗ Thị Thu Hương",
+        "dia_chi": "Da Nang",
+        "email": "huongdtt@gmail.com",
+        "sdt": "0963124875",
+        "cccd": "901234567890"
+    },
+    {
+        "id_khach_hang": 20,
+        "ten_khach_hang": "Trương Văn Hải",
+        "dia_chi": "TP HCM",
+        "email": "haitv@gmail.com",
+        "sdt": "0982736451",
+        "cccd": "012345678901"
+    }
+]
