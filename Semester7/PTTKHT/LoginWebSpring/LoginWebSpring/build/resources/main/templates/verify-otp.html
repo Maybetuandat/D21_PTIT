@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Xác minh OTP</title>
+</head>
+<body>
+<h2>Xác minh OTP</h2>
+<form action="/verify-otp" method="post">
+  <div>
+    <label for="username">Tên đăng nhập:</label>
+    <input type="text" id="username" name="username" required />
+  </div>
+  <div>
+    <label for="otp">Mã OTP:</label>
+    <input type="text" id="otp" name="otp" required />
+  </div>
+  <div>
+    <button type="submit">Xác minh</button>
+  </div>
+</form>
+</body>
+</html>

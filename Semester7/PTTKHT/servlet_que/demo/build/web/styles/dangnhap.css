@@ -1,0 +1,124 @@
+body {
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0 0 0 0;
+    display: flex;
+    height: 100vh;
+    justify-content: center; /* Căn div vào giữa theo chiều ngang */
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0;
+}
+p {
+	color: rgb(204 13 0);
+	animation: slideDown 1s ease-in-out;
+	margin-top: 0px;
+}
+
+
+.logo {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.h {
+	display:flex;
+	justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#logo {
+	height: 80px;
+    width: 70px;
+    margin: 20px 20px 20px 0;
+}
+
+.hv {
+	color: rgb(204 13 0);
+	font-weight: bold;
+	text-align: center;
+	width: 100%;
+}
+
+.hv2 {
+	text-align: center;
+	width: 100%;
+}
+
+
+.form {
+	width: 500px;
+	align-self: center;
+	flex-direction: column;
+	background-color: white;
+    z-index: 999;
+    padding: 2rem;
+    border-radius: .5rem;
+    justify-content: center;
+    align-items: center;
+
+}
+@media (max-width: 640px) {
+    .form {
+        width: 100%; /* Khi màn hình nhỏ hơn 500px, giữ nguyên kích thước */
+    }
+}
+
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dangky, input {
+	width: 100%;
+    height: 2.5rem;
+    padding: 8px 12px;
+    margin-top: 0px;
+    border: 1px solid #ebe8e8;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box; /* Tính cả padding và border vào kích thước của phần tử */
+}
+
+input:focus {
+    border: 1px solid #007bff;
+    box-shadow: 0 0 10px rgba(0, 128, 255, 0.5);
+    outline: none;
+}
+
+.dangky, input[type="submit"] {
+	background-color: rgb(204 13 0);
+	color: white;
+	margin-bottom: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s; /* Hiệu ứng khi hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2) ;
+}
+.dangky:hover, input[type="submit"]:hover {
+	 background-color: #fa4557; /* Màu nền khi hover */
+    box-shadow: 0 6px 10px rgb(60 53 53);
+}
+
+.quenmk {
+	background-color: white;
+	border: none;
+	color: rgb(37 99 235);
+	float: right;
+	text-decoration: underline;
+	padding: 0;
+	cursor: pointer;
+	margin-top: 5px;
+}
+
+
